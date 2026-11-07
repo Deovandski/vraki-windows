@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <!-- Development identity only. The Microsoft Store identity is kept out of git:
+       see docs/STORE.md and packaging/store-identity.example.json. -->
+  <Identity Name="VrakiLanguage.Dev" Publisher="CN=VrakiLanguageDev" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="ce4091d3-0c78-45b4-9b9d-4380b8e5b91c" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>Vraki Language</DisplayName>
+    <PublisherDisplayName>Deovandski</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Vraki_Language.App">
+      <uap:VisualElements DisplayName="Vraki Language" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="Vraki Language offers the possibility to Reverse, Shift, Transform text in several ways to appear as a new language. Not only that, Vraki is also open source on Github under Deovandski/Vraki_Windows" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square71x71Logo="Assets\Square71x71Logo.png">
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="black" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+</Package>

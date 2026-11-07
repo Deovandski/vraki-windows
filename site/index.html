@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vraki Language for Windows (2017)</title>
+  <meta name="description" content="Vraki Language, a 2017 Windows app that turns English into Vraki, the writing behind the #HusbandOutWorld series. Resurrected for historical purposes, with the Vraki typeface and a working 2017 converter in your browser.">
+  <meta property="og:title" content="Vraki Language for Windows (2017)">
+  <meta property="og:description" content="The 2017 Vraki Language app, back from the archive. Try the original converter and see English written in the Vraki typeface.">
+  <meta property="og:image" content="https://deovandski.github.io/vraki-windows/media/og-tile.png">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="preload" href="fonts/VrakiHusbandOutWorldSeries-Rg.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face {
+      font-family: "Vraki";
+      src: url("fonts/VrakiHusbandOutWorldSeries-Rg.woff2") format("woff2");
+      font-display: swap;
+    }
+    :root {
+      --paper: #f4f6f6;
+      --paper-2: #e6ebeb;
+      --rule: #cdd5d6;
+      --ink: #15191b;
+      --ink-soft: #4f5a5e;
+      --night: #07090a;
+      --night-2: #111618;
+      --glyph: #3fd0d8;        /* the cyan line art from the 2017 tiles */
+      --glyph-dim: rgba(63, 208, 216, .28);
+      --crimson: #c9285a;      /* the 2017 title bar */
+      --mint: #ddfdfd;         /* the 2017 settings pane */
+      --focus: #2f7df6;
+      --radius: 18px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #0e1214;
+        --paper-2: #161c1f;
+        --rule: #2a3236;
+        --ink: #e7eded;
+        --ink-soft: #9fabb0;
+        --mint: #10282a;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+    .vraki { font-family: "Vraki", monospace; font-weight: normal; letter-spacing: 0; }
+
+    /* ---------- Top bar ---------- */
+    .top { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; gap: 16px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; line-height: 1.2; }
+    .brand img { width: 30px; height: 30px; border-radius: 6px; }
+    .top nav { display: flex; gap: 22px; font-size: 15px; flex-wrap: wrap; justify-content: flex-end; }
+
+    /* ---------- Hero: dot-grid paper at night ---------- */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background-color: var(--night);
+      background-image:
+        radial-gradient(circle at center, rgba(160, 230, 232, .32) 1.3px, transparent 1.6px),
+        linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,0) 50%);
+      background-size: 26px 26px, auto;
+      background-position: 13px 13px, 0 0;
+      color: #e9f4f4;
+      border-radius: var(--radius);
+      padding: 48px 44px 40px;
+      border: 1px solid rgba(63, 208, 216, .18);
+      box-shadow: 0 30px 60px -32px rgba(0, 20, 22, .6);
+    }
+    .hero .badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(201, 40, 90, .16); color: #ffb3c9;
+      border: 1px solid rgba(201, 40, 90, .55);
+      border-radius: 999px; padding: 4px 12px; font-size: 14px; font-weight: 600;
+    }
+    .hero h1 {
+      font-size: clamp(38px, 5.6vw, 66px); line-height: 1.02; letter-spacing: -0.02em;
+      margin: 18px 0 14px; font-weight: 800;
+    }
+    .hero h1 .sub { display: block; font-size: .42em; letter-spacing: 0; font-weight: 600; color: var(--glyph); margin-top: 10px; }
+    .hero p.lead { max-width: 40rem; color: #b9c8c9; font-size: 18px; margin: 0 0 26px; }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: #f2fbfb; color: #0b1012; font-weight: 700;
+      padding: 12px 20px; border-radius: 10px; text-decoration: none;
+    }
+    .btn:hover { background: #fff; }
+    .btn.ghost { background: transparent; color: #e9f4f4; box-shadow: inset 0 0 0 1.5px rgba(233,244,244,.45); }
+    .btn.ghost:hover { box-shadow: inset 0 0 0 2px #e9f4f4; }
+    .btn svg { width: 18px; height: 18px; }
+
+    .scribe {
+      margin-top: 38px;
+      border-top: 1px solid rgba(63, 208, 216, .25);
+      padding-top: 26px;
+      display: grid; gap: 10px;
+    }
+    .scribe label { font-size: 14px; color: #8fa3a5; }
+    .scribe input {
+      width: 100%; max-width: 34rem;
+      background: rgba(0,0,0,.55); color: #e9f4f4;
+      border: 1px solid rgba(63, 208, 216, .4); border-radius: 10px;
+      padding: 11px 14px; font: inherit;
+    }
+    .scribe-out {
+      font-size: clamp(30px, 4.6vw, 54px);
+      line-height: 1.45;
+      color: var(--glyph);
+      min-height: 1.5em;
+      overflow-wrap: anywhere;
+      text-shadow: 0 0 18px rgba(63, 208, 216, .35);
+    }
+
+    /* ---------- Sections ---------- */
+    section { padding: 76px 0 8px; }
+    h2 { font-size: 32px; line-height: 1.15; letter-spacing: -0.01em; margin: 0 0 18px; font-weight: 800; }
+    h3 { font-size: 19px; margin: 0 0 6px; font-weight: 700; }
+    .lede { max-width: 44rem; color: var(--ink-soft); margin: -4px 0 28px; }
+    .muted { color: var(--ink-soft); }
+    code { font-size: .9em; background: var(--paper-2); padding: 1px 6px; border-radius: 5px; overflow-wrap: anywhere; }
+
+    .notice {
+      display: grid; grid-template-columns: auto 1fr; gap: 18px;
+      background: var(--mint); border: 1px solid var(--rule); border-left: 6px solid var(--crimson);
+      border-radius: 12px; padding: 22px 24px; max-width: 60rem;
+    }
+    .notice .year { font-size: 40px; font-weight: 800; line-height: 1; color: var(--crimson); }
+    .notice p { margin: 0 0 10px; }
+    .notice p:last-child { margin-bottom: 0; }
+
+    /* ---------- The converter (laid out like the 2017 app) ---------- */
+    .app {
+      border-radius: 14px; overflow: hidden; border: 1px solid var(--rule);
+      background: var(--paper-2);
+      box-shadow: 0 24px 50px -34px rgba(0,0,0,.45);
+    }
+    .app-bar {
+      background: var(--crimson); color: #fff; font-size: 13px; padding: 6px 14px;
+      display: flex; justify-content: space-between;
+    }
+    .app-head {
+      background: #000; color: #fff; padding: 10px 14px 0;
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+    }
+    .app-head img { width: min(420px, 90%); height: auto; display: block; }
+    .tabs { display: flex; gap: 2px; }
+    .tabs span, .tabs button {
+      background: #e8e8e8; color: #111; border: 0; font: inherit; font-size: 15px;
+      padding: 4px 16px; min-width: 64px;
+    }
+    .tabs .writable { color: #d4102e; }
+    .tabs button {
+      background: #fff; box-shadow: inset 0 0 0 2px #2fbf6f; cursor: pointer; letter-spacing: .1em; font-weight: 600;
+    }
+    .app-body { display: grid; grid-template-columns: minmax(0, 1fr) 320px; }
+    .panels { padding: 16px; display: grid; gap: 14px; align-content: start; }
+    .panel h3 { font-size: 14px; margin: 0 0 6px; text-align: center; }
+    .panel textarea, .panel output {
+      display: block; width: 100%; min-height: 108px; resize: vertical;
+      border: 1px solid #9aa4a6; background: #fff; color: #111;
+      padding: 10px 12px; font: 15px/1.5 "Segoe UI", system-ui, sans-serif; border-radius: 2px;
+      white-space: pre-wrap; overflow-wrap: anywhere;
+    }
+    .panel textarea[readonly] { background: #f0f2f2; }
+    .panel output.vraki-render {
+      font-family: "Vraki", monospace; font-size: 30px; line-height: 1.5;
+      background: #000; color: var(--glyph); border-color: #000; min-height: 80px;
+    }
+    .translate-row { display: flex; justify-content: center; }
+    .translate {
+      background: #c9cdce; color: #111; border: 0; font: 600 16px "Segoe UI", system-ui, sans-serif;
+      padding: 10px 34px; cursor: pointer;
+    }
+    .translate:hover { background: #b8bdbe; }
+    .settings {
+      background: #ddfdfd; color: #111; border-left: 4px solid #000; padding: 14px 16px 18px;
+      font-size: 15px;
+    }
+    .settings h3 {
+      text-align: center; font-size: 22px; margin: 0 0 12px;
+      border: 3px solid #0a8f93; background: #fff; padding: 2px 0;
+    }
+    .settings fieldset { border: 0; padding: 0; margin: 0 0 12px; }
+    .settings legend { font-size: 17px; font-weight: 600; padding: 0; margin-bottom: 4px; }
+    .settings select {
+      font: inherit; padding: 4px 6px; background: #cfe5e5; border: 1px solid #9bbcbc; border-radius: 2px; color: #111;
+    }
+    .row { display: flex; align-items: center; gap: 10px; margin: 6px 0; }
+    .row input[type="range"] { flex: 1; accent-color: var(--crimson); }
+    .row .val { min-width: 2.6em; text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+    .toggle { display: inline-flex; align-items: center; gap: 10px; cursor: pointer; }
+    .toggle input {
+      appearance: none; -webkit-appearance: none; margin: 0;
+      width: 44px; height: 22px; border-radius: 11px; border: 2px solid #222; position: relative; cursor: pointer; background: #fff;
+    }
+    .toggle input::after {
+      content: ""; position: absolute; top: 3px; left: 3px; width: 12px; height: 12px; border-radius: 50%; background: #222;
+      transition: transform .15s;
+    }
+    .toggle input:checked { background: var(--crimson); border-color: var(--crimson); }
+    .toggle input:checked::after { background: #fff; transform: translateX(22px); }
+    .current { font-size: 14px; }
+    .current b { font-size: 15px; }
+    .app-foot { background: #000; color: #f0c24b; display: flex; justify-content: space-between; font-size: 13px; padding: 4px 10px; }
+    .app-foot a { color: #f0c24b; }
+    [hidden] { display: none !important; }
+
+    /* ---------- Typeface ---------- */
+    .type-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 36px; align-items: start; }
+    .specimen {
+      background: #000; color: var(--glyph); border-radius: 12px; padding: 18px 20px;
+      font-size: 34px; line-height: 1.5; overflow-wrap: anywhere;
+    }
+    .specimen small { display: block; font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; color: #7f9799; margin-top: 6px; }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0 0; }
+    .chip {
+      display: grid; justify-items: center; gap: 2px; width: 62px; padding: 8px 4px 6px;
+      background: var(--paper-2); border: 1px solid var(--rule); border-radius: 8px;
+    }
+    .chip .vraki { font-size: 28px; line-height: 1.2; color: var(--ink); }
+    .chip span:last-child { font-size: 13px; color: var(--ink-soft); }
+    figure { margin: 0; }
+    figure img, figure video { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--rule); background: #000; }
+    figcaption { margin-top: 8px; color: var(--ink-soft); font-size: 15px; }
+    ul.plain { padding-left: 1.2em; max-width: 46rem; margin: 0 0 16px; }
+    ul.plain li { margin: 0 0 8px; }
+
+    .shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 26px; }
+
+    table { border-collapse: collapse; width: 100%; max-width: 60rem; font-size: 16px; }
+    th, td { text-align: left; padding: 11px 14px 11px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+    th { font-weight: 700; }
+    td.out { font-family: Consolas, "Cascadia Mono", ui-monospace, monospace; font-size: 14.5px; overflow-wrap: anywhere; }
+
+    pre {
+      background: var(--paper-2); border: 1px solid var(--rule); border-radius: 10px;
+      padding: 14px 16px; overflow-x: auto; font-size: 14px; line-height: 1.5; max-width: 60rem;
+    }
+
+    footer { padding: 72px 0 48px; font-size: 14px; color: var(--ink-soft); }
+    footer p { margin: 4px 0; max-width: 52rem; }
+
+    /* ---------- Small screens ---------- */
+    @media (max-width: 900px) {
+      .app-body { grid-template-columns: 1fr; }
+      .settings { border-left: 0; border-top: 4px solid #000; }
+      .type-grid, .shots { grid-template-columns: 1fr; }
+      .hero { padding: 34px 22px 30px; }
+    }
+    @media (max-width: 520px) {
+      .wrap { padding: 0 14px; }
+      .top nav a.hide-sm { display: none; }
+      .notice { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="./"><img src="icon.png" alt="" width="30" height="30">Vraki Language</a>
+      <nav aria-label="Main">
+        <a href="#try">Try it</a>
+        <a href="#typeface">Typeface</a>
+        <a href="#history" class="hide-sm">2017</a>
+        <a href="https://github.com/Deovandski/vraki-windows">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <span class="badge">Originally from 2017 · resurrected for historical purposes</span>
+        <h1>Vraki Language
+          <span class="sub">The writing behind #HusbandOutWorld, on Windows since 2017</span>
+        </h1>
+        <p class="lead">In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href="https://github.com/Deovandski/HusbandOutWorld">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.</p>
+        <div class="actions">
+          <a class="btn" href="https://apps.microsoft.com/detail/9P41XHS4HMLX">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8.5v8.5H3zM12.5 3H21v8.5h-8.5zM3 12.5h8.5V21H3zM12.5 12.5H21V21h-8.5z"/></svg>
+            Get it from Microsoft Store</a>
+          <a class="btn ghost" href="https://github.com/Deovandski/vraki-windows">Source on GitHub</a>
+          <a class="btn ghost" href="#try">Try it in your browser</a>
+        </div>
+
+        <div class="scribe">
+          <label for="scribe-in">Type anything in English. It's written letter for letter in the Vraki typeface:</label>
+          <input id="scribe-in" type="text" value="Vraki" maxlength="60" autocomplete="off" spellcheck="false">
+          <div class="scribe-out vraki" id="scribe-out" aria-live="polite">Vraki</div>
+        </div>
+      </div>
+
+      <section id="about">
+        <div class="notice">
+          <div class="year">2017</div>
+          <div>
+            <p><strong>This is old code, on purpose.</strong> Vraki Language was written in 2017 as a Universal Windows Platform app for Windows 10 and published on the Microsoft Store. Its source is resurrected here for historical purposes: the C# and XAML are unchanged, only moved into <code>legacy/</code>.</p>
+            <p>Since then, Vraki has become the writing system of the #HusbandOutWorld series, written <strong>1:1 with English</strong>: one Vraki glyph per English letter, instead of the 2017 app's reversing and shifting. A modern version built around that idea is the next step for this repository.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="try">
+        <h2>Try the 2017 converter</h2>
+        <p class="lede">This is the app's own conversion code, ported line by line to JavaScript and checked against output captured from the 2017 app. Pick a conversion type, press Translate, and flip the arrows to convert back. Everything runs in your browser.</p>
+
+        <div class="app" role="group" aria-label="Vraki Language 2017 converter">
+          <div class="app-bar"><span>Vraki Language</span><span aria-hidden="true">— ☐ ✕</span></div>
+          <div class="app-head">
+            <img src="media/vraki-language-line.png" alt="" width="1416" height="102">
+            <div class="tabs">
+              <span id="tab-text" class="writable">Text</span>
+              <button id="direction" type="button" aria-label="Switch direction. Currently converting text to Vraki.">&gt;&gt;&gt;</button>
+              <span id="tab-vraki">Vraki</span>
+            </div>
+          </div>
+          <div class="app-body">
+            <div class="panels">
+              <div class="panel">
+                <h3><label for="text-panel">Text Panel</label></h3>
+                <textarea id="text-panel" spellcheck="false">Look at my Horse! My horse is amazing! -Gentleman</textarea>
+              </div>
+              <div class="translate-row"><button class="translate" id="translate" type="button">Translate</button></div>
+              <div class="panel">
+                <h3><label for="vraki-panel">Vraki Panel</label></h3>
+                <textarea id="vraki-panel" spellcheck="false" readonly></textarea>
+              </div>
+              <div class="panel">
+                <h3 id="render-title">The Vraki Panel, in the Vraki typeface</h3>
+                <output id="vraki-render" class="vraki-render" aria-labelledby="render-title"></output>
+              </div>
+            </div>
+
+            <form class="settings" id="settings" aria-label="Settings" onsubmit="return false">
+              <h3>Settings</h3>
+              <div class="row current">
+                <label for="preset">Conversion Type</label>
+                <select id="preset">
+                  <option>Default</option>
+                  <option>Simple Vraki</option>
+                  <option>Complex Vraki</option>
+                  <option>Minimal</option>
+                  <option disabled>Custom</option>
+                </select>
+              </div>
+
+              <fieldset>
+                <legend>Reverse Configuration</legend>
+                <label class="toggle"><input type="checkbox" id="reverse"><span>On</span></label>
+                <div class="row current" id="reverse-type-row">
+                  <label for="reverse-type">Reverse Type</label>
+                  <select id="reverse-type">
+                    <option value="1">Char</option>
+                    <option value="2">Word</option>
+                    <option value="3">Word Pair</option>
+                    <option value="4">Char + Word</option>
+                    <option value="5">Char + Word Pair</option>
+                  </select>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Chars Shift Configuration</legend>
+                <label class="toggle"><input type="checkbox" id="shift"><span>On</span></label>
+                <div id="shift-options">
+                  <div class="row" style="margin-top:10px">Differential Shift Rate</div>
+                  <label class="toggle"><input type="checkbox" id="vowel-separately"><span>Off</span></label>
+                  <div class="row"><label for="shift-by" id="shift-by-label">Shift by</label></div>
+                  <div class="row"><input type="range" id="shift-by" min="-25" max="25" step="1"><span class="val" id="shift-by-val">0</span></div>
+                  <div id="vowel-row">
+                    <div class="row"><label for="vowel-by">Shift Vowels By</label></div>
+                    <div class="row"><input type="range" id="vowel-by" min="-4" max="4" step="1"><span class="val" id="vowel-by-val">0</span></div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>Vraki Structuring</legend>
+                <label class="toggle"><input type="checkbox" id="structure"><span>Off</span></label>
+              </fieldset>
+
+              <fieldset>
+                <legend>Letter Case Fix</legend>
+                <label class="toggle"><input type="checkbox" id="letter-case"><span>Automatic</span></label>
+              </fieldset>
+            </form>
+          </div>
+          <div class="app-foot"><span>Source code at <a href="https://github.com/Deovandski/vraki-windows">github.com/Deovandski/vraki-windows</a></span><span>2017</span></div>
+        </div>
+        <p class="muted" style="margin-top:14px;font-size:15px">Red marks the writable panel, as in the app. Quirks of the 2017 code are kept; see <a href="https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md">how the conversions work</a>.</p>
+      </section>
+
+      <section id="typeface">
+        <h2>The Vraki typeface</h2>
+        <p class="lede">The 2017 README ended with a hand-drawn sketch and a promise: <em>"If time allows, I will develop a cleaner version of the following drawing followed by a font."</em> That font now exists, made for the #HusbandOutWorld series, and it lives in the HusbandOutWorld repository.</p>
+
+        <div class="type-grid">
+          <div>
+            <h3>One glyph per English letter</h3>
+            <ul class="plain">
+              <li>Vraki is English with a different skin: same alphabet, same order, same words. Type in English and it's written in Vraki.</li>
+              <li>Each letter is a line drawn across a dotted grid. <strong>Upper case</strong> letters carry small circle markers; <strong>lower case</strong> is the same stroke without them.</li>
+              <li>Digits mark a single dot on a 3×3 grid (zero marks all nine), and punctuation has its own marks.</li>
+              <li>In the series' lore, Vraki is the common language inherited from the Finaies: mostly English, because English is the common language for business and the language the books were written in.</li>
+            </ul>
+            <div class="specimen vraki" id="specimen">The quick brown fox jumps over the lazy dog<small>"The quick brown fox jumps over the lazy dog" in Vraki</small></div>
+            <div class="chips" id="chips" aria-label="The Vraki alphabet, upper case"></div>
+          </div>
+          <figure>
+            <img src="media/vraki-typeface-v2-sheet.jpg" alt="Hand-drawn reference sheet of the Vraki typeface: A to Z, lower case a and b, digits 0 to 9, and punctuation, each drawn on a dotted grid" width="1260" height="1473" loading="lazy">
+            <figcaption>The hand-drawn reference sheet (v2) the font was built from.</figcaption>
+          </figure>
+        </div>
+
+        <h3 style="margin-top:34px">Get the typeface</h3>
+        <ul class="plain">
+          <li><a href="https://github.com/Deovandski/HusbandOutWorld/tree/main/Logo%20and%20Font">Deovandski/HusbandOutWorld › Logo and Font</a>: <code>VrakiHusbandOutWorldSeries-Rg</code> as <code>.otf</code>, <code>.ttf</code> and <code>.woff2</code>, plus the reference sheet.</li>
+          <li><a href="https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.</li>
+          <li class="muted">The typeface is © 2024 Deovandski Skibinski Junior, all rights reserved, and may not be altered without permission. For commercial use, get in touch through <a href="https://www.ahusbandoutofthisworld.com/">the official channels</a>. This site uses an unaltered copy to show Vraki text.</li>
+        </ul>
+      </section>
+
+      <section id="history">
+        <h2>The app in 2017</h2>
+        <p class="lede">A Text panel, a Vraki panel, a direction switch and a Settings pane full of toggles. Recorded while it was being built in May 2017.</p>
+        <figure>
+          <video src="media/vraki-2017-demo.mp4" poster="media/vraki-2017-demo-poster.jpg" width="1280" height="720"
+                 muted loop playsinline preload="none" controls
+                 aria-label="Video from May 2017: the Vraki Language app running beside Visual Studio, switching settings and translating text"></video>
+          <figcaption>Development recording, May 2017 (46 seconds, no sound).</figcaption>
+        </figure>
+        <div class="shots">
+          <figure>
+            <img src="media/screenshot-2017-text-panel.jpg" alt="The 2017 app: the Text panel with an English sentence and the Settings pane open, with the Default conversion type" width="1600" height="867" loading="lazy">
+            <figcaption>Version 1.3, June 2017: the Text panel and Settings.</figcaption>
+          </figure>
+          <figure>
+            <img src="media/screenshot-2017-v1.1.jpg" alt="The 2017 app, version 1.1, with an orange accent color instead of crimson" width="1600" height="867" loading="lazy">
+            <figcaption>Version 1.1, May 2017, with an orange accent.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="how">
+        <h2>How the 2017 conversions work</h2>
+        <p class="lede">Four building blocks, run in order: Reverse, Shift, Vraki Structure, then Letter Case Fix. Each conversion type is a preset of them. Here's what each does to the app's sample sentence, <em>"Look at my Horse! My horse is amazing! -Gentleman"</em>:</p>
+        <table>
+          <thead><tr><th scope="col">Conversion type</th><th scope="col">Steps</th><th scope="col">Output</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Default</strong></td><td>Char reverse, shift all by −3, letter case</td><td class="out">Kxjbiqkbd- !Dkfwxjx pf bpole vj !Bpole vj qx hlli</td></tr>
+            <tr><td><strong>Simple Vraki</strong></td><td>Vraki structure, letter case</td><td class="out">Look at my hol-li`lde! My hol-li`lde is amazing! -Gentleman</td></tr>
+            <tr><td><strong>Complex Vraki</strong></td><td>Char + word pair reverse, consonants −10, vowels +2, Vraki structure, letter case</td><td class="out">Tbi-rg`ldbzhoy- !Itzbiun ug voagf zm !Voagf zm ih yxaa</td></tr>
+            <tr><td><strong>Minimal</strong></td><td>Shift all by +1, letter case</td><td class="out">Mppl bu nz ipstf! Nz ipstf jt bnbajoh! -Hfoumfnbo</td></tr>
+          </tbody>
+        </table>
+        <p class="muted">The full write-up, with the 2017 diagrams for every reverse algorithm and the Vraki structure table, is in <a href="https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md">docs/ALGORITHMS.md</a>.</p>
+      </section>
+
+      <section id="source">
+        <h2>Source code</h2>
+        <p class="lede">MIT-licensed. The repository keeps the 2017 app intact and leaves room for the modern one.</p>
+<pre>legacy/                  the 2017 UWP app, unchanged (Visual Studio solution, C#, XAML, assets)
+docs/ALGORITHMS.md       how the conversions work, with the 2017 diagrams
+docs/2017-design/        original design files: GIMP sources, tables, notes
+docs/STORE.md            Microsoft Store listing and keeping its identity out of git
+site/                    this website, including the JavaScript port of the converter
+tools/                   tests for the port, checked against the 2017 app's output</pre>
+        <p class="muted">To open the 2017 project you need Visual Studio with the Universal Windows Platform workload; see <a href="https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md">legacy/README.md</a>. Downloads of the source are on the <a href="https://github.com/Deovandski/vraki-windows/releases/latest">releases page</a>.</p>
+      </section>
+
+      <section id="privacy">
+        <h2>Privacy</h2>
+        <p class="lede">The app stores nothing about you; the text you convert stays on your device. This website has no cookies, no analytics and no ads, and the converter and typeface preview run entirely in your browser. It's hosted on GitHub Pages, so <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a> sees your IP address when it sends you the page. Questions go to <a href="https://github.com/Deovandski/vraki-windows/issues">GitHub issues</a>.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made by <a href="https://github.com/Deovandski">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, all rights reserved.</p>
+      <p>Part of the <a href="https://github.com/Deovandski/HusbandOutWorld">#HusbandOutWorld</a> world. Source and issues on <a href="https://github.com/Deovandski/vraki-windows">GitHub</a>. <a href="#privacy">Privacy</a>.</p>
+    </footer>
+  </div>
+
+  <script src="vraki-2017.js"></script>
+  <script>
+    (function () {
+      "use strict";
+      var $ = function (id) { return document.getElementById(id); };
+
+      // ---------- Hero: English written in the Vraki typeface ----------
+      var scribeIn = $("scribe-in"), scribeOut = $("scribe-out");
+      function scribe() { scribeOut.textContent = scribeIn.value || " "; }
+      scribeIn.addEventListener("input", scribe);
+      scribe();
+
+      // ---------- Alphabet chips ----------
+      var chips = $("chips");
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").forEach(function (ch) {
+        var d = document.createElement("div");
+        d.className = "chip";
+        d.innerHTML = '<span class="vraki" aria-hidden="true"></span><span></span>';
+        d.firstChild.textContent = ch;
+        d.lastChild.textContent = ch + " " + ch.toLowerCase();
+        d.title = ch + " (upper case). Lower case is the same without the circle markers.";
+        chips.appendChild(d);
+      });
+
+      // ---------- The 2017 converter ----------
+      var V = window.Vraki2017;
+      var el = {
+        preset: $("preset"), reverse: $("reverse"), reverseType: $("reverse-type"), reverseRow: $("reverse-type-row"),
+        shift: $("shift"), shiftOptions: $("shift-options"), vowelSeparately: $("vowel-separately"),
+        shiftBy: $("shift-by"), shiftByVal: $("shift-by-val"), shiftByLabel: $("shift-by-label"),
+        vowelRow: $("vowel-row"), vowelBy: $("vowel-by"), vowelByVal: $("vowel-by-val"),
+        structure: $("structure"), letterCase: $("letter-case"),
+        text: $("text-panel"), vraki: $("vraki-panel"), render: $("vraki-render"),
+        direction: $("direction"), tabText: $("tab-text"), tabVraki: $("tab-vraki"), translate: $("translate")
+      };
+      var toVraki = true;
+
+      function read() {
+        return {
+          reverse: el.reverse.checked,
+          reverseType: parseInt(el.reverseType.value, 10),
+          shift: el.shift.checked,
+          vowelSeparately: el.vowelSeparately.checked,
+          shiftBy: parseInt(el.shiftBy.value, 10),
+          vowelShiftBy: parseInt(el.vowelBy.value, 10),
+          vrakiStructure: el.structure.checked,
+          letterCase: el.letterCase.checked
+        };
+      }
+
+      function label(input, on, off) { input.nextElementSibling.textContent = input.checked ? on : off; }
+
+      // Mirrors updateReverse("switch") and updateShift() from the 2017 app.
+      function refresh() {
+        el.reverseRow.hidden = !el.reverse.checked;
+        el.shiftOptions.hidden = !el.shift.checked;
+        if (el.vowelSeparately.checked) {
+          el.shiftByLabel.textContent = "Shift Consonants by";
+          if (+el.shiftBy.value < -20 || +el.shiftBy.value > 20) el.shiftBy.value = 0;
+          el.shiftBy.min = -20; el.shiftBy.max = 20;
+        } else {
+          el.shiftByLabel.textContent = "Shift by";
+          el.shiftBy.min = -25; el.shiftBy.max = 25;
+        }
+        el.vowelRow.hidden = !el.vowelSeparately.checked;
+        el.shiftByVal.textContent = el.shiftBy.value;
+        el.vowelByVal.textContent = el.vowelBy.value;
+        label(el.reverse, "On", "Off");
+        label(el.shift, "On", "Off");
+        label(el.vowelSeparately, "On", "Off");
+        label(el.structure, "On", "Off");
+        label(el.letterCase, "Automatic", "Off");
+        el.preset.value = V.presetName(read());
+      }
+
+      function applyPreset(name) {
+        var p = V.PRESETS[name];
+        if (!p) return;
+        el.reverse.checked = p.reverse;
+        el.reverseType.value = String(p.reverseType);
+        el.shift.checked = p.shift;
+        el.vowelSeparately.checked = p.vowelSeparately;
+        el.shiftBy.min = -25; el.shiftBy.max = 25;
+        el.shiftBy.value = p.shiftBy;
+        el.vowelBy.value = p.vowelShiftBy;
+        el.structure.checked = p.vrakiStructure;
+        el.letterCase.checked = p.letterCase;
+        refresh();
+      }
+
+      function translate() {
+        var s = read();
+        if (toVraki) el.vraki.value = V.toVraki(el.text.value, s);
+        else el.text.value = V.fromVraki(el.vraki.value, s);
+        el.render.textContent = el.vraki.value;
+      }
+
+      // Mirrors changeTranslationDirection(): flip, clear the output, swap the writable panel.
+      function flip() {
+        toVraki = !toVraki;
+        el.direction.textContent = toVraki ? ">>>" : "<<<";
+        el.direction.setAttribute("aria-label", "Switch direction. Currently converting " + (toVraki ? "text to Vraki." : "Vraki to text."));
+        el.text.readOnly = !toVraki;
+        el.vraki.readOnly = toVraki;
+        if (toVraki) el.vraki.value = ""; else el.text.value = "";
+        el.tabText.classList.toggle("writable", toVraki);
+        el.tabVraki.classList.toggle("writable", !toVraki);
+        el.render.textContent = el.vraki.value;
+        (toVraki ? el.text : el.vraki).focus();
+      }
+
+      el.preset.addEventListener("change", function () { applyPreset(el.preset.value); });
+      ["reverse", "reverseType", "shift", "vowelSeparately", "shiftBy", "vowelBy", "structure", "letterCase"].forEach(function (k) {
+        el[k].addEventListener("input", refresh);
+        el[k].addEventListener("change", refresh);
+      });
+      el.translate.addEventListener("click", translate);
+      el.direction.addEventListener("click", flip);
+      el.vraki.addEventListener("input", function () { el.render.textContent = el.vraki.value; });
+
+      applyPreset("Default");
+      translate();
+    })();
+  </script>
+</body>
+</html>

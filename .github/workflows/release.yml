@@ -1,0 +1,57 @@
+name: Release
+
+# Push a tag like v1.3.0-legacy to package the source and publish a GitHub Release.
+# Release notes come from docs/release-notes/<tag>.md when that file exists.
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Test
+        run: node tools/test-vraki-2017.js
+
+      - name: Work out version
+        shell: bash
+        run: |
+          tag="${GITHUB_REF_NAME}"
+          echo "VERSION=${tag#v}" >> "$GITHUB_ENV"
+          if [ -f "docs/release-notes/${tag}.md" ]; then
+            echo "NOTES=docs/release-notes/${tag}.md" >> "$GITHUB_ENV"
+          fi
+
+      - name: Package the 2017 source
+        shell: bash
+        run: |
+          mkdir -p dist
+          name="VrakiLanguage-${VERSION}-source"
+          git archive --format=zip --prefix="${name}/" -o "dist/${name}.zip" HEAD \
+            legacy docs packaging LICENSE README.md PRIVACY.md SECURITY.md
+          unzip -l "dist/${name}.zip" | tail -n 1
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: source
+          path: dist/*.zip
+
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Vraki Language ${{ env.VERSION }}
+          files: dist/*.zip
+          body_path: ${{ env.NOTES }}
+          generate_release_notes: ${{ env.NOTES == '' }}

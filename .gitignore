@@ -1,0 +1,67 @@
+# Build output
+bin/
+obj/
+artifacts/
+publish/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+ARM/
+ARM64/
+bld/
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+*.user
+*.suo
+*.rsuser
+*.userosscache
+*.sln.docstates
+project.lock.json
+project.fragment.lock.json
+packages/
+.vscode/*
+!.vscode/extensions.json
+
+# Test results
+TestResults/
+*.trx
+coverage*.xml
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Local scratch
+.claude-access-test.txt
+
+# ---------------------------------------------------------------------------
+# Microsoft Store identity and signing. Never commit these.
+# See docs/STORE.md.
+# ---------------------------------------------------------------------------
+
+# Store identity (Partner Center > Product identity). Copy store-identity.example.json.
+packaging/store-identity.json
+
+# Written by Visual Studio's "Associate App with the Store"
+Package.StoreAssociation.xml
+
+# Signing certificates (temporary dev keys and Store keys alike)
+*.pfx
+*.cer
+*_TemporaryKey.pfx
+*_StoreKey.pfx
+
+# Store packages and upload bundles
+AppPackages/
+BundleArtifacts/
+*.appx
+*.appxbundle
+*.appxupload
+*.appxsym
+*.msix
+*.msixbundle
+*.msixupload

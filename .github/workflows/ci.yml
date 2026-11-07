@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  converter:
+    name: 2017 converter port
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Test the JavaScript port against the 2017 app's output
+        run: node tools/test-vraki-2017.js
+
+  store-identity:
+    name: Store identity guard
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Manifest must carry the development identity only
+        shell: bash
+        run: |
+          manifest="legacy/Vraki Language/Package.appxmanifest"
+          if ! grep -q '<Identity Name="VrakiLanguage.Dev" Publisher="CN=VrakiLanguageDev"' "$manifest"; then
+            echo "::error file=$manifest::Package identity was changed. Restore the development identity before committing (see docs/STORE.md)."
+            exit 1
+          fi
+      - name: No Store identity files or signing keys
+        shell: bash
+        run: |
+          bad=$(git ls-files | grep -Ei '(^|/)(store-identity\.json|Package\.StoreAssociation\.xml)$|\.(pfx|cer|appxupload|msixupload|appxbundle|msixbundle|appx|msix)$' || true)
+          if [ -n "$bad" ]; then
+            echo "::error::These files must not be committed (see docs/STORE.md):"
+            echo "$bad"
+            exit 1
+          fi
