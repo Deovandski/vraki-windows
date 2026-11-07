@@ -9,6 +9,7 @@ The release pipeline is `.github/workflows/release.yml`, set up the same way as 
    git tag v1.3.0-legacy
    git push origin v1.3.0-legacy
    ```
+   Or, without a terminal: **Actions › Release › Run workflow**, type the tag, and run it on `main`.
 4. GitHub Actions runs the converter tests, zips the 2017 source (`legacy/`, `docs/`, the license and readme) into `VrakiLanguage-<version>-source.zip`, and publishes a GitHub Release with it.
 
 ## What gets released
