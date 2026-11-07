@@ -15,6 +15,17 @@ Vraki began as this small Windows app that reversed, shifted and restructured En
   <img src="docs/media/screenshot-v1.3-1.png" alt="The 2017 app: Text panel with an English sentence, Settings pane open" width="760">
 </p>
 
+## Where Vraki came from
+
+Deovandski always dreamed of coming up with a language. As a child he doodled the alphabets of alien civilizations, and the more he traveled the world and soaked up its cultures, the closer those doodles drifted to the Vraki writing you see here.
+
+He didn't expect it to grow into an entire world with extensive lore, and from there into several stories:
+
+- **[A Husband Out of This World](https://github.com/Deovandski/HusbandOutWorld)**, published as the **#HusbandOutWorld** light novel series. It opens on Paulin 14th, 1039 A.G. (After Ganyrami, the Vraki calendar's count from the year Ganyrami fell), when Harry is summoned out of our world into the world of Vraki, in the Prosperity Treaty era, the long peace that followed the overthrow of the old kingdoms.
+- **[Vraki West March Campaign](https://github.com/Deovandski/Vraki-West-March-Campaign-D-D)**, an open-table, West Marches-style D&D 5e campaign set in the same world in the 1040s A.G., with lore summaries, quests, stat blocks and ready-made adventurers.
+
+This app is where the writing first went digital, back in 2017.
+
 ## What the 2017 app does
 
 - **Two panels.** Type English in the Text panel, press **Translate**, and read the result in the Vraki panel. Flip the `>>>` switch to convert back.
@@ -32,6 +43,15 @@ How every step works, with the original 2017 diagrams: **[docs/ALGORITHMS.md](do
 
 **Try it without Windows:** the [website](https://deovandski.github.io/vraki-windows/#try) runs a line-by-line JavaScript port of the 2017 code, checked against the app's own output (`node tools/test-vraki-2017.js`).
 
+## Version history (2017)
+
+| Version | Changes |
+|---|---|
+| 1.4 | Fixed issues #2 and #3. |
+| 1.3 | Changed the header image to support VisualStates, and updated the GitHub links. |
+| 1.2 | Changed how the current panel and the writable panel are shown. |
+| 1.1 | May 2017. The only built package that survived is this version: it's attached to the [v1.4.0-legacy release](https://github.com/Deovandski/vraki-windows/releases) for the record. Its certificate expired in 2018, so install from the Store instead. |
+
 ## The Vraki typeface
 
 The 2017 README ended with a sketch and a promise to turn it into a font "if time allows". That font now exists: **Vraki - #HusbandOutWorld Series**, made for the series.
@@ -47,7 +67,7 @@ The 2017 README ended with a sketch and a promise to turn it into a font "if tim
 
 ## Install
 
-Get **[Vraki Language from the Microsoft Store](https://apps.microsoft.com/detail/9P41XHS4HMLX)** (or open `ms-windows-store://pdp/?productid=9P41XHS4HMLX` on Windows). It's the 2017 build.
+Get **[Vraki Language from the Microsoft Store](https://apps.microsoft.com/detail/9P41XHS4HMLX)** (or open `ms-windows-store://pdp/?productid=9P41XHS4HMLX` on Windows). It's the 2017 app, version 1.4.
 
 ## Build from source
 
@@ -72,7 +92,7 @@ Like [Deo's LED Matrix Manager](https://github.com/Deovandski/Deo-s-Framework16-
 
 ## Disclosure
 
-**History.** The code in `legacy/` dates from May and June 2017 and was first published on GitHub that year. In 2026 it was moved into `legacy/` with its manifest identity neutralized; nothing else in it was changed.
+**History.** The code in `legacy/` is version 1.4 of the 2017 app and was first published on GitHub that year. In 2026 it was moved into `legacy/` with its manifest identity neutralized; nothing else in it was changed.
 
 **AI assistance.** The 2026 restoration (repository layout, website, JavaScript port, docs and workflows) was done with help from Claude (Anthropic). Commits it contributed to are marked `Co-Authored-By: Claude`. The 2017 code is entirely the original.
 

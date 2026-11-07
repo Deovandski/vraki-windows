@@ -143,6 +143,20 @@
     .notice p { margin: 0 0 10px; }
     .notice p:last-child { margin-bottom: 0; }
 
+    .story { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 40px; align-items: start; }
+    .story p { margin: 0 0 16px; max-width: 38rem; }
+    .worlds { display: grid; gap: 16px; }
+    .world {
+      display: block; text-decoration: none;
+      background: var(--paper-2); border: 1px solid var(--rule); border-radius: 12px; padding: 18px 20px;
+    }
+    .world:hover { border-color: var(--glyph); }
+    .world .kicker { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--crimson); }
+    .world h3 { margin: 4px 0 6px; }
+    .world p { margin: 0; color: var(--ink-soft); font-size: 15.5px; }
+    .doodle { font-size: 26px; color: var(--glyph); line-height: 1.3; margin: 4px 0 18px; overflow-wrap: anywhere; }
+    @media (prefers-color-scheme: light) { .doodle { color: #0a8f93; } }
+
     /* ---------- The converter (laid out like the 2017 app) ---------- */
     .app {
       border-radius: 14px; overflow: hidden; border: 1px solid var(--rule);
@@ -259,7 +273,7 @@
     @media (max-width: 900px) {
       .app-body { grid-template-columns: 1fr; }
       .settings { border-left: 0; border-top: 4px solid #000; }
-      .type-grid, .shots { grid-template-columns: 1fr; }
+      .type-grid, .shots, .story { grid-template-columns: 1fr; }
       .hero { padding: 34px 22px 30px; }
     }
     @media (max-width: 520px) {
@@ -274,6 +288,7 @@
     <header class="top">
       <a class="brand" href="./"><img src="icon.png" alt="" width="30" height="30">Vraki Language</a>
       <nav aria-label="Main">
+        <a href="#origin" class="hide-sm">Origin</a>
         <a href="#try">Try it</a>
         <a href="#typeface">Typeface</a>
         <a href="#history" class="hide-sm">2017</a>
@@ -309,6 +324,29 @@
           <div>
             <p><strong>This is old code, on purpose.</strong> Vraki Language was written in 2017 as a Universal Windows Platform app for Windows 10 and published on the Microsoft Store. Its source is resurrected here for historical purposes: the C# and XAML are unchanged, only moved into <code>legacy/</code>.</p>
             <p>Since then, Vraki has become the writing system of the #HusbandOutWorld series, written <strong>1:1 with English</strong>: one Vraki glyph per English letter, instead of the 2017 app's reversing and shifting. A modern version built around that idea is the next step for this repository.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="origin">
+        <h2>Where Vraki came from</h2>
+        <div class="story">
+          <div>
+            <p>Deovandski always dreamed of coming up with a language. As a child he doodled the alphabets of alien civilizations, and the more he traveled the world and soaked up its cultures, the closer those doodles drifted to the Vraki writing you see here.</p>
+            <div class="doodle vraki" aria-hidden="true">From doodles to a world</div>
+            <p>He didn't expect it to grow into an entire world with extensive lore, and from there into several stories. This app is where the writing first went digital, back in 2017.</p>
+          </div>
+          <div class="worlds">
+            <a class="world" href="https://github.com/Deovandski/HusbandOutWorld">
+              <span class="kicker">Light novel series</span>
+              <h3>A Husband Out of This World <span class="muted">#HusbandOutWorld</span></h3>
+              <p>Opens on Paulin 14th, 1039 A.G. (After Ganyrami, the Vraki calendar's count from the year Ganyrami fell), when Harry is summoned out of our world into the world of Vraki, in the Prosperity Treaty era, the long peace that followed the overthrow of the old kingdoms.</p>
+            </a>
+            <a class="world" href="https://github.com/Deovandski/Vraki-West-March-Campaign-D-D">
+              <span class="kicker">D&amp;D 5e campaign</span>
+              <h3>Vraki West March Campaign</h3>
+              <p>An open-table, West Marches-style campaign set in the same world in the 1040s A.G., with lore summaries, quests, stat blocks and ready-made adventurers.</p>
+            </a>
           </div>
         </div>
       </section>
@@ -452,6 +490,16 @@
             <figcaption>Version 1.1, May 2017, with an orange accent.</figcaption>
           </figure>
         </div>
+        <h3 style="margin-top:34px">Version history</h3>
+        <table>
+          <thead><tr><th scope="col">Version</th><th scope="col">Changes</th></tr></thead>
+          <tbody>
+            <tr><td><strong>1.4</strong></td><td>Fixed issues #2 and #3. The version on the Store today.</td></tr>
+            <tr><td><strong>1.3</strong></td><td>Changed the header image to support VisualStates, and updated the GitHub links.</td></tr>
+            <tr><td><strong>1.2</strong></td><td>Changed how the current panel and the writable panel are shown.</td></tr>
+            <tr><td><strong>1.1</strong></td><td>May 2017. Its sideload package is the only build that survived; it's attached to the <a href="https://github.com/Deovandski/vraki-windows/releases">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).</td></tr>
+          </tbody>
+        </table>
       </section>
 
       <section id="how">
@@ -489,7 +537,7 @@ tools/                   tests for the port, checked against the 2017 app's outp
 
     <footer>
       <p>Made by <a href="https://github.com/Deovandski">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, all rights reserved.</p>
-      <p>Part of the <a href="https://github.com/Deovandski/HusbandOutWorld">#HusbandOutWorld</a> world. Source and issues on <a href="https://github.com/Deovandski/vraki-windows">GitHub</a>. <a href="#privacy">Privacy</a>.</p>
+      <p>Part of the world of <a href="https://github.com/Deovandski/HusbandOutWorld">#HusbandOutWorld</a> and the <a href="https://github.com/Deovandski/Vraki-West-March-Campaign-D-D">Vraki West March Campaign</a>. Source and issues on <a href="https://github.com/Deovandski/vraki-windows">GitHub</a>. <a href="#privacy">Privacy</a>.</p>
     </footer>
   </div>
 

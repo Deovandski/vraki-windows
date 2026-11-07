@@ -1,6 +1,6 @@
 name: Release
 
-# Push a tag like v1.3.0-legacy to package the source and publish a GitHub Release,
+# Push a tag like v1.4.0-legacy to package the source and publish a GitHub Release,
 # or run it from the Actions tab and type the tag (it's created on the current commit).
 # Release notes come from docs/release-notes/<tag>.md when that file exists.
 on:
@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: "Tag to release, e.g. v1.3.0-legacy (leave empty to only build the zip)"
+        description: "Tag to release, e.g. v1.4.0-legacy (leave empty to only build the zip)"
         required: false
         default: ""
 
