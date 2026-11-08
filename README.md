@@ -60,10 +60,10 @@ The 2017 README ended with a sketch and a promise to turn it into a font "if tim
   <img src="docs/media/VrakiTypeFaceIdea.jpg" alt="The 2017 sketch of the Vraki typeface" width="560">
 </p>
 
-- **Where:** [Deovandski/HusbandOutWorld › Logo and Font](https://github.com/Deovandski/HusbandOutWorld/tree/main/Logo%20and%20Font) has `VrakiHusbandOutWorldSeries-Rg` as `.otf`, `.ttf` and `.woff2`, and the hand-drawn reference sheet `Vraki TypeFace - v2.png`.
+- **Where:** [Deovandski/HusbandOutWorld › Logo and Font](https://github.com/Deovandski/HusbandOutWorld/tree/main/Legacy/Behind%20The%20Scenes/Logo%20and%20Font) has `VrakiHusbandOutWorldSeries-Rg` as `.otf`, `.ttf` and `.woff2`, and the hand-drawn reference sheet `Vraki TypeFace - v2.png`.
 - **How it works:** one glyph per English letter, A to Z, drawn as a line across a dotted grid. Upper case letters carry small circle markers; lower case is the same stroke without them. Digits mark one dot on a 3×3 grid, and punctuation has its own marks. Type English in the font and it's written in Vraki.
 - **Lore:** [World Lore › Language](https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md) describes Vraki as the common language inherited from the Finaies: mostly English, with a skin.
-- **License:** the typeface is © 2024 Deovandski Skibinski Junior ([font license](site/fonts/LICENSE.md)). Non-commercial use is free with attribution. Commercial use needs approval and a fee, kept small for artists and creators to support the community; ask through [the official channels](https://husbandoutworld.com/). It may not be altered without permission. The website includes an unaltered copy only to render Vraki text (see [site/fonts/README.md](site/fonts/README.md)). The rest of the HusbandOutWorld repository is CC BY-NC-SA 4.0.
+- **License:** the typeface is © 2024 Deovandski Skibinski Junior ([font license](site/fonts/LICENSE.md)). Non-commercial use is free with attribution. Commercial use needs approval and a fee, kept small for artists and creators to support the community; ask on [LinkedIn](https://www.linkedin.com/in/deovandski/) or email [Deovandski@outlook.com](mailto:Deovandski@outlook.com). It may not be altered without permission. The website includes an unaltered copy only to render Vraki text (see [site/fonts/README.md](site/fonts/README.md)). The rest of the HusbandOutWorld repository is CC BY-NC-SA 4.0.
 
 ## Install
 
@@ -99,3 +99,19 @@ Like [Deo's LED Matrix Manager](https://github.com/Deovandski/Deo-s-Framework16-
 ## License
 
 [MIT](LICENSE) © 2017 Deovandski Skibinski Junior. The Vraki typeface in `site/fonts/` is not covered by the MIT license; it has [its own license](site/fonts/LICENSE.md).
+
+### Copyright and trademarks
+
+- **The #HusbandOutWorld series** (the *A Husband Out of This World* light novels and webcomic, their story and characters, and the world of Vraki with its lore) © Deovandski Skibinski Junior.
+- **The series artwork**, illustrated by Mitsukiven and Feiourm, © Deovandski Skibinski Junior.
+- **Trademarks:** *A Husband Out of This World* and *#HusbandOutWorld* are trademarks of Deovandski Skibinski Junior. The MIT license covers this app's code only and grants no trademark rights: don't use these names or logos to brand your own work or to suggest it's official.
+- **The Vraki typeface** © 2024 Deovandski Skibinski Junior, under [its own license](site/fonts/LICENSE.md).
+
+### Permissions beyond the license
+
+- **Videos, streams and social media: go for it, and make money from it.** You can monetize videos, streams, podcasts and social media posts that use or talk about #HusbandOutWorld: readings, reviews, commentary, fan art, D&D sessions set in Vraki and anything like that. Ad revenue, sponsorships, memberships and tips are all fine. Please credit the series (*A Husband Out of This World* by Deovandski Skibinski Junior) and link to [husbandoutworld.com](https://husbandoutworld.com/). You don't need anyone's approval for what you say: honest opinions, critiques and hot takes are all welcome. Just don't present your content as official.
+- **Streams and 3D prints from the source files:** you can earn money from streams and 3D prints made with the series' source files, as a transformative use. Please credit us.
+- **Any other commercial use needs approval first:** merchandise, publishing, translations or adaptations for sale, games, apps, advertising and so on. Reach out on [LinkedIn](https://www.linkedin.com/in/deovandski/) or email [Deovandski@outlook.com](mailto:Deovandski@outlook.com).
+
+Official site: [husbandoutworld.com](https://husbandoutworld.com/)
+
