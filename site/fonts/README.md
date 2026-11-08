@@ -5,7 +5,7 @@
 - Source: [Deovandski/HusbandOutWorld › Logo and Font](https://github.com/Deovandski/HusbandOutWorld/tree/main/Legacy/Behind%20The%20Scenes/Logo%20and%20Font), which also has the `.otf` and `.ttf` versions and the hand-drawn reference sheet (`Vraki TypeFace - v2.png`).
 - Copyright (c) 2024 Deovandski Skibinski Junior. License: [LICENSE.md](LICENSE.md).
   - **Non-commercial use** is free, with attribution.
-  - **Commercial use** needs approval and a fee. The fee is kept small for artists and creators, to support the community. Ask through the official channels at https://husbandoutworld.com/.
+  - **Commercial use** needs approval and a fee. The fee is kept small for artists and creators, to support the community. Ask on [LinkedIn](https://www.linkedin.com/in/deovandski/) or email [Deovandski@outlook.com](mailto:Deovandski@outlook.com).
   - The font may not be altered unless explicitly authorized by Deovandski.
 
 It is copied here **unaltered**, only so the website can render Vraki text. It is not covered by this repository's MIT license.
