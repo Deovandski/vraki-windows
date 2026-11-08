@@ -11,5 +11,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ---
 
 Not covered by this license: site/fonts/VrakiHusbandOutWorldSeries-Rg.woff2, the Vraki typeface.
-It is copyright (c) 2024 Deovandski Skibinski Junior, all rights reserved, and is included
-unaltered so the website can show Vraki text. See site/fonts/README.md.
+It is copyright (c) 2024 Deovandski Skibinski Junior and is included unaltered so the website
+can show Vraki text. Its own terms are in site/fonts/LICENSE.md: free for non-commercial use
+with attribution; commercial use needs approval and a fee (kept small for artists and
+creators); no alterations without permission.
