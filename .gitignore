@@ -65,3 +65,8 @@ BundleArtifacts/
 *.msix
 *.msixbundle
 *.msixupload
+
+# Website build (node tools/i18n.mjs build) and its tooling
+_site/
+node_modules/
+work*.json

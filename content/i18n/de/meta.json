@@ -1,0 +1,8 @@
+{
+ "_about": "Strings tools/i18n.mjs writes itself for this language. \"banner\" is the AI-translation notice on every page (the author asked for: AI-Translated to <language> from Original work by Deovandski).",
+ "name": "Deutsch",
+ "html_lang": "de",
+ "dir": "ltr",
+ "banner": "Von KI ins Deutsche übersetzt, nach dem Originalwerk von Deovandski. Die Sprache änderst du in den Einstellungen (⚙) oben rechts.",
+ "english": "English"
+}

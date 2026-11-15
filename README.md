@@ -9,7 +9,7 @@
 
 Vraki began as this small Windows app that reversed, shifted and restructured English until it read like a new language. It went on to become the writing of the [#HusbandOutWorld](https://github.com/Deovandski/HusbandOutWorld) series, with its own [typeface](#the-vraki-typeface), written **1:1 with English**. Modernizing the app around that idea is the next step for this repository.
 
-**Website:** https://deovandski.github.io/vraki-windows/ · **Microsoft Store:** [Vraki Language](https://apps.microsoft.com/detail/9P41XHS4HMLX) · **Source download:** [latest release](https://github.com/Deovandski/vraki-windows/releases/latest)
+**Website:** https://deovandski.github.io/vraki-windows/ (also in 中文 · 日本語 · Português · Español · العربية · 한국어 · Bahasa Melayu · ไทย · Deutsch · Tiếng Việt · Italiano · Français · हिन्दी · Bahasa Indonesia, AI-translated) · **Microsoft Store:** [Vraki Language](https://apps.microsoft.com/detail/9P41XHS4HMLX) · **Source download:** [latest release](https://github.com/Deovandski/vraki-windows/releases/latest)
 
 <p align="center">
   <img src="docs/media/screenshot-v1.3-1.png" alt="The 2017 app: Text panel with an English sentence, Settings pane open" width="760">
@@ -80,8 +80,9 @@ docs/2017-design/        original design files: GIMP sources, tables, handwritte
 docs/media/              diagrams and screenshots from 2017
 docs/STORE.md            the Store listing, and keeping its identity out of git
 packaging/               store-identity.example.json (the real one is git-ignored)
-site/                    GitHub Pages website, with the JavaScript port of the converter
-tools/                   tests for the port
+site/                    GitHub Pages website (English source), with the JavaScript port of the converter
+content/i18n/            the website's translations, one folder per language (written ahead of time)
+tools/                   tests for the port; i18n.mjs builds the translated site
 ```
 
 Docs: [How the conversions work](docs/ALGORITHMS.md) · [Microsoft Store](docs/STORE.md) · [Releasing](docs/RELEASING.md) · [Privacy](PRIVACY.md) · [Security](SECURITY.md)
@@ -94,7 +95,7 @@ Like [Deo's LED Matrix Manager](https://github.com/Deovandski/Deo-s-Framework16-
 
 **History.** The code in `legacy/` is version 1.4 of the 2017 app and was first published on GitHub that year. In 2026 it was moved into `legacy/` with its manifest identity neutralized; nothing else in it was changed.
 
-**AI assistance.** The 2026 restoration (repository layout, website, JavaScript port, docs and workflows) was done with help from Claude (Anthropic). Commits it contributed to are marked `Co-Authored-By: Claude`. The 2017 code is entirely the original.
+**AI assistance.** The 2026 restoration (repository layout, website, JavaScript port, docs and workflows) was done with help from Claude (Anthropic). The website's translations into 14 languages were written by Claude from the English original; translated pages carry a banner saying so. Commits it contributed to are marked `Co-Authored-By: Claude`. The 2017 code is entirely the original.
 
 ## License
 

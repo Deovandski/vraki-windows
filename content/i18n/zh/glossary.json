@@ -1,0 +1,38 @@
+{
+ "_about": "How names and recurring terms are written in this language, so they are always spelled the same. Names are written by sound, never translated (the author's rule). Spellings come from HusbandOutWorld's content/i18n/<lang>/glossary.json where it has them, so the series reads the same on every site; correct a name there and here together.",
+ "rule": "Simplified Chinese. Story names in Chinese characters chosen for sound, as in HusbandOutWorld. Anything shown in the Vraki typeface, the converter's sample text and outputs, and code stay in English (they are marked translate=\"no\").",
+ "keep_as_is": [
+  "Vraki Language (the 2017 app's name, as on the Microsoft Store)",
+  "A Husband Out of This World",
+  "#HusbandOutWorld",
+  "Deovandski",
+  "Deovandski Skibinski Junior",
+  "A.G.",
+  "D&D 5e",
+  "GitHub",
+  "Microsoft Store",
+  "Visual Studio",
+  "Universal Windows Platform",
+  "VisualStates",
+  "C#",
+  "XAML",
+  "MIT"
+ ],
+ "names": {
+  "Vraki": "弗拉基",
+  "Finaies": "菲奈斯",
+  "Ganyrami": "加尼拉米",
+  "Paulin": "保林",
+  "Harry": "哈利",
+  "The Prosperity Treaty": "《繁荣条约》",
+  "Vraki West March Campaign": "弗拉基·韦斯特马奇战役"
+ },
+ "terms": {
+  "Vraki typeface": "弗拉基字体",
+  "Vraki script": "弗拉基文字",
+  "converter": "转换器",
+  "Settings": "设置",
+  "Text size": "文字大小",
+  "Language": "语言"
+ }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "vraki-windows-site",
+  "private": true,
+  "description": "Website tooling for Vraki Language: the translation build (tools/i18n.mjs) and the converter test.",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node tools/i18n.mjs build --out _site",
+    "i18n:status": "node tools/i18n.mjs status",
+    "test": "node tools/test-vraki-2017.js"
+  },
+  "devDependencies": {
+    "linkedom": "^0.18.15"
+  }
+}

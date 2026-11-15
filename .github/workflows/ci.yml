@@ -21,6 +21,21 @@ jobs:
       - name: Test the JavaScript port against the 2017 app's output
         run: node tools/test-vraki-2017.js
 
+  translations:
+    name: Translations (reports only, never blocks)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - name: How much of the site is translated
+        run: |
+          npm ci
+          node tools/i18n.mjs build --out _site
+          node tools/i18n.mjs status | tee -a "$GITHUB_STEP_SUMMARY"
+
   store-identity:
     name: Store identity guard
     runs-on: ubuntu-latest

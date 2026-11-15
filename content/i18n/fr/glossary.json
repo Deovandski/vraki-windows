@@ -1,0 +1,32 @@
+{
+ "_about": "How names and recurring terms are written in this language, so they are always spelled the same. Names are written by sound, never translated (the author's rule). Spellings come from HusbandOutWorld's content/i18n/<lang>/glossary.json where it has them, so the series reads the same on every site; correct a name there and here together.",
+ "rule": "French (France). Story names stay exactly as in English. Anything shown in the Vraki typeface, the converter's sample text and outputs, and code stay in English (they are marked translate=\"no\").",
+ "keep_as_is": [
+  "Vraki Language (the 2017 app's name, as on the Microsoft Store)",
+  "A Husband Out of This World",
+  "#HusbandOutWorld",
+  "Deovandski",
+  "Deovandski Skibinski Junior",
+  "A.G.",
+  "D&D 5e",
+  "GitHub",
+  "Microsoft Store",
+  "Visual Studio",
+  "Universal Windows Platform",
+  "VisualStates",
+  "C#",
+  "XAML",
+  "MIT"
+ ],
+ "names": {
+  "The Prosperity Treaty": "le Traité de la Prospérité"
+ },
+ "terms": {
+  "Vraki typeface": "police Vraki",
+  "Vraki script": "écriture Vraki",
+  "converter": "convertisseur",
+  "Settings": "Paramètres",
+  "Text size": "Taille du texte",
+  "Language": "Langue"
+ }
+}

@@ -1,0 +1,38 @@
+{
+ "_about": "How names and recurring terms are written in this language, so they are always spelled the same. Names are written by sound, never translated (the author's rule). Spellings come from HusbandOutWorld's content/i18n/<lang>/glossary.json where it has them, so the series reads the same on every site; correct a name there and here together.",
+ "rule": "Story names in katakana, by sound, as in HusbandOutWorld. Multi-word names join with ・. Anything shown in the Vraki typeface, the converter's sample text and outputs, and code stay in English (they are marked translate=\"no\").",
+ "keep_as_is": [
+  "Vraki Language (the 2017 app's name, as on the Microsoft Store)",
+  "A Husband Out of This World",
+  "#HusbandOutWorld",
+  "Deovandski",
+  "Deovandski Skibinski Junior",
+  "A.G.",
+  "D&D 5e",
+  "GitHub",
+  "Microsoft Store",
+  "Visual Studio",
+  "Universal Windows Platform",
+  "VisualStates",
+  "C#",
+  "XAML",
+  "MIT"
+ ],
+ "names": {
+  "Vraki": "ヴラキ",
+  "Finaies": "フィナイエス",
+  "Ganyrami": "ガニラミ",
+  "Paulin": "パウリン",
+  "Harry": "ハリー",
+  "The Prosperity Treaty": "プロスペリティ・トリーティ",
+  "Vraki West March Campaign": "ヴラキ・ウェストマーチ・キャンペーン"
+ },
+ "terms": {
+  "Vraki typeface": "ヴラキ書体",
+  "Vraki script": "ヴラキ文字",
+  "converter": "コンバーター",
+  "Settings": "設定",
+  "Text size": "文字サイズ",
+  "Language": "言語"
+ }
+}

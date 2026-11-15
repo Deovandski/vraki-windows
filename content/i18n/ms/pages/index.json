@@ -1,0 +1,414 @@
+{
+ "004ce47c8fa4": {
+  "en": "The writing behind #HusbandOutWorld, on Windows since 2017",
+  "t": "Tulisan di sebalik #HusbandOutWorld, di Windows sejak 2017"
+ },
+ "010bbbc5982e": {
+  "en": "\"The quick brown fox jumps over the lazy dog\" in Vraki",
+  "t": "\"The quick brown fox jumps over the lazy dog\" dalam Vraki"
+ },
+ "0295995602fb": {
+  "en": "Shift Consonants by",
+  "t": "Anjak Konsonan sebanyak"
+ },
+ "049aa5073c7b": {
+  "en": "The 2017 README ended with a hand-drawn sketch and a promise: <em>\"If time allows, I will develop a cleaner version of the following drawing followed by a font.\"</em> That font now exists, made for the #HusbandOutWorld series, and it lives in the HusbandOutWorld repository.",
+  "t": "README 2017 berakhir dengan lakaran tangan dan satu janji: <em>\"Jika masa mengizinkan, saya akan membangunkan versi lukisan berikut yang lebih kemas dan kemudian sebuah fon.\"</em> Fon itu kini wujud, dibuat untuk siri #HusbandOutWorld, dan disimpan dalam repositori HusbandOutWorld."
+ },
+ "081ae3fdc403": {
+  "en": "Custom",
+  "t": "Tersuai"
+ },
+ "097be51be337": {
+  "en": "Red marks the writable panel, as in the app. Quirks of the 2017 code are kept; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md\">how the conversions work</a>.",
+  "t": "Merah menandakan panel yang boleh ditulis, seperti dalam aplikasi. Keanehan kod 2017 dikekalkan; lihat <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md\">cara penukaran berfungsi</a>."
+ },
+ "0c1716207542": {
+  "en": "Vraki structure, letter case",
+  "t": "Struktur Vraki, huruf besar/kecil"
+ },
+ "0c8df973e24e": {
+  "en": "Your Language and Text size choices are saved in this browser only, so the site remembers them next time. They never leave your device.",
+  "t": "Pilihan Bahasa dan Saiz teks anda disimpan dalam pelayar ini sahaja, supaya laman ini mengingatinya lain kali. Ia tidak pernah keluar dari peranti anda."
+ },
+ "0efb2d6b3410": {
+  "en": "Chars Shift Configuration",
+  "t": "Konfigurasi Anjakan Aksara"
+ },
+ "0f9ba953e351": {
+  "en": "Char",
+  "t": "Aksara"
+ },
+ "15531e3065a5": {
+  "en": "Development recording, May 2017 (46 seconds, no sound).",
+  "t": "Rakaman pembangunan, Mei 2017 (46 saat, tanpa bunyi)."
+ },
+ "165047664701": {
+  "en": "Changed the header image to support VisualStates, and updated the GitHub links.",
+  "t": "Menukar imej pengepala untuk menyokong VisualStates, dan mengemas kini pautan GitHub."
+ },
+ "1697a41e2cb5": {
+  "en": "Version 1.3, June 2017: the Text panel and Settings.",
+  "t": "Versi 1.3, Jun 2017: panel Teks dan Tetapan."
+ },
+ "1c3f7ae2391c": {
+  "en": "Reverse Type",
+  "t": "Jenis Terbalik"
+ },
+ "1cbe0e5551ed": {
+  "en": "Get the typeface",
+  "t": "Dapatkan fon"
+ },
+ "1f17ac3c6c0d": {
+  "en": "Video from May 2017: the Vraki Language app running beside Visual Studio, switching settings and translating text",
+  "t": "Video dari Mei 2017: aplikasi Vraki Language berjalan di sebelah Visual Studio, menukar tetapan dan menterjemah teks"
+ },
+ "22a35fbebff4": {
+  "en": "Source code",
+  "t": "Kod sumber"
+ },
+ "2373f56e6d90": {
+  "en": "The Vraki Panel, in the Vraki typeface",
+  "t": "Panel Vraki, dalam fon Vraki"
+ },
+ "2481e34e5025": {
+  "en": "Type anything in English. It's written letter for letter in the Vraki typeface:",
+  "t": "Taip apa-apa sahaja dalam bahasa Inggeris. Ia ditulis huruf demi huruf dalam fon Vraki:"
+ },
+ "25246a23b40e": {
+  "en": "He didn't expect it to grow into an entire world with extensive lore, and from there into several stories. This app is where the writing first went digital, back in 2017.",
+  "t": "Dia tidak menyangka ia akan berkembang menjadi sebuah dunia lengkap dengan lore yang luas, dan dari situ menjadi beberapa cerita. Aplikasi inilah tempat tulisan itu mula-mula menjadi digital, pada tahun 2017."
+ },
+ "2788945b52c2": {
+  "en": "Changed how the current panel and the writable panel are shown.",
+  "t": "Menukar cara panel semasa dan panel yang boleh ditulis dipaparkan."
+ },
+ "2be17aa181d8": {
+  "en": "Translate",
+  "t": "Terjemah"
+ },
+ "2c3f3395ba15": {
+  "en": "How the 2017 conversions work",
+  "t": "Cara penukaran 2017 berfungsi"
+ },
+ "2c7365f43c93": {
+  "en": "Digits mark a single dot on a 3×3 grid (zero marks all nine), and punctuation has its own marks.",
+  "t": "Digit menandakan satu titik pada grid 3×3 (sifar menandakan kesemua sembilan), dan tanda baca mempunyai tandanya sendiri."
+ },
+ "2da600bf9404": {
+  "en": "Version",
+  "t": "Versi"
+ },
+ "301c8c5eb185": {
+  "en": "In the series' lore, Vraki is the common language inherited from the Finaies: mostly English, because English is the common language for business and the language the books were written in.",
+  "t": "Dalam lore siri ini, Vraki ialah bahasa umum yang diwarisi daripada Finaies: kebanyakannya bahasa Inggeris, kerana bahasa Inggeris ialah bahasa umum perniagaan dan bahasa buku-buku itu ditulis."
+ },
+ "31b28abf4e09": {
+  "en": "One glyph per English letter",
+  "t": "Satu glif bagi setiap huruf Inggeris"
+ },
+ "3855931425eb": {
+  "en": "This is the app's own conversion code, ported line by line to JavaScript and checked against output captured from the 2017 app. Pick a conversion type, press Translate, and flip the arrows to convert back. Everything runs in your browser.",
+  "t": "Inilah kod penukaran aplikasi itu sendiri, dialihkan baris demi baris ke JavaScript dan disemak dengan output yang dirakam daripada aplikasi 2017. Pilih jenis penukaran, tekan Terjemah, dan tukar arah anak panah untuk menukar semula. Semuanya berjalan dalam pelayar anda."
+ },
+ "40b1a4d1811f": {
+  "en": "Try the 2017 converter",
+  "t": "Cuba penukar 2017"
+ },
+ "41e10583cc30": {
+  "en": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/tree/main/Legacy/Behind%20The%20Scenes/Logo%20and%20Font\">Deovandski/HusbandOutWorld › Logo and Font</a>: <code>VrakiHusbandOutWorldSeries-Rg</code> as <code>.otf</code>, <code>.ttf</code> and <code>.woff2</code>, plus the reference sheet.",
+  "t": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/tree/main/Legacy/Behind%20The%20Scenes/Logo%20and%20Font\">Deovandski/HusbandOutWorld › Logo and Font</a>: <code>VrakiHusbandOutWorldSeries-Rg</code> dalam format <code>.otf</code>, <code>.ttf</code> dan <code>.woff2</code>, serta helaian rujukan."
+ },
+ "44363ccb8230": {
+  "en": "Word",
+  "t": "Perkataan"
+ },
+ "444ac7c63f89": {
+  "en": "<strong>This is old code, on purpose.</strong> Vraki Language was written in 2017 as a Universal Windows Platform app for Windows 10 and published on the Microsoft Store. Its source is resurrected here for historical purposes: the C# and XAML are unchanged, only moved into <code>legacy/</code>.",
+  "t": "<strong>Ini kod lama, dengan sengaja.</strong> Vraki Language ditulis pada tahun 2017 sebagai aplikasi Platform Windows Sejagat untuk Windows 10 dan diterbitkan di Microsoft Store. Kod sumbernya dihidupkan semula di sini untuk tujuan sejarah: C# dan XAML tidak berubah, cuma dipindahkan ke <code>legacy/</code>."
+ },
+ "4bed336194a9": {
+  "en": "Output",
+  "t": "Output"
+ },
+ "509a0c11c170": {
+  "en": "To open the 2017 project you need Visual Studio with the Universal Windows Platform workload; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Downloads of the source are on the <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">releases page</a>.",
+  "t": "Untuk membuka projek 2017 anda memerlukan Visual Studio dengan beban kerja Platform Windows Sejagat; lihat <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Muat turun kod sumber ada di <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">halaman keluaran</a>."
+ },
+ "5c5e4fddede4": {
+  "en": "Switch direction. Currently converting text to Vraki.",
+  "t": "Tukar arah. Kini menukar teks kepada Vraki."
+ },
+ "5d96154a0774": {
+  "en": "The 2017 app, version 1.1, with an orange accent color instead of crimson",
+  "t": "Aplikasi 2017, versi 1.1, dengan warna aksen jingga dan bukannya merah lembayung"
+ },
+ "5eaa5c80a056": {
+  "en": "Char reverse, shift all by −3, letter case",
+  "t": "Terbalik aksara, anjak semua sebanyak −3, huruf besar/kecil"
+ },
+ "67035439a32a": {
+  "en": "The Vraki alphabet, upper case",
+  "t": "Abjad Vraki, huruf besar"
+ },
+ "6882ba4c8aa6": {
+  "en": "Fixed issues #2 and #3. The version on the Store today.",
+  "t": "Membaiki isu #2 dan #3. Versi yang ada di Store hari ini."
+ },
+ "6aacaec4b94e": {
+  "en": "Vraki Structuring",
+  "t": "Penstrukturan Vraki"
+ },
+ "6b01ab0039e2": {
+  "en": "The full write-up, with the 2017 diagrams for every reverse algorithm and the Vraki structure table, is in <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md\">docs/ALGORITHMS.md</a>.",
+  "t": "Penerangan penuh, dengan rajah 2017 bagi setiap algoritma terbalik dan jadual struktur Vraki, ada dalam <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md\">docs/ALGORITHMS.md</a>."
+ },
+ "6b45805e00c9": {
+  "en": "Version 1.1, May 2017, with an orange accent.",
+  "t": "Versi 1.1, Mei 2017, dengan aksen jingga."
+ },
+ "76d715243767": {
+  "en": "Letter Case Fix",
+  "t": "Pembetulan Huruf Besar/Kecil"
+ },
+ "7717cf1db38e": {
+  "en": "Char + Word",
+  "t": "Aksara + Perkataan"
+ },
+ "808d7dca8a74": {
+  "en": "Default",
+  "t": "Lalai"
+ },
+ "8212d2448792": {
+  "en": "The app stores nothing about you; the text you convert stays on your device. This website has no cookies, no analytics and no ads, and the converter and typeface preview run entirely in your browser. It's hosted on GitHub Pages, so <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\">GitHub</a> sees your IP address when it sends you the page. Questions go to <a href=\"https://github.com/Deovandski/vraki-windows/issues\">GitHub issues</a>.",
+  "t": "Aplikasi ini tidak menyimpan apa-apa tentang anda; teks yang anda tukar kekal dalam peranti anda. Laman web ini tiada kuki, tiada analitik dan tiada iklan, dan penukar serta pratonton fon berjalan sepenuhnya dalam pelayar anda. Ia dihoskan di GitHub Pages, jadi <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\">GitHub</a> melihat alamat IP anda apabila menghantar halaman kepada anda. Soalan boleh dihantar ke <a href=\"https://github.com/Deovandski/vraki-windows/issues\">isu GitHub</a>."
+ },
+ "8481bc4c75d0": {
+  "en": "Reverse Configuration",
+  "t": "Konfigurasi Terbalik"
+ },
+ "86526182c8aa": {
+  "en": "Vraki Language for Windows (2017)",
+  "t": "Vraki Language untuk Windows (2017)"
+ },
+ "87a97817e32b": {
+  "en": "Each letter is a line drawn across a dotted grid. <strong>Upper case</strong> letters carry small circle markers; <strong>lower case</strong> is the same stroke without them.",
+  "t": "Setiap huruf ialah satu garisan yang dilukis merentasi grid bertitik. Huruf <strong>besar</strong> mempunyai penanda bulatan kecil; huruf <strong>kecil</strong> ialah lakaran yang sama tanpanya."
+ },
+ "8991b34090fd": {
+  "en": "Vraki West March Campaign",
+  "t": "Kempen Vraki West March"
+ },
+ "8aa57de6dce6": {
+  "en": "Changes",
+  "t": "Perubahan"
+ },
+ "90731c7fa707": {
+  "en": "Get it from Microsoft Store",
+  "t": "Dapatkan dari Microsoft Store"
+ },
+ "9077b4f91840": {
+  "en": "The 2017 Vraki Language app, back from the archive. Try the original converter and see English written in the Vraki typeface.",
+  "t": "Aplikasi Vraki Language tahun 2017, kembali dari arkib. Cuba penukar asal dan lihat bahasa Inggeris ditulis dalam fon Vraki."
+ },
+ "91f86581f16b": {
+  "en": "Version history",
+  "t": "Sejarah versi"
+ },
+ "98f355d768ba": {
+  "en": "Try it in your browser",
+  "t": "Cuba dalam pelayar anda"
+ },
+ "99c08ea62081": {
+  "en": "Source code at <a href=\"https://github.com/Deovandski/vraki-windows\" translate=\"no\">github.com/Deovandski/vraki-windows</a>",
+  "t": "Kod sumber di <a href=\"https://github.com/Deovandski/vraki-windows\" translate=\"no\">github.com/Deovandski/vraki-windows</a>"
+ },
+ "9a96dc2d5d12": {
+  "en": "Differential Shift Rate",
+  "t": "Kadar Anjakan Berbeza"
+ },
+ "a485fd837a64": {
+  "en": "Complex Vraki",
+  "t": "Vraki Kompleks"
+ },
+ "a50c37aa3021": {
+  "en": "Vraki is English with a different skin: same alphabet, same order, same words. Type in English and it's written in Vraki.",
+  "t": "Vraki ialah bahasa Inggeris dengan kulit yang berbeza: abjad yang sama, susunan yang sama, perkataan yang sama. Taip dalam bahasa Inggeris dan ia ditulis dalam Vraki."
+ },
+ "a6b8067f62d4": {
+  "en": "Since then, Vraki has become the writing system of the #HusbandOutWorld series, written <strong>1:1 with English</strong>: one Vraki glyph per English letter, instead of the 2017 app's reversing and shifting. A modern version built around that idea is the next step for this repository.",
+  "t": "Sejak itu, Vraki menjadi sistem tulisan siri #HusbandOutWorld, ditulis <strong>1:1 dengan bahasa Inggeris</strong>: satu glif Vraki bagi setiap huruf Inggeris, bukan lagi terbalik dan anjakan seperti aplikasi 2017. Versi moden yang dibina berdasarkan idea itu ialah langkah seterusnya untuk repositori ini."
+ },
+ "a6cb354b5f2a": {
+  "en": "Vraki Language, a 2017 Windows app that turns English into Vraki, the writing behind the #HusbandOutWorld series. Resurrected for historical purposes, with the Vraki typeface and a working 2017 converter in your browser.",
+  "t": "Vraki Language, aplikasi Windows tahun 2017 yang menukar bahasa Inggeris kepada Vraki, tulisan di sebalik siri #HusbandOutWorld. Dihidupkan semula untuk tujuan sejarah, bersama fon Vraki dan penukar 2017 yang berfungsi dalam pelayar anda."
+ },
+ "a711cca9a4a9": {
+  "en": "Minimal",
+  "t": "Minimum"
+ },
+ "a808520107fe": {
+  "en": "Deovandski always dreamed of coming up with a language. As a child he doodled the alphabets of alien civilizations, and the more he traveled the world and soaked up its cultures, the closer those doodles drifted to the Vraki writing you see here.",
+  "t": "Deovandski sentiasa bermimpi untuk mencipta sebuah bahasa. Semasa kecil dia menconteng abjad tamadun makhluk asing, dan semakin banyak dia mengembara dan menyelami budaya dunia, semakin hampir contengan itu kepada tulisan Vraki yang anda lihat di sini."
+ },
+ "a940b67b9d76": {
+  "en": "The 2017 app: the Text panel with an English sentence and the Settings pane open, with the Default conversion type",
+  "t": "Aplikasi 2017: panel Teks dengan satu ayat Inggeris dan anak tetingkap Tetapan terbuka, dengan jenis penukaran Lalai"
+ },
+ "aa7ea458ee21": {
+  "en": "(upper case). Lower case is the same without the circle markers.",
+  "t": "(huruf besar). Huruf kecil sama sahaja, tanpa penanda bulatan."
+ },
+ "ab1b95aa4094": {
+  "en": "The hand-drawn reference sheet (v2) the font was built from.",
+  "t": "Helaian rujukan lukisan tangan (v2) yang menjadi asas fon ini."
+ },
+ "ab4fe9e222c8": {
+  "en": "Switch direction. Currently converting Vraki to text.",
+  "t": "Tukar arah. Kini menukar Vraki kepada teks."
+ },
+ "ac9041e76816": {
+  "en": "Automatic",
+  "t": "Automatik"
+ },
+ "ae5b95eda2c5": {
+  "en": "Simple Vraki",
+  "t": "Vraki Mudah"
+ },
+ "b138c327dc56": {
+  "en": "Vraki",
+  "t": "Vraki"
+ },
+ "b1bd460b6a0a": {
+  "en": "D&amp;D 5e campaign",
+  "t": "Kempen D&amp;D 5e"
+ },
+ "b886e999b650": {
+  "en": "A Text panel, a Vraki panel, a direction switch and a Settings pane full of toggles. Recorded while it was being built in May 2017.",
+  "t": "Panel Teks, panel Vraki, suis arah dan anak tetingkap Tetapan yang penuh dengan togol. Dirakam semasa ia sedang dibina pada Mei 2017."
+ },
+ "bcf7b1111733": {
+  "en": "Opens on Paulin 14th, 1039 A.G. (After Ganyrami, the Vraki calendar's count from the year Ganyrami fell), when Harry is summoned out of our world into the world of Vraki, in the Prosperity Treaty era, the long peace that followed the overthrow of the old kingdoms.",
+  "t": "Bermula pada 14 Paulin 1039 A.G. (After Ganyrami, kiraan kalendar Vraki dari tahun Ganyrami jatuh), apabila Harry dipanggil keluar dari dunia kita ke dunia Vraki, pada era Perjanjian Kemakmuran, keamanan panjang yang menyusul selepas kerajaan-kerajaan lama digulingkan."
+ },
+ "bd1c365d9b88": {
+  "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
+  "t": "Mei 2017. Pakej sideload-nya ialah satu-satunya binaan yang terselamat; ia dilampirkan pada <a href=\"https://github.com/Deovandski/vraki-windows/releases\">keluaran GitHub</a> sebagai rekod (sijilnya tamat tempoh pada 2018, jadi pasang dari Store)."
+ },
+ "c00a9cb389cf": {
+  "en": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
+  "t": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: abjad, angka dan tanda, serta kedudukan Vraki dalam kalangan bahasa lain dalam siri ini."
+ },
+ "c3328c39b0e2": {
+  "en": "Text",
+  "t": "Teks"
+ },
+ "c60f2f817f12": {
+  "en": "Source on GitHub",
+  "t": "Kod sumber di GitHub"
+ },
+ "c697bb6ff5e2": {
+  "en": "Shift Vowels By",
+  "t": "Anjak Vokal Sebanyak"
+ },
+ "cd9ba08526ff": {
+  "en": "Conversion Type",
+  "t": "Jenis Penukaran"
+ },
+ "cdde4f20ba31": {
+  "en": "Steps",
+  "t": "Langkah"
+ },
+ "cf01481f626d": {
+  "en": "Privacy",
+  "t": "Privasi"
+ },
+ "cf9dc0383a41": {
+  "en": "Char + Word Pair",
+  "t": "Aksara + Pasangan Perkataan"
+ },
+ "d36d5516dbff": {
+  "en": "The Vraki typeface",
+  "t": "Fon Vraki"
+ },
+ "d89e229419df": {
+  "en": "Word Pair",
+  "t": "Pasangan Perkataan"
+ },
+ "d8a46b94ae4f": {
+  "en": "Shift by",
+  "t": "Anjak sebanyak"
+ },
+ "db91db843ba0": {
+  "en": "Where Vraki came from",
+  "t": "Dari mana datangnya Vraki"
+ },
+ "dbb744b70772": {
+  "en": "Text Panel",
+  "t": "Panel Teks"
+ },
+ "dd6ab2a8e8f9": {
+  "en": "The app in 2017",
+  "t": "Aplikasi pada 2017"
+ },
+ "dd9e4aee2fef": {
+  "en": "Originally from 2017 · resurrected for historical purposes",
+  "t": "Asalnya dari 2017 · dihidupkan semula untuk tujuan sejarah"
+ },
+ "dfb6b2189cd8": {
+  "en": "Vraki Panel",
+  "t": "Panel Vraki"
+ },
+ "e0049a66519c": {
+  "en": "On",
+  "t": "Hidup"
+ },
+ "e29701f4e234": {
+  "en": "Light novel series",
+  "t": "Siri novel ringan"
+ },
+ "e33cf3599fc5": {
+  "en": "Shift all by +1, letter case",
+  "t": "Anjak semua sebanyak +1, huruf besar/kecil"
+ },
+ "e3dc2b25944f": {
+  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
+  "t": "Pada tahun 2017, Vraki ialah aplikasi Windows kecil yang menterbalikkan, menganjakkan dan menyusun semula bahasa Inggeris sehingga ia dibaca seperti bahasa baharu. Idea itu berkembang menjadi tulisan siri <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> dan fonnya sendiri. Aplikasi asal kembali, seperti sediakala, sebagai rekod."
+ },
+ "e3de5ab0ca4c": {
+  "en": "Off",
+  "t": "Mati"
+ },
+ "e410a09ec390": {
+  "en": "Hand-drawn reference sheet of the Vraki typeface: A to Z, lower case a and b, digits 0 to 9, and punctuation, each drawn on a dotted grid",
+  "t": "Helaian rujukan fon Vraki yang dilukis tangan: A hingga Z, huruf kecil a dan b, digit 0 hingga 9, dan tanda baca, setiap satu dilukis pada grid bertitik"
+ },
+ "e47983e40a6b": {
+  "en": "Conversion type",
+  "t": "Jenis penukaran"
+ },
+ "e8083ad0cf19": {
+  "en": "MIT-licensed. The repository keeps the 2017 app intact and leaves room for the modern one.",
+  "t": "Berlesen MIT. Repositori ini mengekalkan aplikasi 2017 tanpa diubah dan memberi ruang untuk aplikasi moden."
+ },
+ "e9b6dd68fd20": {
+  "en": "The typeface is © 2024 Deovandski Skibinski Junior. Non-commercial use is free with attribution. Commercial use needs approval and a fee, kept small for artists and creators to support the community; ask on <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> or email <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>. It may not be altered without permission. See the <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. This site uses an unaltered copy to show Vraki text.",
+  "t": "Fon ini © 2024 Deovandski Skibinski Junior. Penggunaan bukan komersial adalah percuma dengan atribusi. Penggunaan komersial memerlukan kelulusan dan bayaran, yang dikekalkan rendah supaya artis dan pencipta dapat menyokong komuniti; tanya di <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> atau e-mel <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>. Ia tidak boleh diubah tanpa kebenaran. Lihat <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">lesen fon</a>. Laman ini menggunakan salinan yang tidak diubah untuk memaparkan teks Vraki."
+ },
+ "f39fd52191ee": {
+  "en": "Four building blocks, run in order: Reverse, Shift, Vraki Structure, then Letter Case Fix. Each conversion type is a preset of them. Here's what each does to the app's sample sentence, <em>\"Look at my Horse! My horse is amazing! -Gentleman\"</em>:",
+  "t": "Empat blok binaan, dijalankan mengikut urutan: Terbalik, Anjakan, Struktur Vraki, kemudian Pembetulan Huruf Besar/Kecil. Setiap jenis penukaran ialah pratetap daripadanya. Inilah yang dilakukan oleh setiap satu kepada ayat contoh aplikasi, <em>\"Look at my Horse! My horse is amazing! -Gentleman\"</em>:"
+ },
+ "f3e46e1a79d5": {
+  "en": "Vraki Language 2017 converter",
+  "t": "Penukar Vraki Language 2017"
+ },
+ "fdf936b2bc81": {
+  "en": "An open-table, West Marches-style campaign set in the same world in the 1040s A.G., with lore summaries, quests, stat blocks and ready-made adventurers.",
+  "t": "Kempen meja terbuka gaya West Marches yang berlatarkan dunia yang sama pada tahun 1040-an A.G., dengan ringkasan lore, misi, blok statistik dan pengembara siap guna."
+ },
+ "ff578165fc1a": {
+  "en": "Char + word pair reverse, consonants −10, vowels +2, Vraki structure, letter case",
+  "t": "Terbalik aksara + pasangan perkataan, konsonan −10, vokal +2, struktur Vraki, huruf besar/kecil"
+ }
+}
