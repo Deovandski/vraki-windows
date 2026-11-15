@@ -135,6 +135,10 @@
   "en": "To open the 2017 project you need Visual Studio with the Universal Windows Platform workload; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Downloads of the source are on the <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">releases page</a>.",
   "t": "Pour ouvrir le projet de 2017, il vous faut Visual Studio avec la charge de travail de la plateforme Windows universelle ; voir <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Les téléchargements du code source sont sur la <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">page des releases</a>."
  },
+ "544ec96d0c5b": {
+  "en": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
+  "t": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a> : l'alphabet, les chiffres et les signes, et la place du Vraki parmi les autres langues de la série."
+ },
  "5c5e4fddede4": {
   "en": "Switch direction. Currently converting text to Vraki.",
   "t": "Changer de sens. Conversion actuelle : texte vers Vraki."
@@ -295,10 +299,6 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "Mai 2017. Son paquet de chargement latéral est le seul build qui ait survécu ; il est joint à la <a href=\"https://github.com/Deovandski/vraki-windows/releases\">release GitHub</a> pour mémoire (son certificat a expiré en 2018, installez donc depuis le Store)."
  },
- "c00a9cb389cf": {
-  "en": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
-  "t": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a> : l'alphabet, les chiffres et les signes, et la place du Vraki parmi les autres langues de la série."
- },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "Texte"
@@ -326,6 +326,10 @@
  "cf9dc0383a41": {
   "en": "Char + Word Pair",
   "t": "Caractère + paire de mots"
+ },
+ "d26f9b5e2e9d": {
+  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
+  "t": "En 2017, Vraki était une petite application Windows qui inversait, décalait et restructurait l'anglais jusqu'à ce qu'il ressemble à une nouvelle langue. Cette idée est devenue l'écriture de la série <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> et sa propre police. L'application d'origine est de retour, telle qu'elle était, pour mémoire."
  },
  "d36d5516dbff": {
   "en": "The Vraki typeface",
@@ -370,10 +374,6 @@
  "e33cf3599fc5": {
   "en": "Shift all by +1, letter case",
   "t": "Tout décaler de +1, casse"
- },
- "e3dc2b25944f": {
-  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
-  "t": "En 2017, Vraki était une petite application Windows qui inversait, décalait et restructurait l'anglais jusqu'à ce qu'il ressemble à une nouvelle langue. Cette idée est devenue l'écriture de la série <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> et sa propre police. L'application d'origine est de retour, telle qu'elle était, pour mémoire."
  },
  "e3de5ab0ca4c": {
   "en": "Off",

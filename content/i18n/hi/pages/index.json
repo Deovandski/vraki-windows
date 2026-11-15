@@ -135,6 +135,10 @@
   "en": "To open the 2017 project you need Visual Studio with the Universal Windows Platform workload; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Downloads of the source are on the <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">releases page</a>.",
   "t": "2017 का प्रोजेक्ट खोलने के लिए आपको Universal Windows Platform वर्कलोड वाला Visual Studio चाहिए; <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a> देखें। सोर्स डाउनलोड <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">रिलीज़ पेज</a> पर हैं।"
  },
+ "544ec96d0c5b": {
+  "en": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
+  "t": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: वर्णमाला, अंक और चिह्न, और सीरीज़ की अन्य भाषाओं के बीच व्राकी का स्थान।"
+ },
  "5c5e4fddede4": {
   "en": "Switch direction. Currently converting text to Vraki.",
   "t": "दिशा बदलें। अभी टेक्स्ट से व्राकी में बदला जा रहा है।"
@@ -295,10 +299,6 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "मई 2017। इसका साइडलोड पैकेज ही अकेला बिल्ड है जो बचा रहा; इसे रिकॉर्ड के लिए <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub रिलीज़</a> से जोड़ा गया है (इसका सर्टिफ़िकेट 2018 में समाप्त हो गया, इसलिए Store से इंस्टॉल करें)।"
  },
- "c00a9cb389cf": {
-  "en": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
-  "t": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: वर्णमाला, अंक और चिह्न, और सीरीज़ की अन्य भाषाओं के बीच व्राकी का स्थान।"
- },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "टेक्स्ट"
@@ -326,6 +326,10 @@
  "cf9dc0383a41": {
   "en": "Char + Word Pair",
   "t": "अक्षर + शब्द जोड़ी"
+ },
+ "d26f9b5e2e9d": {
+  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
+  "t": "2017 में व्राकी एक छोटा Windows ऐप था जो अंग्रेज़ी को उलटता, खिसकाता और फिर से गढ़ता था, जब तक वह किसी नई भाषा जैसी न लगने लगे। यही विचार आगे चलकर <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> सीरीज़ की लिपि और उसका अपना टाइपफ़ेस बना। मूल ऐप रिकॉर्ड के लिए जैसा था वैसा ही वापस आया है।"
  },
  "d36d5516dbff": {
   "en": "The Vraki typeface",
@@ -370,10 +374,6 @@
  "e33cf3599fc5": {
   "en": "Shift all by +1, letter case",
   "t": "सबको +1 खिसकाना, अक्षर केस"
- },
- "e3dc2b25944f": {
-  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
-  "t": "2017 में व्राकी एक छोटा Windows ऐप था जो अंग्रेज़ी को उलटता, खिसकाता और फिर से गढ़ता था, जब तक वह किसी नई भाषा जैसी न लगने लगे। यही विचार आगे चलकर <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> सीरीज़ की लिपि और उसका अपना टाइपफ़ेस बना। मूल ऐप रिकॉर्ड के लिए जैसा था वैसा ही वापस आया है।"
  },
  "e3de5ab0ca4c": {
   "en": "Off",

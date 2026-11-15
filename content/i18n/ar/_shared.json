@@ -1,8 +1,4 @@
 {
- "341c667192a4": {
-  "en": "Made by <a href=\"https://github.com/Deovandski\">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. The #HusbandOutWorld series © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> and #HusbandOutWorld are his trademarks.",
-  "t": "من صنع <a href=\"https://github.com/Deovandski\">Deovandski</a>. شيفرة التطبيق © 2017 Deovandski Skibinski Junior، بترخيص MIT. خط فراكي الطباعي © 2024 Deovandski Skibinski Junior، <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">ترخيص الخط</a>. سلسلة #HusbandOutWorld © Deovandski Skibinski Junior؛ و<em>A Husband Out of This World</em> و#HusbandOutWorld علامتان تجاريتان له."
- },
  "3cc6e124a8e4": {
   "en": "Text size",
   "t": "حجم النص"
@@ -14,6 +10,10 @@
  "4a8865e43378": {
   "en": "Monetized videos and posts about the series are welcome; other commercial use needs approval: <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> or <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>.",
   "t": "مقاطع الفيديو والمنشورات المربحة عن السلسلة مرحَّب بها؛ أما الاستخدامات التجارية الأخرى فتحتاج إلى موافقة: <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> أو <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>."
+ },
+ "54067f8be0db": {
+  "en": "Made by <a href=\"https://deovandski.github.io/Deovandski/\">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. The #HusbandOutWorld series © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> and #HusbandOutWorld are his trademarks.",
+  "t": "من صنع <a href=\"https://deovandski.github.io/Deovandski/\">Deovandski</a>. شيفرة التطبيق © 2017 Deovandski Skibinski Junior، بترخيص MIT. خط فراكي الطباعي © 2024 Deovandski Skibinski Junior، <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">ترخيص الخط</a>. سلسلة #HusbandOutWorld © Deovandski Skibinski Junior؛ و<em>A Husband Out of This World</em> و#HusbandOutWorld علامتان تجاريتان له."
  },
  "62bce9422ff2": {
   "en": "Main",
@@ -35,10 +35,6 @@
   "en": "Want a language added?",
   "t": "هل تريد إضافة لغة؟"
  },
- "d38727900106": {
-  "en": "Part of the world of <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> and the <a href=\"https://github.com/Deovandski/Vraki-West-March-Campaign-D-D\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
-  "t": "جزء من عالم <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> و<a href=\"https://github.com/Deovandski/Vraki-West-March-Campaign-D-D\">حملة فراكي ويست مارش</a>. الشيفرة المصدرية والمشكلات على <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">الخصوصية</a>."
- },
  "e9b450d14bc2": {
   "en": "Done",
   "t": "تم"
@@ -46,5 +42,9 @@
  "eb29514de833": {
   "en": "Typeface",
   "t": "الخط"
+ },
+ "f630425e994c": {
+  "en": "Part of the world of <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> and the <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
+  "t": "جزء من عالم <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> و<a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">حملة فراكي ويست مارش</a>. الشيفرة المصدرية والمشكلات على <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">الخصوصية</a>."
  }
 }

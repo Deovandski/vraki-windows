@@ -135,6 +135,10 @@
   "en": "To open the 2017 project you need Visual Studio with the Universal Windows Platform workload; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Downloads of the source are on the <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">releases page</a>.",
   "t": "การเปิดโปรเจกต์ปี 2017 ต้องใช้ Visual Studio ที่ติดตั้งเวิร์กโหลด Universal Windows Platform ดู <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a> ดาวน์โหลดซอร์สโค้ดได้ที่<a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">หน้ารีลีส</a>"
  },
+ "544ec96d0c5b": {
+  "en": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
+  "t": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: ตัวอักษร ตัวเลขและเครื่องหมาย และตำแหน่งของวรากีท่ามกลางภาษาอื่น ๆ ของซีรีส์"
+ },
  "5c5e4fddede4": {
   "en": "Switch direction. Currently converting text to Vraki.",
   "t": "สลับทิศทาง ขณะนี้กำลังแปลงข้อความเป็นวรากี"
@@ -295,10 +299,6 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "พฤษภาคม 2017 แพ็กเกจ sideload ของเวอร์ชันนี้เป็นบิลด์เดียวที่เหลืออยู่ แนบไว้ใน<a href=\"https://github.com/Deovandski/vraki-windows/releases\">รีลีสบน GitHub</a> เพื่อเป็นบันทึก (ใบรับรองหมดอายุในปี 2018 จึงควรติดตั้งจาก Store)"
  },
- "c00a9cb389cf": {
-  "en": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
-  "t": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: ตัวอักษร ตัวเลขและเครื่องหมาย และตำแหน่งของวรากีท่ามกลางภาษาอื่น ๆ ของซีรีส์"
- },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "ข้อความ"
@@ -326,6 +326,10 @@
  "cf9dc0383a41": {
   "en": "Char + Word Pair",
   "t": "อักขระ + คู่คำ"
+ },
+ "d26f9b5e2e9d": {
+  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
+  "t": "ในปี 2017 วรากีเป็นแอป Windows เล็ก ๆ ที่กลับด้าน เลื่อน และจัดโครงสร้างภาษาอังกฤษใหม่จนอ่านเหมือนภาษาใหม่ แนวคิดนั้นเติบโตเป็นอักษรของซีรีส์ <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> และฟอนต์ของตัวเอง แอปต้นฉบับกลับมาแล้วในแบบที่มันเคยเป็น เพื่อเป็นบันทึก"
  },
  "d36d5516dbff": {
   "en": "The Vraki typeface",
@@ -370,10 +374,6 @@
  "e33cf3599fc5": {
   "en": "Shift all by +1, letter case",
   "t": "เลื่อนทั้งหมด +1 ตัวพิมพ์ใหญ่-เล็ก"
- },
- "e3dc2b25944f": {
-  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
-  "t": "ในปี 2017 วรากีเป็นแอป Windows เล็ก ๆ ที่กลับด้าน เลื่อน และจัดโครงสร้างภาษาอังกฤษใหม่จนอ่านเหมือนภาษาใหม่ แนวคิดนั้นเติบโตเป็นอักษรของซีรีส์ <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> และฟอนต์ของตัวเอง แอปต้นฉบับกลับมาแล้วในแบบที่มันเคยเป็น เพื่อเป็นบันทึก"
  },
  "e3de5ab0ca4c": {
   "en": "Off",

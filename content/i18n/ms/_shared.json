@@ -1,8 +1,4 @@
 {
- "341c667192a4": {
-  "en": "Made by <a href=\"https://github.com/Deovandski\">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. The #HusbandOutWorld series © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> and #HusbandOutWorld are his trademarks.",
-  "t": "Dibuat oleh <a href=\"https://github.com/Deovandski\">Deovandski</a>. Kod aplikasi © 2017 Deovandski Skibinski Junior, lesen MIT. Fon Vraki © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">lesen fon</a>. Siri #HusbandOutWorld © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> dan #HusbandOutWorld ialah tanda dagangannya."
- },
  "3cc6e124a8e4": {
   "en": "Text size",
   "t": "Saiz teks"
@@ -14,6 +10,10 @@
  "4a8865e43378": {
   "en": "Monetized videos and posts about the series are welcome; other commercial use needs approval: <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> or <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>.",
   "t": "Video dan hantaran bermonetari tentang siri ini dialu-alukan; penggunaan komersial lain memerlukan kelulusan: <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> atau <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>."
+ },
+ "54067f8be0db": {
+  "en": "Made by <a href=\"https://deovandski.github.io/Deovandski/\">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. The #HusbandOutWorld series © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> and #HusbandOutWorld are his trademarks.",
+  "t": "Dibuat oleh <a href=\"https://deovandski.github.io/Deovandski/\">Deovandski</a>. Kod aplikasi © 2017 Deovandski Skibinski Junior, lesen MIT. Fon Vraki © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">lesen fon</a>. Siri #HusbandOutWorld © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> dan #HusbandOutWorld ialah tanda dagangannya."
  },
  "62bce9422ff2": {
   "en": "Main",
@@ -35,10 +35,6 @@
   "en": "Want a language added?",
   "t": "Mahu bahasa lain ditambah?"
  },
- "d38727900106": {
-  "en": "Part of the world of <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> and the <a href=\"https://github.com/Deovandski/Vraki-West-March-Campaign-D-D\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
-  "t": "Sebahagian daripada dunia <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> dan <a href=\"https://github.com/Deovandski/Vraki-West-March-Campaign-D-D\">Kempen Vraki West March</a>. Kod sumber dan isu di <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privasi</a>."
- },
  "e9b450d14bc2": {
   "en": "Done",
   "t": "Selesai"
@@ -46,5 +42,9 @@
  "eb29514de833": {
   "en": "Typeface",
   "t": "Fon"
+ },
+ "f630425e994c": {
+  "en": "Part of the world of <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> and the <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
+  "t": "Sebahagian daripada dunia <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> dan <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">Kempen Vraki West March</a>. Kod sumber dan isu di <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privasi</a>."
  }
 }

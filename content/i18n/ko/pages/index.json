@@ -135,6 +135,10 @@
   "en": "To open the 2017 project you need Visual Studio with the Universal Windows Platform workload; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Downloads of the source are on the <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">releases page</a>.",
   "t": "2017년 프로젝트를 열려면 유니버설 Windows 플랫폼 워크로드가 설치된 Visual Studio가 필요합니다. <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>를 참고하세요. 소스 다운로드는 <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">릴리스 페이지</a>에 있습니다."
  },
+ "544ec96d0c5b": {
+  "en": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
+  "t": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: 알파벳, 숫자와 기호, 그리고 시리즈의 다른 언어들 사이에서 브라키의 위치."
+ },
  "5c5e4fddede4": {
   "en": "Switch direction. Currently converting text to Vraki.",
   "t": "방향을 바꿉니다. 지금은 텍스트를 브라키로 변환하고 있습니다."
@@ -295,10 +299,6 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "2017년 5월. 사이드로드 패키지가 유일하게 남은 빌드이며, 기록으로 <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub 릴리스</a>에 첨부했습니다(인증서가 2018년에 만료되었으니 Store에서 설치하세요)."
  },
- "c00a9cb389cf": {
-  "en": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
-  "t": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: 알파벳, 숫자와 기호, 그리고 시리즈의 다른 언어들 사이에서 브라키의 위치."
- },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "텍스트"
@@ -326,6 +326,10 @@
  "cf9dc0383a41": {
   "en": "Char + Word Pair",
   "t": "글자 + 단어 쌍"
+ },
+ "d26f9b5e2e9d": {
+  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
+  "t": "2017년, 브라키는 영어를 뒤집고, 밀고, 재구성해서 새로운 언어처럼 읽히게 만드는 작은 Windows 앱이었습니다. 그 아이디어는 <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> 시리즈의 문자와 전용 서체로 자라났습니다. 원래 앱은 기록을 위해 당시 모습 그대로 돌아왔습니다."
  },
  "d36d5516dbff": {
   "en": "The Vraki typeface",
@@ -370,10 +374,6 @@
  "e33cf3599fc5": {
   "en": "Shift all by +1, letter case",
   "t": "전체 +1 밀기, 대소문자"
- },
- "e3dc2b25944f": {
-  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
-  "t": "2017년, 브라키는 영어를 뒤집고, 밀고, 재구성해서 새로운 언어처럼 읽히게 만드는 작은 Windows 앱이었습니다. 그 아이디어는 <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> 시리즈의 문자와 전용 서체로 자라났습니다. 원래 앱은 기록을 위해 당시 모습 그대로 돌아왔습니다."
  },
  "e3de5ab0ca4c": {
   "en": "Off",

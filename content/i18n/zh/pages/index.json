@@ -135,6 +135,10 @@
   "en": "To open the 2017 project you need Visual Studio with the Universal Windows Platform workload; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Downloads of the source are on the <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">releases page</a>.",
   "t": "要打开 2017 年的项目，你需要安装了通用 Windows 平台工作负载的 Visual Studio；请参阅 <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>。源代码下载在<a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">发布页面</a>。"
  },
+ "544ec96d0c5b": {
+  "en": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
+  "t": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>：字母表、数字和符号，以及弗拉基在系列中其他语言之间的位置。"
+ },
  "5c5e4fddede4": {
   "en": "Switch direction. Currently converting text to Vraki.",
   "t": "切换方向。当前为文本转弗拉基。"
@@ -295,10 +299,6 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "2017 年 5 月。它的旁加载安装包是唯一留存下来的构建，作为记录附在 <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub 发布</a>中（其证书已于 2018 年过期，请从 Store 安装）。"
  },
- "c00a9cb389cf": {
-  "en": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
-  "t": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>：字母表、数字和符号，以及弗拉基在系列中其他语言之间的位置。"
- },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "文本"
@@ -326,6 +326,10 @@
  "cf9dc0383a41": {
   "en": "Char + Word Pair",
   "t": "字符 + 单词对"
+ },
+ "d26f9b5e2e9d": {
+  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
+  "t": "2017 年，弗拉基是一款小小的 Windows 应用，它把英语反转、移位、重组，直到读起来像一门新语言。这个想法后来成长为 <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> 系列的文字，并有了自己的字体。原版应用按原样回归，作为记录。"
  },
  "d36d5516dbff": {
   "en": "The Vraki typeface",
@@ -370,10 +374,6 @@
  "e33cf3599fc5": {
   "en": "Shift all by +1, letter case",
   "t": "全部移位 +1，大小写"
- },
- "e3dc2b25944f": {
-  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
-  "t": "2017 年，弗拉基是一款小小的 Windows 应用，它把英语反转、移位、重组，直到读起来像一门新语言。这个想法后来成长为 <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> 系列的文字，并有了自己的字体。原版应用按原样回归，作为记录。"
  },
  "e3de5ab0ca4c": {
   "en": "Off",

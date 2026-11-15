@@ -1,8 +1,4 @@
 {
- "341c667192a4": {
-  "en": "Made by <a href=\"https://github.com/Deovandski\">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. The #HusbandOutWorld series © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> and #HusbandOutWorld are his trademarks.",
-  "t": "Thực hiện bởi <a href=\"https://github.com/Deovandski\">Deovandski</a>. Mã ứng dụng © 2017 Deovandski Skibinski Junior, giấy phép MIT. Phông chữ Vraki © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">giấy phép phông chữ</a>. Loạt truyện #HusbandOutWorld © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> và #HusbandOutWorld là nhãn hiệu của anh."
- },
  "3cc6e124a8e4": {
   "en": "Text size",
   "t": "Cỡ chữ"
@@ -14,6 +10,10 @@
  "4a8865e43378": {
   "en": "Monetized videos and posts about the series are welcome; other commercial use needs approval: <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> or <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>.",
   "t": "Hoan nghênh video và bài đăng kiếm tiền về loạt truyện; các mục đích thương mại khác cần được chấp thuận: <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> hoặc <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>."
+ },
+ "54067f8be0db": {
+  "en": "Made by <a href=\"https://deovandski.github.io/Deovandski/\">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. The #HusbandOutWorld series © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> and #HusbandOutWorld are his trademarks.",
+  "t": "Thực hiện bởi <a href=\"https://deovandski.github.io/Deovandski/\">Deovandski</a>. Mã ứng dụng © 2017 Deovandski Skibinski Junior, giấy phép MIT. Phông chữ Vraki © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">giấy phép phông chữ</a>. Loạt truyện #HusbandOutWorld © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> và #HusbandOutWorld là nhãn hiệu của anh."
  },
  "62bce9422ff2": {
   "en": "Main",
@@ -35,10 +35,6 @@
   "en": "Want a language added?",
   "t": "Muốn thêm một ngôn ngữ?"
  },
- "d38727900106": {
-  "en": "Part of the world of <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> and the <a href=\"https://github.com/Deovandski/Vraki-West-March-Campaign-D-D\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
-  "t": "Một phần của thế giới <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> và <a href=\"https://github.com/Deovandski/Vraki-West-March-Campaign-D-D\">Chiến dịch Vraki West March</a>. Mã nguồn và issue trên <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Quyền riêng tư</a>."
- },
  "e9b450d14bc2": {
   "en": "Done",
   "t": "Xong"
@@ -46,5 +42,9 @@
  "eb29514de833": {
   "en": "Typeface",
   "t": "Phông chữ"
+ },
+ "f630425e994c": {
+  "en": "Part of the world of <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> and the <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
+  "t": "Một phần của thế giới <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> và <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">Chiến dịch Vraki West March</a>. Mã nguồn và issue trên <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Quyền riêng tư</a>."
  }
 }
