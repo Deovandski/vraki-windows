@@ -1,8 +1,4 @@
 {
- "341c667192a4": {
-  "en": "Made by <a href=\"https://github.com/Deovandski\">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. The #HusbandOutWorld series © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> and #HusbandOutWorld are his trademarks.",
-  "t": "สร้างโดย <a href=\"https://github.com/Deovandski\">Deovandski</a> โค้ดแอป © 2017 Deovandski Skibinski Junior สัญญาอนุญาต MIT ฟอนต์วรากี © 2024 Deovandski Skibinski Junior <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">สัญญาอนุญาตฟอนต์</a> ซีรีส์ #HusbandOutWorld © Deovandski Skibinski Junior โดย <em>A Husband Out of This World</em> และ #HusbandOutWorld เป็นเครื่องหมายการค้าของเขา"
- },
  "3cc6e124a8e4": {
   "en": "Text size",
   "t": "ขนาดตัวอักษร"
@@ -14,6 +10,10 @@
  "4a8865e43378": {
   "en": "Monetized videos and posts about the series are welcome; other commercial use needs approval: <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> or <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>.",
   "t": "ยินดีต้อนรับวิดีโอและโพสต์ที่สร้างรายได้เกี่ยวกับซีรีส์นี้ การใช้งานเชิงพาณิชย์อื่น ๆ ต้องได้รับอนุมัติ: <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> หรือ <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>"
+ },
+ "54067f8be0db": {
+  "en": "Made by <a href=\"https://deovandski.github.io/Deovandski/\">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. The #HusbandOutWorld series © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> and #HusbandOutWorld are his trademarks.",
+  "t": "สร้างโดย <a href=\"https://deovandski.github.io/Deovandski/\">Deovandski</a> โค้ดแอป © 2017 Deovandski Skibinski Junior สัญญาอนุญาต MIT ฟอนต์วรากี © 2024 Deovandski Skibinski Junior <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">สัญญาอนุญาตฟอนต์</a> ซีรีส์ #HusbandOutWorld © Deovandski Skibinski Junior โดย <em>A Husband Out of This World</em> และ #HusbandOutWorld เป็นเครื่องหมายการค้าของเขา"
  },
  "62bce9422ff2": {
   "en": "Main",
@@ -35,10 +35,6 @@
   "en": "Want a language added?",
   "t": "อยากให้เพิ่มภาษาไหม?"
  },
- "d38727900106": {
-  "en": "Part of the world of <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> and the <a href=\"https://github.com/Deovandski/Vraki-West-March-Campaign-D-D\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
-  "t": "ส่วนหนึ่งของโลก <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> และ<a href=\"https://github.com/Deovandski/Vraki-West-March-Campaign-D-D\">แคมเปญวรากี เวสต์มาร์ช</a> ซอร์สโค้ดและ issue อยู่บน <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a> <a href=\"#privacy\">ความเป็นส่วนตัว</a>"
- },
  "e9b450d14bc2": {
   "en": "Done",
   "t": "เสร็จ"
@@ -46,5 +42,9 @@
  "eb29514de833": {
   "en": "Typeface",
   "t": "ฟอนต์"
+ },
+ "f630425e994c": {
+  "en": "Part of the world of <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> and the <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
+  "t": "ส่วนหนึ่งของโลก <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> และ<a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">แคมเปญวรากี เวสต์มาร์ช</a> ซอร์สโค้ดและ issue อยู่บน <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a> <a href=\"#privacy\">ความเป็นส่วนตัว</a>"
  }
 }

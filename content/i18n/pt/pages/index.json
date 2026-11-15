@@ -135,6 +135,10 @@
   "en": "To open the 2017 project you need Visual Studio with the Universal Windows Platform workload; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Downloads of the source are on the <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">releases page</a>.",
   "t": "Para abrir o projeto de 2017 você precisa do Visual Studio com a carga de trabalho da Plataforma Universal do Windows; veja <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Os downloads do código-fonte estão na <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">página de releases</a>."
  },
+ "544ec96d0c5b": {
+  "en": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
+  "t": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: o alfabeto, os numerais e as marcas, e onde Vraki fica entre as outras línguas da série."
+ },
  "5c5e4fddede4": {
   "en": "Switch direction. Currently converting text to Vraki.",
   "t": "Trocar a direção. Convertendo agora de texto para Vraki."
@@ -295,10 +299,6 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "Maio de 2017. O pacote de sideload dela é a única build que sobreviveu; está anexado à <a href=\"https://github.com/Deovandski/vraki-windows/releases\">release do GitHub</a> para registro (o certificado expirou em 2018, então instale pela Store)."
  },
- "c00a9cb389cf": {
-  "en": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
-  "t": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: o alfabeto, os numerais e as marcas, e onde Vraki fica entre as outras línguas da série."
- },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "Texto"
@@ -326,6 +326,10 @@
  "cf9dc0383a41": {
   "en": "Char + Word Pair",
   "t": "Caractere + Par de Palavras"
+ },
+ "d26f9b5e2e9d": {
+  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
+  "t": "Em 2017, Vraki era um pequeno app para Windows que invertia, deslocava e reestruturava o inglês até ele parecer uma língua nova. Essa ideia cresceu e virou a escrita da série <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> e a sua própria fonte. O app original está de volta, do jeito que era, para registro."
  },
  "d36d5516dbff": {
   "en": "The Vraki typeface",
@@ -370,10 +374,6 @@
  "e33cf3599fc5": {
   "en": "Shift all by +1, letter case",
   "t": "Deslocar tudo em +1, maiúsculas"
- },
- "e3dc2b25944f": {
-  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
-  "t": "Em 2017, Vraki era um pequeno app para Windows que invertia, deslocava e reestruturava o inglês até ele parecer uma língua nova. Essa ideia cresceu e virou a escrita da série <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> e a sua própria fonte. O app original está de volta, do jeito que era, para registro."
  },
  "e3de5ab0ca4c": {
   "en": "Off",

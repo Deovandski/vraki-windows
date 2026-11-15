@@ -7,7 +7,7 @@
 > **Originally from 2017, resurrected for historical purposes.**
 > The app in [`legacy/`](legacy/) is the Universal Windows Platform app published on the Microsoft Store in 2017. Its C# and XAML are unchanged; it lives here as a record of where Vraki started.
 
-Vraki began as this small Windows app that reversed, shifted and restructured English until it read like a new language. It went on to become the writing of the [#HusbandOutWorld](https://github.com/Deovandski/HusbandOutWorld) series, with its own [typeface](#the-vraki-typeface), written **1:1 with English**. Modernizing the app around that idea is the next step for this repository.
+Vraki began as this small Windows app that reversed, shifted and restructured English until it read like a new language. It went on to become the writing of the [#HusbandOutWorld](https://deovandski.github.io/HusbandOutWorld/) series, with its own [typeface](#the-vraki-typeface), written **1:1 with English**. Modernizing the app around that idea is the next step for this repository.
 
 **Website:** https://deovandski.github.io/vraki-windows/ (also in 中文 · 日本語 · Português · Español · العربية · 한국어 · Bahasa Melayu · ไทย · Deutsch · Tiếng Việt · Italiano · Français · हिन्दी · Bahasa Indonesia, AI-translated) · **Microsoft Store:** [Vraki Language](https://apps.microsoft.com/detail/9P41XHS4HMLX) · **Source download:** [latest release](https://github.com/Deovandski/vraki-windows/releases/latest)
 
@@ -21,8 +21,8 @@ Deovandski always dreamed of coming up with a language. As a child he doodled th
 
 He didn't expect it to grow into an entire world with extensive lore, and from there into several stories:
 
-- **[A Husband Out of This World](https://github.com/Deovandski/HusbandOutWorld)**, published as the **#HusbandOutWorld** light novel series. It opens on Paulin 14th, 1039 A.G. (After Ganyrami, the Vraki calendar's count from the year Ganyrami fell), when Harry is summoned out of our world into the world of Vraki, in the Prosperity Treaty era, the long peace that followed the overthrow of the old kingdoms.
-- **[Vraki West March Campaign](https://github.com/Deovandski/Vraki-West-March-Campaign-D-D)**, an open-table, West Marches-style D&D 5e campaign set in the same world in the 1040s A.G., with lore summaries, quests, stat blocks and ready-made adventurers.
+- **[A Husband Out of This World](https://deovandski.github.io/HusbandOutWorld/)**, published as the **#HusbandOutWorld** light novel series. It opens on Paulin 14th, 1039 A.G. (After Ganyrami, the Vraki calendar's count from the year Ganyrami fell), when Harry is summoned out of our world into the world of Vraki, in the Prosperity Treaty era, the long peace that followed the overthrow of the old kingdoms.
+- **[Vraki West March Campaign](https://deovandski.github.io/Vraki-West-March-Campaign-D-D/)**, an open-table, West Marches-style D&D 5e campaign set in the same world in the 1040s A.G., with lore summaries, quests, stat blocks and ready-made adventurers.
 
 This app is where the writing first went digital, back in 2017.
 
@@ -62,7 +62,7 @@ The 2017 README ended with a sketch and a promise to turn it into a font "if tim
 
 - **Where:** [Deovandski/HusbandOutWorld › Logo and Font](https://github.com/Deovandski/HusbandOutWorld/tree/main/Legacy/Behind%20The%20Scenes/Logo%20and%20Font) has `VrakiHusbandOutWorldSeries-Rg` as `.otf`, `.ttf` and `.woff2`, and the hand-drawn reference sheet `Vraki TypeFace - v2.png`.
 - **How it works:** one glyph per English letter, A to Z, drawn as a line across a dotted grid. Upper case letters carry small circle markers; lower case is the same stroke without them. Digits mark one dot on a 3×3 grid, and punctuation has its own marks. Type English in the font and it's written in Vraki.
-- **Lore:** [World Lore › Language](https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md) describes Vraki as the common language inherited from the Finaies: mostly English, with a skin.
+- **Lore:** [World Lore › Language](https://deovandski.github.io/HusbandOutWorld/lore/language/) describes Vraki as the common language inherited from the Finaies: mostly English, with a skin.
 - **License:** the typeface is © 2024 Deovandski Skibinski Junior ([font license](site/fonts/LICENSE.md)). Non-commercial use is free with attribution. Commercial use needs approval and a fee, kept small for artists and creators to support the community; ask on [LinkedIn](https://www.linkedin.com/in/deovandski/) or email [Deovandski@outlook.com](mailto:Deovandski@outlook.com). It may not be altered without permission. The website includes an unaltered copy only to render Vraki text (see [site/fonts/README.md](site/fonts/README.md)). The rest of the HusbandOutWorld repository is CC BY-NC-SA 4.0.
 
 ## Install

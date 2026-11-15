@@ -1,8 +1,4 @@
 {
- "341c667192a4": {
-  "en": "Made by <a href=\"https://github.com/Deovandski\">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. The #HusbandOutWorld series © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> and #HusbandOutWorld are his trademarks.",
-  "t": "Hecho por <a href=\"https://github.com/Deovandski\">Deovandski</a>. Código de la app © 2017 Deovandski Skibinski Junior, licencia MIT. Tipografía Vraki © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">licencia de la fuente</a>. La serie #HusbandOutWorld © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> y #HusbandOutWorld son marcas suyas."
- },
  "3cc6e124a8e4": {
   "en": "Text size",
   "t": "Tamaño del texto"
@@ -14,6 +10,10 @@
  "4a8865e43378": {
   "en": "Monetized videos and posts about the series are welcome; other commercial use needs approval: <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> or <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>.",
   "t": "Los vídeos y publicaciones monetizados sobre la serie son bienvenidos; otros usos comerciales requieren aprobación: <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> o <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>."
+ },
+ "54067f8be0db": {
+  "en": "Made by <a href=\"https://deovandski.github.io/Deovandski/\">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. The #HusbandOutWorld series © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> and #HusbandOutWorld are his trademarks.",
+  "t": "Hecho por <a href=\"https://deovandski.github.io/Deovandski/\">Deovandski</a>. Código de la app © 2017 Deovandski Skibinski Junior, licencia MIT. Tipografía Vraki © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">licencia de la fuente</a>. La serie #HusbandOutWorld © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> y #HusbandOutWorld son marcas suyas."
  },
  "62bce9422ff2": {
   "en": "Main",
@@ -35,10 +35,6 @@
   "en": "Want a language added?",
   "t": "¿Quieres que añadamos un idioma?"
  },
- "d38727900106": {
-  "en": "Part of the world of <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> and the <a href=\"https://github.com/Deovandski/Vraki-West-March-Campaign-D-D\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
-  "t": "Parte del mundo de <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> y de la <a href=\"https://github.com/Deovandski/Vraki-West-March-Campaign-D-D\">Campaña Vraki West March</a>. Código e incidencias en <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacidad</a>."
- },
  "e9b450d14bc2": {
   "en": "Done",
   "t": "Listo"
@@ -46,5 +42,9 @@
  "eb29514de833": {
   "en": "Typeface",
   "t": "Tipografía"
+ },
+ "f630425e994c": {
+  "en": "Part of the world of <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> and the <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
+  "t": "Parte del mundo de <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> y de la <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">Campaña Vraki West March</a>. Código e incidencias en <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacidad</a>."
  }
 }

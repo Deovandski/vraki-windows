@@ -135,6 +135,10 @@
   "en": "To open the 2017 project you need Visual Studio with the Universal Windows Platform workload; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Downloads of the source are on the <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">releases page</a>.",
   "t": "Để mở dự án năm 2017, bạn cần Visual Studio có workload Universal Windows Platform; xem <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Bản tải mã nguồn có ở <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">trang phát hành</a>."
  },
+ "544ec96d0c5b": {
+  "en": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
+  "t": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: bảng chữ cái, chữ số và ký hiệu, và vị trí của Vraki giữa các ngôn ngữ khác của loạt truyện."
+ },
  "5c5e4fddede4": {
   "en": "Switch direction. Currently converting text to Vraki.",
   "t": "Đổi chiều. Hiện đang chuyển văn bản sang Vraki."
@@ -295,10 +299,6 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "Tháng 5 năm 2017. Gói sideload của nó là bản dựng duy nhất còn sót lại; được đính kèm vào <a href=\"https://github.com/Deovandski/vraki-windows/releases\">bản phát hành trên GitHub</a> để lưu lại (chứng chỉ đã hết hạn năm 2018, nên hãy cài từ Store)."
  },
- "c00a9cb389cf": {
-  "en": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
-  "t": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: bảng chữ cái, chữ số và ký hiệu, và vị trí của Vraki giữa các ngôn ngữ khác của loạt truyện."
- },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "Văn bản"
@@ -326,6 +326,10 @@
  "cf9dc0383a41": {
   "en": "Char + Word Pair",
   "t": "Ký tự + Cặp từ"
+ },
+ "d26f9b5e2e9d": {
+  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
+  "t": "Năm 2017, Vraki là một ứng dụng Windows nhỏ đảo ngược, dịch chuyển và sắp xếp lại tiếng Anh cho đến khi đọc lên như một ngôn ngữ mới. Ý tưởng đó lớn dần thành chữ viết của loạt truyện <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> và phông chữ riêng của nó. Ứng dụng gốc đã trở lại, đúng như ngày trước, để lưu lại."
  },
  "d36d5516dbff": {
   "en": "The Vraki typeface",
@@ -370,10 +374,6 @@
  "e33cf3599fc5": {
   "en": "Shift all by +1, letter case",
   "t": "Dịch chuyển tất cả +1, chữ hoa/thường"
- },
- "e3dc2b25944f": {
-  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
-  "t": "Năm 2017, Vraki là một ứng dụng Windows nhỏ đảo ngược, dịch chuyển và sắp xếp lại tiếng Anh cho đến khi đọc lên như một ngôn ngữ mới. Ý tưởng đó lớn dần thành chữ viết của loạt truyện <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> và phông chữ riêng của nó. Ứng dụng gốc đã trở lại, đúng như ngày trước, để lưu lại."
  },
  "e3de5ab0ca4c": {
   "en": "Off",

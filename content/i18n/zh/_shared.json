@@ -1,8 +1,4 @@
 {
- "341c667192a4": {
-  "en": "Made by <a href=\"https://github.com/Deovandski\">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. The #HusbandOutWorld series © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> and #HusbandOutWorld are his trademarks.",
-  "t": "由 <a href=\"https://github.com/Deovandski\">Deovandski</a> 制作。应用代码 © 2017 Deovandski Skibinski Junior，MIT 许可。弗拉基字体 © 2024 Deovandski Skibinski Junior，<a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">字体许可</a>。#HusbandOutWorld 系列 © Deovandski Skibinski Junior；<em>A Husband Out of This World</em> 和 #HusbandOutWorld 是他的商标。"
- },
  "3cc6e124a8e4": {
   "en": "Text size",
   "t": "文字大小"
@@ -14,6 +10,10 @@
  "4a8865e43378": {
   "en": "Monetized videos and posts about the series are welcome; other commercial use needs approval: <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> or <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>.",
   "t": "欢迎制作关于本系列的盈利视频和帖子；其他商业用途需经批准：<a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> 或 <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>。"
+ },
+ "54067f8be0db": {
+  "en": "Made by <a href=\"https://deovandski.github.io/Deovandski/\">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. The #HusbandOutWorld series © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> and #HusbandOutWorld are his trademarks.",
+  "t": "由 <a href=\"https://deovandski.github.io/Deovandski/\">Deovandski</a> 制作。应用代码 © 2017 Deovandski Skibinski Junior，MIT 许可。弗拉基字体 © 2024 Deovandski Skibinski Junior，<a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">字体许可</a>。#HusbandOutWorld 系列 © Deovandski Skibinski Junior；<em>A Husband Out of This World</em> 和 #HusbandOutWorld 是他的商标。"
  },
  "62bce9422ff2": {
   "en": "Main",
@@ -35,10 +35,6 @@
   "en": "Want a language added?",
   "t": "想添加一种语言？"
  },
- "d38727900106": {
-  "en": "Part of the world of <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> and the <a href=\"https://github.com/Deovandski/Vraki-West-March-Campaign-D-D\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
-  "t": "属于 <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> 和<a href=\"https://github.com/Deovandski/Vraki-West-March-Campaign-D-D\">弗拉基·韦斯特马奇战役</a>的世界。源代码和 issue 在 <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a> 上。<a href=\"#privacy\">隐私</a>。"
- },
  "e9b450d14bc2": {
   "en": "Done",
   "t": "完成"
@@ -46,5 +42,9 @@
  "eb29514de833": {
   "en": "Typeface",
   "t": "字体"
+ },
+ "f630425e994c": {
+  "en": "Part of the world of <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> and the <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
+  "t": "属于 <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> 和<a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">弗拉基·韦斯特马奇战役</a>的世界。源代码和 issue 在 <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a> 上。<a href=\"#privacy\">隐私</a>。"
  }
 }

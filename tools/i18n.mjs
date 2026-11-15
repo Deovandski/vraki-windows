@@ -25,6 +25,8 @@
 //                                                   only the segments that still need translating
 //   node tools/i18n.mjs apply work.json             save the "t" fields of a work file into the store
 //   node tools/i18n.mjs prune                       drop translations whose English no longer exists
+//   node tools/i18n.mjs rehash                      re-key stored translations from their "en" (after a find/replace
+//                                                   that touched the English, like changing a link everywhere)
 import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -327,6 +329,23 @@ function cmdPrune() {
   }
 }
 
+/** A find/replace that also changed the stored "en" text leaves old hashes behind: key every entry by its "en" again. */
+function cmdRehash() {
+  for (const code of languages()) {
+    let moved = 0;
+    for (const p of shardFiles(code)) {
+      const data = readJson(p), out = {};
+      for (const [h, v] of Object.entries(data)) {
+        const k = v && v.en ? segHash(v.en) : h;
+        if (k !== h) moved++;
+        out[k] = v;
+      }
+      writeJson(p, Object.fromEntries(Object.entries(out).sort(([a], [b]) => a.localeCompare(b))));
+    }
+    console.log(`${code}: re-keyed ${moved} translations`);
+  }
+}
+
 function die(msg) { console.error(msg); process.exit(2); }
 
 function parseArgs(argv) {
@@ -340,7 +359,7 @@ function parseArgs(argv) {
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const [cmd, ...rest] = process.argv.slice(2);
-  const cmds = { build: cmdBuild, status: cmdStatus, todo: cmdTodo, apply: cmdApply, prune: cmdPrune };
-  if (!cmds[cmd]) die('usage: node tools/i18n.mjs build|status|todo|apply|prune (see the top of tools/i18n.mjs)');
+  const cmds = { build: cmdBuild, status: cmdStatus, todo: cmdTodo, apply: cmdApply, prune: cmdPrune, rehash: cmdRehash };
+  if (!cmds[cmd]) die('usage: node tools/i18n.mjs build|status|todo|apply|prune|rehash (see the top of tools/i18n.mjs)');
   cmds[cmd](parseArgs(rest));
 }

@@ -1,8 +1,4 @@
 {
- "341c667192a4": {
-  "en": "Made by <a href=\"https://github.com/Deovandski\">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. The #HusbandOutWorld series © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> and #HusbandOutWorld are his trademarks.",
-  "t": "<a href=\"https://github.com/Deovandski\">Deovandski</a> द्वारा बनाया गया। ऐप कोड © 2017 Deovandski Skibinski Junior, MIT लाइसेंस। व्राकी टाइपफ़ेस © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">फ़ॉन्ट लाइसेंस</a>। #HusbandOutWorld सीरीज़ © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> और #HusbandOutWorld उनके ट्रेडमार्क हैं।"
- },
  "3cc6e124a8e4": {
   "en": "Text size",
   "t": "टेक्स्ट का आकार"
@@ -14,6 +10,10 @@
  "4a8865e43378": {
   "en": "Monetized videos and posts about the series are welcome; other commercial use needs approval: <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> or <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>.",
   "t": "सीरीज़ के बारे में कमाई वाले वीडियो और पोस्ट का स्वागत है; अन्य व्यावसायिक उपयोग के लिए अनुमति चाहिए: <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> या <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>।"
+ },
+ "54067f8be0db": {
+  "en": "Made by <a href=\"https://deovandski.github.io/Deovandski/\">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. The #HusbandOutWorld series © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> and #HusbandOutWorld are his trademarks.",
+  "t": "<a href=\"https://deovandski.github.io/Deovandski/\">Deovandski</a> द्वारा बनाया गया। ऐप कोड © 2017 Deovandski Skibinski Junior, MIT लाइसेंस। व्राकी टाइपफ़ेस © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">फ़ॉन्ट लाइसेंस</a>। #HusbandOutWorld सीरीज़ © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> और #HusbandOutWorld उनके ट्रेडमार्क हैं।"
  },
  "62bce9422ff2": {
   "en": "Main",
@@ -35,10 +35,6 @@
   "en": "Want a language added?",
   "t": "कोई भाषा जुड़वाना चाहते हैं?"
  },
- "d38727900106": {
-  "en": "Part of the world of <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> and the <a href=\"https://github.com/Deovandski/Vraki-West-March-Campaign-D-D\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
-  "t": "<a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> और <a href=\"https://github.com/Deovandski/Vraki-West-March-Campaign-D-D\">व्राकी वेस्ट मार्च कैंपेन</a> की दुनिया का हिस्सा। सोर्स और इश्यू <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a> पर। <a href=\"#privacy\">निजता</a>।"
- },
  "e9b450d14bc2": {
   "en": "Done",
   "t": "हो गया"
@@ -46,5 +42,9 @@
  "eb29514de833": {
   "en": "Typeface",
   "t": "टाइपफ़ेस"
+ },
+ "f630425e994c": {
+  "en": "Part of the world of <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> and the <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
+  "t": "<a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> और <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">व्राकी वेस्ट मार्च कैंपेन</a> की दुनिया का हिस्सा। सोर्स और इश्यू <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a> पर। <a href=\"#privacy\">निजता</a>।"
  }
 }

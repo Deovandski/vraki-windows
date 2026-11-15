@@ -1,8 +1,4 @@
 {
- "341c667192a4": {
-  "en": "Made by <a href=\"https://github.com/Deovandski\">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. The #HusbandOutWorld series © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> and #HusbandOutWorld are his trademarks.",
-  "t": "<a href=\"https://github.com/Deovandski\">Deovandski</a> 제작. 앱 코드 © 2017 Deovandski Skibinski Junior, MIT 라이선스. 브라키 서체 © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">폰트 라이선스</a>. #HusbandOutWorld 시리즈 © Deovandski Skibinski Junior. <em>A Husband Out of This World</em>와 #HusbandOutWorld는 그의 상표입니다."
- },
  "3cc6e124a8e4": {
   "en": "Text size",
   "t": "글자 크기"
@@ -14,6 +10,10 @@
  "4a8865e43378": {
   "en": "Monetized videos and posts about the series are welcome; other commercial use needs approval: <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> or <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>.",
   "t": "시리즈에 관한 수익형 영상과 게시물은 환영합니다. 그 밖의 상업적 사용은 승인이 필요합니다: <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> 또는 <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>."
+ },
+ "54067f8be0db": {
+  "en": "Made by <a href=\"https://deovandski.github.io/Deovandski/\">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. The #HusbandOutWorld series © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> and #HusbandOutWorld are his trademarks.",
+  "t": "<a href=\"https://deovandski.github.io/Deovandski/\">Deovandski</a> 제작. 앱 코드 © 2017 Deovandski Skibinski Junior, MIT 라이선스. 브라키 서체 © 2024 Deovandski Skibinski Junior, <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">폰트 라이선스</a>. #HusbandOutWorld 시리즈 © Deovandski Skibinski Junior. <em>A Husband Out of This World</em>와 #HusbandOutWorld는 그의 상표입니다."
  },
  "62bce9422ff2": {
   "en": "Main",
@@ -35,10 +35,6 @@
   "en": "Want a language added?",
   "t": "추가하고 싶은 언어가 있나요?"
  },
- "d38727900106": {
-  "en": "Part of the world of <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> and the <a href=\"https://github.com/Deovandski/Vraki-West-March-Campaign-D-D\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
-  "t": "<a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a>와 <a href=\"https://github.com/Deovandski/Vraki-West-March-Campaign-D-D\">브라키 웨스트 마치 캠페인</a>의 세계에 속합니다. 소스와 이슈는 <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>에. <a href=\"#privacy\">개인정보</a>."
- },
  "e9b450d14bc2": {
   "en": "Done",
   "t": "완료"
@@ -46,5 +42,9 @@
  "eb29514de833": {
   "en": "Typeface",
   "t": "서체"
+ },
+ "f630425e994c": {
+  "en": "Part of the world of <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> and the <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
+  "t": "<a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a>와 <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">브라키 웨스트 마치 캠페인</a>의 세계에 속합니다. 소스와 이슈는 <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>에. <a href=\"#privacy\">개인정보</a>."
  }
 }
