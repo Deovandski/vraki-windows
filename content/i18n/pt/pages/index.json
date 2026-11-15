@@ -1,0 +1,414 @@
+{
+ "004ce47c8fa4": {
+  "en": "The writing behind #HusbandOutWorld, on Windows since 2017",
+  "t": "A escrita por trás de #HusbandOutWorld, no Windows desde 2017"
+ },
+ "010bbbc5982e": {
+  "en": "\"The quick brown fox jumps over the lazy dog\" in Vraki",
+  "t": "\"The quick brown fox jumps over the lazy dog\" em Vraki"
+ },
+ "0295995602fb": {
+  "en": "Shift Consonants by",
+  "t": "Deslocar Consoantes em"
+ },
+ "049aa5073c7b": {
+  "en": "The 2017 README ended with a hand-drawn sketch and a promise: <em>\"If time allows, I will develop a cleaner version of the following drawing followed by a font.\"</em> That font now exists, made for the #HusbandOutWorld series, and it lives in the HusbandOutWorld repository.",
+  "t": "O README de 2017 terminava com um esboço feito à mão e uma promessa: <em>\"Se o tempo permitir, vou desenvolver uma versão mais limpa do desenho a seguir e, depois, uma fonte.\"</em> Essa fonte agora existe, feita para a série #HusbandOutWorld, e mora no repositório HusbandOutWorld."
+ },
+ "081ae3fdc403": {
+  "en": "Custom",
+  "t": "Personalizado"
+ },
+ "097be51be337": {
+  "en": "Red marks the writable panel, as in the app. Quirks of the 2017 code are kept; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md\">how the conversions work</a>.",
+  "t": "O vermelho marca o painel editável, como no app. As manias do código de 2017 foram mantidas; veja <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md\">como as conversões funcionam</a>."
+ },
+ "0c1716207542": {
+  "en": "Vraki structure, letter case",
+  "t": "Estrutura Vraki, maiúsculas"
+ },
+ "0c8df973e24e": {
+  "en": "Your Language and Text size choices are saved in this browser only, so the site remembers them next time. They never leave your device.",
+  "t": "Suas escolhas de Idioma e Tamanho do texto ficam salvas só neste navegador, para o site lembrar delas na próxima vez. Elas nunca saem do seu dispositivo."
+ },
+ "0efb2d6b3410": {
+  "en": "Chars Shift Configuration",
+  "t": "Configuração de Deslocamento"
+ },
+ "0f9ba953e351": {
+  "en": "Char",
+  "t": "Caractere"
+ },
+ "15531e3065a5": {
+  "en": "Development recording, May 2017 (46 seconds, no sound).",
+  "t": "Gravação do desenvolvimento, maio de 2017 (46 segundos, sem som)."
+ },
+ "165047664701": {
+  "en": "Changed the header image to support VisualStates, and updated the GitHub links.",
+  "t": "Mudou a imagem do cabeçalho para suportar VisualStates e atualizou os links do GitHub."
+ },
+ "1697a41e2cb5": {
+  "en": "Version 1.3, June 2017: the Text panel and Settings.",
+  "t": "Versão 1.3, junho de 2017: o painel de Texto e as Configurações."
+ },
+ "1c3f7ae2391c": {
+  "en": "Reverse Type",
+  "t": "Tipo de Inversão"
+ },
+ "1cbe0e5551ed": {
+  "en": "Get the typeface",
+  "t": "Baixe a fonte"
+ },
+ "1f17ac3c6c0d": {
+  "en": "Video from May 2017: the Vraki Language app running beside Visual Studio, switching settings and translating text",
+  "t": "Vídeo de maio de 2017: o app Vraki Language rodando ao lado do Visual Studio, mudando configurações e traduzindo texto"
+ },
+ "22a35fbebff4": {
+  "en": "Source code",
+  "t": "Código-fonte"
+ },
+ "2373f56e6d90": {
+  "en": "The Vraki Panel, in the Vraki typeface",
+  "t": "O Painel Vraki, na fonte Vraki"
+ },
+ "2481e34e5025": {
+  "en": "Type anything in English. It's written letter for letter in the Vraki typeface:",
+  "t": "Digite qualquer coisa em inglês. Ela é escrita letra por letra na fonte Vraki:"
+ },
+ "25246a23b40e": {
+  "en": "He didn't expect it to grow into an entire world with extensive lore, and from there into several stories. This app is where the writing first went digital, back in 2017.",
+  "t": "Ele não esperava que isso virasse um mundo inteiro com uma lore extensa e, dali, várias histórias. Este app é onde a escrita ficou digital pela primeira vez, em 2017."
+ },
+ "2788945b52c2": {
+  "en": "Changed how the current panel and the writable panel are shown.",
+  "t": "Mudou como o painel atual e o painel editável são mostrados."
+ },
+ "2be17aa181d8": {
+  "en": "Translate",
+  "t": "Traduzir"
+ },
+ "2c3f3395ba15": {
+  "en": "How the 2017 conversions work",
+  "t": "Como funcionam as conversões de 2017"
+ },
+ "2c7365f43c93": {
+  "en": "Digits mark a single dot on a 3×3 grid (zero marks all nine), and punctuation has its own marks.",
+  "t": "Os dígitos marcam um único ponto numa grade 3×3 (o zero marca os nove), e a pontuação tem as suas próprias marcas."
+ },
+ "2da600bf9404": {
+  "en": "Version",
+  "t": "Versão"
+ },
+ "301c8c5eb185": {
+  "en": "In the series' lore, Vraki is the common language inherited from the Finaies: mostly English, because English is the common language for business and the language the books were written in.",
+  "t": "Na lore da série, Vraki é a língua comum herdada dos Finaies: quase tudo inglês, porque o inglês é a língua comum dos negócios e a língua em que os livros foram escritos."
+ },
+ "31b28abf4e09": {
+  "en": "One glyph per English letter",
+  "t": "Um glifo por letra do inglês"
+ },
+ "3855931425eb": {
+  "en": "This is the app's own conversion code, ported line by line to JavaScript and checked against output captured from the 2017 app. Pick a conversion type, press Translate, and flip the arrows to convert back. Everything runs in your browser.",
+  "t": "Este é o próprio código de conversão do app, portado linha por linha para JavaScript e conferido com saídas capturadas do app de 2017. Escolha um tipo de conversão, aperte Traduzir e inverta as setas para converter de volta. Tudo roda no seu navegador."
+ },
+ "40b1a4d1811f": {
+  "en": "Try the 2017 converter",
+  "t": "Experimente o conversor de 2017"
+ },
+ "41e10583cc30": {
+  "en": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/tree/main/Legacy/Behind%20The%20Scenes/Logo%20and%20Font\">Deovandski/HusbandOutWorld › Logo and Font</a>: <code>VrakiHusbandOutWorldSeries-Rg</code> as <code>.otf</code>, <code>.ttf</code> and <code>.woff2</code>, plus the reference sheet.",
+  "t": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/tree/main/Legacy/Behind%20The%20Scenes/Logo%20and%20Font\">Deovandski/HusbandOutWorld › Logo and Font</a>: <code>VrakiHusbandOutWorldSeries-Rg</code> em <code>.otf</code>, <code>.ttf</code> e <code>.woff2</code>, mais a folha de referência."
+ },
+ "44363ccb8230": {
+  "en": "Word",
+  "t": "Palavra"
+ },
+ "444ac7c63f89": {
+  "en": "<strong>This is old code, on purpose.</strong> Vraki Language was written in 2017 as a Universal Windows Platform app for Windows 10 and published on the Microsoft Store. Its source is resurrected here for historical purposes: the C# and XAML are unchanged, only moved into <code>legacy/</code>.",
+  "t": "<strong>Este é um código antigo, de propósito.</strong> O Vraki Language foi escrito em 2017 como um app da Plataforma Universal do Windows para o Windows 10 e publicado na Microsoft Store. O código-fonte foi ressuscitado aqui por motivos históricos: o C# e o XAML não mudaram, só foram movidos para <code>legacy/</code>."
+ },
+ "4bed336194a9": {
+  "en": "Output",
+  "t": "Saída"
+ },
+ "509a0c11c170": {
+  "en": "To open the 2017 project you need Visual Studio with the Universal Windows Platform workload; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Downloads of the source are on the <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">releases page</a>.",
+  "t": "Para abrir o projeto de 2017 você precisa do Visual Studio com a carga de trabalho da Plataforma Universal do Windows; veja <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Os downloads do código-fonte estão na <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">página de releases</a>."
+ },
+ "5c5e4fddede4": {
+  "en": "Switch direction. Currently converting text to Vraki.",
+  "t": "Trocar a direção. Convertendo agora de texto para Vraki."
+ },
+ "5d96154a0774": {
+  "en": "The 2017 app, version 1.1, with an orange accent color instead of crimson",
+  "t": "O app de 2017, versão 1.1, com cor de destaque laranja em vez de carmesim"
+ },
+ "5eaa5c80a056": {
+  "en": "Char reverse, shift all by −3, letter case",
+  "t": "Inversão de caracteres, deslocar tudo em −3, maiúsculas"
+ },
+ "67035439a32a": {
+  "en": "The Vraki alphabet, upper case",
+  "t": "O alfabeto Vraki, em maiúsculas"
+ },
+ "6882ba4c8aa6": {
+  "en": "Fixed issues #2 and #3. The version on the Store today.",
+  "t": "Corrigiu as issues #2 e #3. A versão que está na Store hoje."
+ },
+ "6aacaec4b94e": {
+  "en": "Vraki Structuring",
+  "t": "Estruturação Vraki"
+ },
+ "6b01ab0039e2": {
+  "en": "The full write-up, with the 2017 diagrams for every reverse algorithm and the Vraki structure table, is in <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md\">docs/ALGORITHMS.md</a>.",
+  "t": "A explicação completa, com os diagramas de 2017 de cada algoritmo de inversão e a tabela da estrutura Vraki, está em <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md\">docs/ALGORITHMS.md</a>."
+ },
+ "6b45805e00c9": {
+  "en": "Version 1.1, May 2017, with an orange accent.",
+  "t": "Versão 1.1, maio de 2017, com destaque laranja."
+ },
+ "76d715243767": {
+  "en": "Letter Case Fix",
+  "t": "Correção de Maiúsculas"
+ },
+ "7717cf1db38e": {
+  "en": "Char + Word",
+  "t": "Caractere + Palavra"
+ },
+ "808d7dca8a74": {
+  "en": "Default",
+  "t": "Padrão"
+ },
+ "8212d2448792": {
+  "en": "The app stores nothing about you; the text you convert stays on your device. This website has no cookies, no analytics and no ads, and the converter and typeface preview run entirely in your browser. It's hosted on GitHub Pages, so <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\">GitHub</a> sees your IP address when it sends you the page. Questions go to <a href=\"https://github.com/Deovandski/vraki-windows/issues\">GitHub issues</a>.",
+  "t": "O app não guarda nada sobre você; o texto que você converte fica no seu dispositivo. Este site não tem cookies, análises nem anúncios, e o conversor e a prévia da fonte rodam inteiramente no seu navegador. Ele é hospedado no GitHub Pages, então o <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\">GitHub</a> vê o seu endereço IP quando envia a página. Dúvidas vão para as <a href=\"https://github.com/Deovandski/vraki-windows/issues\">issues do GitHub</a>."
+ },
+ "8481bc4c75d0": {
+  "en": "Reverse Configuration",
+  "t": "Configuração de Inversão"
+ },
+ "86526182c8aa": {
+  "en": "Vraki Language for Windows (2017)",
+  "t": "Vraki Language para Windows (2017)"
+ },
+ "87a97817e32b": {
+  "en": "Each letter is a line drawn across a dotted grid. <strong>Upper case</strong> letters carry small circle markers; <strong>lower case</strong> is the same stroke without them.",
+  "t": "Cada letra é uma linha traçada sobre uma grade de pontos. As letras <strong>maiúsculas</strong> têm pequenos marcadores em círculo; as <strong>minúsculas</strong> são o mesmo traço sem eles."
+ },
+ "8991b34090fd": {
+  "en": "Vraki West March Campaign",
+  "t": "Campanha Vraki West March"
+ },
+ "8aa57de6dce6": {
+  "en": "Changes",
+  "t": "Mudanças"
+ },
+ "90731c7fa707": {
+  "en": "Get it from Microsoft Store",
+  "t": "Baixar na Microsoft Store"
+ },
+ "9077b4f91840": {
+  "en": "The 2017 Vraki Language app, back from the archive. Try the original converter and see English written in the Vraki typeface.",
+  "t": "O app Vraki Language de 2017, de volta do arquivo. Experimente o conversor original e veja o inglês escrito na fonte Vraki."
+ },
+ "91f86581f16b": {
+  "en": "Version history",
+  "t": "Histórico de versões"
+ },
+ "98f355d768ba": {
+  "en": "Try it in your browser",
+  "t": "Experimente no navegador"
+ },
+ "99c08ea62081": {
+  "en": "Source code at <a href=\"https://github.com/Deovandski/vraki-windows\" translate=\"no\">github.com/Deovandski/vraki-windows</a>",
+  "t": "Código-fonte em <a href=\"https://github.com/Deovandski/vraki-windows\" translate=\"no\">github.com/Deovandski/vraki-windows</a>"
+ },
+ "9a96dc2d5d12": {
+  "en": "Differential Shift Rate",
+  "t": "Taxa de Deslocamento Diferenciada"
+ },
+ "a485fd837a64": {
+  "en": "Complex Vraki",
+  "t": "Vraki Complexo"
+ },
+ "a50c37aa3021": {
+  "en": "Vraki is English with a different skin: same alphabet, same order, same words. Type in English and it's written in Vraki.",
+  "t": "Vraki é inglês com outra pele: mesmo alfabeto, mesma ordem, mesmas palavras. Digite em inglês e ele é escrito em Vraki."
+ },
+ "a6b8067f62d4": {
+  "en": "Since then, Vraki has become the writing system of the #HusbandOutWorld series, written <strong>1:1 with English</strong>: one Vraki glyph per English letter, instead of the 2017 app's reversing and shifting. A modern version built around that idea is the next step for this repository.",
+  "t": "Desde então, Vraki virou o sistema de escrita da série #HusbandOutWorld, escrito <strong>1:1 com o inglês</strong>: um glifo Vraki por letra do inglês, em vez das inversões e deslocamentos do app de 2017. Uma versão moderna construída em torno dessa ideia é o próximo passo deste repositório."
+ },
+ "a6cb354b5f2a": {
+  "en": "Vraki Language, a 2017 Windows app that turns English into Vraki, the writing behind the #HusbandOutWorld series. Resurrected for historical purposes, with the Vraki typeface and a working 2017 converter in your browser.",
+  "t": "Vraki Language, um app para Windows de 2017 que transforma inglês em Vraki, a escrita por trás da série #HusbandOutWorld. Ressuscitado por motivos históricos, com a fonte Vraki e um conversor de 2017 funcionando no seu navegador."
+ },
+ "a711cca9a4a9": {
+  "en": "Minimal",
+  "t": "Mínimo"
+ },
+ "a808520107fe": {
+  "en": "Deovandski always dreamed of coming up with a language. As a child he doodled the alphabets of alien civilizations, and the more he traveled the world and soaked up its cultures, the closer those doodles drifted to the Vraki writing you see here.",
+  "t": "Deovandski sempre sonhou em criar uma língua. Quando criança, rabiscava os alfabetos de civilizações alienígenas e, quanto mais viajava pelo mundo e mergulhava nas suas culturas, mais esses rabiscos se aproximavam da escrita Vraki que você vê aqui."
+ },
+ "a940b67b9d76": {
+  "en": "The 2017 app: the Text panel with an English sentence and the Settings pane open, with the Default conversion type",
+  "t": "O app de 2017: o painel de Texto com uma frase em inglês e o painel de Configurações aberto, com o tipo de conversão Padrão"
+ },
+ "aa7ea458ee21": {
+  "en": "(upper case). Lower case is the same without the circle markers.",
+  "t": "(maiúscula). A minúscula é igual, sem os marcadores em círculo."
+ },
+ "ab1b95aa4094": {
+  "en": "The hand-drawn reference sheet (v2) the font was built from.",
+  "t": "A folha de referência desenhada à mão (v2) a partir da qual a fonte foi feita."
+ },
+ "ab4fe9e222c8": {
+  "en": "Switch direction. Currently converting Vraki to text.",
+  "t": "Trocar a direção. Convertendo agora de Vraki para texto."
+ },
+ "ac9041e76816": {
+  "en": "Automatic",
+  "t": "Automático"
+ },
+ "ae5b95eda2c5": {
+  "en": "Simple Vraki",
+  "t": "Vraki Simples"
+ },
+ "b138c327dc56": {
+  "en": "Vraki",
+  "t": "Vraki"
+ },
+ "b1bd460b6a0a": {
+  "en": "D&amp;D 5e campaign",
+  "t": "Campanha de D&amp;D 5e"
+ },
+ "b886e999b650": {
+  "en": "A Text panel, a Vraki panel, a direction switch and a Settings pane full of toggles. Recorded while it was being built in May 2017.",
+  "t": "Um painel de Texto, um painel Vraki, uma chave de direção e um painel de Configurações cheio de botões. Gravado enquanto era construído, em maio de 2017."
+ },
+ "bcf7b1111733": {
+  "en": "Opens on Paulin 14th, 1039 A.G. (After Ganyrami, the Vraki calendar's count from the year Ganyrami fell), when Harry is summoned out of our world into the world of Vraki, in the Prosperity Treaty era, the long peace that followed the overthrow of the old kingdoms.",
+  "t": "Começa em 14 de Paulin de 1039 A.G. (After Ganyrami, a contagem do calendário Vraki a partir do ano em que Ganyrami caiu), quando Harry é invocado do nosso mundo para o mundo de Vraki, na era do Tratado da Prosperidade, a longa paz que veio depois da derrubada dos antigos reinos."
+ },
+ "bd1c365d9b88": {
+  "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
+  "t": "Maio de 2017. O pacote de sideload dela é a única build que sobreviveu; está anexado à <a href=\"https://github.com/Deovandski/vraki-windows/releases\">release do GitHub</a> para registro (o certificado expirou em 2018, então instale pela Store)."
+ },
+ "c00a9cb389cf": {
+  "en": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
+  "t": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: o alfabeto, os numerais e as marcas, e onde Vraki fica entre as outras línguas da série."
+ },
+ "c3328c39b0e2": {
+  "en": "Text",
+  "t": "Texto"
+ },
+ "c60f2f817f12": {
+  "en": "Source on GitHub",
+  "t": "Código no GitHub"
+ },
+ "c697bb6ff5e2": {
+  "en": "Shift Vowels By",
+  "t": "Deslocar Vogais em"
+ },
+ "cd9ba08526ff": {
+  "en": "Conversion Type",
+  "t": "Tipo de Conversão"
+ },
+ "cdde4f20ba31": {
+  "en": "Steps",
+  "t": "Etapas"
+ },
+ "cf01481f626d": {
+  "en": "Privacy",
+  "t": "Privacidade"
+ },
+ "cf9dc0383a41": {
+  "en": "Char + Word Pair",
+  "t": "Caractere + Par de Palavras"
+ },
+ "d36d5516dbff": {
+  "en": "The Vraki typeface",
+  "t": "A fonte Vraki"
+ },
+ "d89e229419df": {
+  "en": "Word Pair",
+  "t": "Par de Palavras"
+ },
+ "d8a46b94ae4f": {
+  "en": "Shift by",
+  "t": "Deslocar em"
+ },
+ "db91db843ba0": {
+  "en": "Where Vraki came from",
+  "t": "De onde veio Vraki"
+ },
+ "dbb744b70772": {
+  "en": "Text Panel",
+  "t": "Painel de Texto"
+ },
+ "dd6ab2a8e8f9": {
+  "en": "The app in 2017",
+  "t": "O app em 2017"
+ },
+ "dd9e4aee2fef": {
+  "en": "Originally from 2017 · resurrected for historical purposes",
+  "t": "Original de 2017 · ressuscitado por motivos históricos"
+ },
+ "dfb6b2189cd8": {
+  "en": "Vraki Panel",
+  "t": "Painel Vraki"
+ },
+ "e0049a66519c": {
+  "en": "On",
+  "t": "Ligado"
+ },
+ "e29701f4e234": {
+  "en": "Light novel series",
+  "t": "Série de light novel"
+ },
+ "e33cf3599fc5": {
+  "en": "Shift all by +1, letter case",
+  "t": "Deslocar tudo em +1, maiúsculas"
+ },
+ "e3dc2b25944f": {
+  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
+  "t": "Em 2017, Vraki era um pequeno app para Windows que invertia, deslocava e reestruturava o inglês até ele parecer uma língua nova. Essa ideia cresceu e virou a escrita da série <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> e a sua própria fonte. O app original está de volta, do jeito que era, para registro."
+ },
+ "e3de5ab0ca4c": {
+  "en": "Off",
+  "t": "Desligado"
+ },
+ "e410a09ec390": {
+  "en": "Hand-drawn reference sheet of the Vraki typeface: A to Z, lower case a and b, digits 0 to 9, and punctuation, each drawn on a dotted grid",
+  "t": "Folha de referência da fonte Vraki desenhada à mão: de A a Z, a e b minúsculos, dígitos de 0 a 9 e pontuação, cada um desenhado sobre uma grade de pontos"
+ },
+ "e47983e40a6b": {
+  "en": "Conversion type",
+  "t": "Tipo de conversão"
+ },
+ "e8083ad0cf19": {
+  "en": "MIT-licensed. The repository keeps the 2017 app intact and leaves room for the modern one.",
+  "t": "Licença MIT. O repositório mantém o app de 2017 intacto e deixa espaço para o moderno."
+ },
+ "e9b6dd68fd20": {
+  "en": "The typeface is © 2024 Deovandski Skibinski Junior. Non-commercial use is free with attribution. Commercial use needs approval and a fee, kept small for artists and creators to support the community; ask on <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> or email <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>. It may not be altered without permission. See the <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. This site uses an unaltered copy to show Vraki text.",
+  "t": "A fonte é © 2024 Deovandski Skibinski Junior. O uso não comercial é gratuito com atribuição. O uso comercial precisa de aprovação e de uma taxa, mantida baixa para que artistas e criadores apoiem a comunidade; peça pelo <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> ou pelo e-mail <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>. Ela não pode ser alterada sem permissão. Veja a <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">licença da fonte</a>. Este site usa uma cópia inalterada para mostrar texto em Vraki."
+ },
+ "f39fd52191ee": {
+  "en": "Four building blocks, run in order: Reverse, Shift, Vraki Structure, then Letter Case Fix. Each conversion type is a preset of them. Here's what each does to the app's sample sentence, <em>\"Look at my Horse! My horse is amazing! -Gentleman\"</em>:",
+  "t": "Quatro blocos, executados em ordem: Inversão, Deslocamento, Estrutura Vraki e, por fim, Correção de Maiúsculas. Cada tipo de conversão é uma predefinição deles. Veja o que cada um faz com a frase de exemplo do app, <em>\"Look at my Horse! My horse is amazing! -Gentleman\"</em>:"
+ },
+ "f3e46e1a79d5": {
+  "en": "Vraki Language 2017 converter",
+  "t": "Conversor Vraki Language 2017"
+ },
+ "fdf936b2bc81": {
+  "en": "An open-table, West Marches-style campaign set in the same world in the 1040s A.G., with lore summaries, quests, stat blocks and ready-made adventurers.",
+  "t": "Uma campanha de mesa aberta no estilo West Marches, ambientada no mesmo mundo nos anos 1040 A.G., com resumos da lore, missões, fichas de criaturas e aventureiros prontos para jogar."
+ },
+ "ff578165fc1a": {
+  "en": "Char + word pair reverse, consonants −10, vowels +2, Vraki structure, letter case",
+  "t": "Inversão de caractere + par de palavras, consoantes −10, vogais +2, estrutura Vraki, maiúsculas"
+ }
+}

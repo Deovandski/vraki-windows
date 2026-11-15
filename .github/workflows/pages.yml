@@ -1,11 +1,11 @@
 name: Website
 
-# Deploys the site/ folder to GitHub Pages.
+# Builds the site (site/ plus a translated copy per language from content/i18n/) and deploys it to GitHub Pages.
 # One-time setup: repo Settings > Pages > Build and deployment > Source = "GitHub Actions".
 on:
   push:
     branches: [main]
-    paths: ["site/**", ".github/workflows/pages.yml"]
+    paths: ["site/**", "content/i18n/**", "tools/i18n.mjs", "package.json", "package-lock.json", ".github/workflows/pages.yml"]
   workflow_dispatch:
 
 permissions:
@@ -26,11 +26,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Build the site in every language
+        run: |
+          npm ci
+          node tools/i18n.mjs build --out _site
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: _site
 
       - id: deployment
         uses: actions/deploy-pages@v4

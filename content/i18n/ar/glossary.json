@@ -1,0 +1,38 @@
+{
+ "_about": "How names and recurring terms are written in this language, so they are always spelled the same. Names are written by sound, never translated (the author's rule). Spellings come from HusbandOutWorld's content/i18n/<lang>/glossary.json where it has them, so the series reads the same on every site; correct a name there and here together.",
+ "rule": "Story names in Arabic letters, by sound (ف for v, غ for hard g), as in HusbandOutWorld. Right to left. Anything shown in the Vraki typeface, the converter's sample text and outputs, and code stay in English (they are marked translate=\"no\").",
+ "keep_as_is": [
+  "Vraki Language (the 2017 app's name, as on the Microsoft Store)",
+  "A Husband Out of This World",
+  "#HusbandOutWorld",
+  "Deovandski",
+  "Deovandski Skibinski Junior",
+  "A.G.",
+  "D&D 5e",
+  "GitHub",
+  "Microsoft Store",
+  "Visual Studio",
+  "Universal Windows Platform",
+  "VisualStates",
+  "C#",
+  "XAML",
+  "MIT"
+ ],
+ "names": {
+  "Vraki": "فراكي",
+  "Finaies": "فينايس",
+  "Ganyrami": "غانيرامي",
+  "Paulin": "باولين",
+  "Harry": "هاري",
+  "The Prosperity Treaty": "معاهدة الرخاء",
+  "Vraki West March Campaign": "حملة فراكي ويست مارش"
+ },
+ "terms": {
+  "Vraki typeface": "خط فراكي الطباعي",
+  "Vraki script": "خط فراكي",
+  "converter": "المحوِّل",
+  "Settings": "الإعدادات",
+  "Text size": "حجم النص",
+  "Language": "اللغة"
+ }
+}

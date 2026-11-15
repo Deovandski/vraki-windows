@@ -1,0 +1,414 @@
+{
+ "004ce47c8fa4": {
+  "en": "The writing behind #HusbandOutWorld, on Windows since 2017",
+  "t": "#HusbandOutWorld の文字。2017 年から Windows で"
+ },
+ "010bbbc5982e": {
+  "en": "\"The quick brown fox jumps over the lazy dog\" in Vraki",
+  "t": "ヴラキで書いた「The quick brown fox jumps over the lazy dog」"
+ },
+ "0295995602fb": {
+  "en": "Shift Consonants by",
+  "t": "子音のシフト量"
+ },
+ "049aa5073c7b": {
+  "en": "The 2017 README ended with a hand-drawn sketch and a promise: <em>\"If time allows, I will develop a cleaner version of the following drawing followed by a font.\"</em> That font now exists, made for the #HusbandOutWorld series, and it lives in the HusbandOutWorld repository.",
+  "t": "2017 年の README は、手描きのスケッチと約束で締めくくられていました：<em>「時間が許せば、この絵をもっときれいにしたものを作り、続けてフォントにします。」</em>そのフォントは今、#HusbandOutWorld シリーズのために作られ、HusbandOutWorld リポジトリにあります。"
+ },
+ "081ae3fdc403": {
+  "en": "Custom",
+  "t": "カスタム"
+ },
+ "097be51be337": {
+  "en": "Red marks the writable panel, as in the app. Quirks of the 2017 code are kept; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md\">how the conversions work</a>.",
+  "t": "赤い表示は、アプリと同じく書き込めるパネルを示します。2017 年のコードのクセもそのまま残しています。詳しくは<a href=\"https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md\">変換の仕組み</a>をご覧ください。"
+ },
+ "0c1716207542": {
+  "en": "Vraki structure, letter case",
+  "t": "ヴラキ構造、大文字・小文字"
+ },
+ "0c8df973e24e": {
+  "en": "Your Language and Text size choices are saved in this browser only, so the site remembers them next time. They never leave your device.",
+  "t": "「言語」と「文字サイズ」の選択はこのブラウザにだけ保存され、次回も覚えておけるようにしています。あなたの端末の外に出ることはありません。"
+ },
+ "0efb2d6b3410": {
+  "en": "Chars Shift Configuration",
+  "t": "文字シフトの設定"
+ },
+ "0f9ba953e351": {
+  "en": "Char",
+  "t": "文字"
+ },
+ "15531e3065a5": {
+  "en": "Development recording, May 2017 (46 seconds, no sound).",
+  "t": "開発中の録画、2017 年 5 月（46 秒、音声なし）。"
+ },
+ "165047664701": {
+  "en": "Changed the header image to support VisualStates, and updated the GitHub links.",
+  "t": "ヘッダー画像を VisualStates に対応させ、GitHub のリンクを更新。"
+ },
+ "1697a41e2cb5": {
+  "en": "Version 1.3, June 2017: the Text panel and Settings.",
+  "t": "バージョン 1.3、2017 年 6 月：テキストパネルと設定。"
+ },
+ "1c3f7ae2391c": {
+  "en": "Reverse Type",
+  "t": "反転の種類"
+ },
+ "1cbe0e5551ed": {
+  "en": "Get the typeface",
+  "t": "書体を入手する"
+ },
+ "1f17ac3c6c0d": {
+  "en": "Video from May 2017: the Vraki Language app running beside Visual Studio, switching settings and translating text",
+  "t": "2017 年 5 月の動画：Visual Studio の横で動く Vraki Language アプリ。設定を切り替え、テキストを翻訳しています"
+ },
+ "22a35fbebff4": {
+  "en": "Source code",
+  "t": "ソースコード"
+ },
+ "2373f56e6d90": {
+  "en": "The Vraki Panel, in the Vraki typeface",
+  "t": "ヴラキパネルをヴラキ書体で表示"
+ },
+ "2481e34e5025": {
+  "en": "Type anything in English. It's written letter for letter in the Vraki typeface:",
+  "t": "英語で何か入力してください。1 文字ずつヴラキ書体で書かれます："
+ },
+ "25246a23b40e": {
+  "en": "He didn't expect it to grow into an entire world with extensive lore, and from there into several stories. This app is where the writing first went digital, back in 2017.",
+  "t": "それが豊かな世界観を持つ一つの世界に、そしていくつもの物語にまで育つとは、本人も思っていませんでした。このアプリは、その文字が初めてデジタルになった場所です。2017 年のことでした。"
+ },
+ "2788945b52c2": {
+  "en": "Changed how the current panel and the writable panel are shown.",
+  "t": "現在のパネルと書き込めるパネルの表示方法を変更。"
+ },
+ "2be17aa181d8": {
+  "en": "Translate",
+  "t": "翻訳"
+ },
+ "2c3f3395ba15": {
+  "en": "How the 2017 conversions work",
+  "t": "2017 年の変換の仕組み"
+ },
+ "2c7365f43c93": {
+  "en": "Digits mark a single dot on a 3×3 grid (zero marks all nine), and punctuation has its own marks.",
+  "t": "数字は 3×3 の格子の点を 1 つだけ示し（0 は 9 つすべて）、句読点にはそれぞれ独自の記号があります。"
+ },
+ "2da600bf9404": {
+  "en": "Version",
+  "t": "バージョン"
+ },
+ "301c8c5eb185": {
+  "en": "In the series' lore, Vraki is the common language inherited from the Finaies: mostly English, because English is the common language for business and the language the books were written in.",
+  "t": "シリーズの世界観では、ヴラキはフィナイエスから受け継がれた共通語です。ほとんどが英語なのは、英語が商取引の共通語であり、本が書かれた言語でもあるからです。"
+ },
+ "31b28abf4e09": {
+  "en": "One glyph per English letter",
+  "t": "英語の 1 文字に 1 つの字形"
+ },
+ "3855931425eb": {
+  "en": "This is the app's own conversion code, ported line by line to JavaScript and checked against output captured from the 2017 app. Pick a conversion type, press Translate, and flip the arrows to convert back. Everything runs in your browser.",
+  "t": "これはアプリ自身の変換コードを 1 行ずつ JavaScript に移植し、2017 年のアプリから取った出力と照らし合わせて確かめたものです。変換タイプを選んで「翻訳」を押し、矢印を切り替えると元に戻せます。すべてブラウザ内で動きます。"
+ },
+ "40b1a4d1811f": {
+  "en": "Try the 2017 converter",
+  "t": "2017 年のコンバーターを試す"
+ },
+ "41e10583cc30": {
+  "en": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/tree/main/Legacy/Behind%20The%20Scenes/Logo%20and%20Font\">Deovandski/HusbandOutWorld › Logo and Font</a>: <code>VrakiHusbandOutWorldSeries-Rg</code> as <code>.otf</code>, <code>.ttf</code> and <code>.woff2</code>, plus the reference sheet.",
+  "t": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/tree/main/Legacy/Behind%20The%20Scenes/Logo%20and%20Font\">Deovandski/HusbandOutWorld › Logo and Font</a>：<code>VrakiHusbandOutWorldSeries-Rg</code> の <code>.otf</code>、<code>.ttf</code>、<code>.woff2</code> と参考シート。"
+ },
+ "44363ccb8230": {
+  "en": "Word",
+  "t": "単語"
+ },
+ "444ac7c63f89": {
+  "en": "<strong>This is old code, on purpose.</strong> Vraki Language was written in 2017 as a Universal Windows Platform app for Windows 10 and published on the Microsoft Store. Its source is resurrected here for historical purposes: the C# and XAML are unchanged, only moved into <code>legacy/</code>.",
+  "t": "<strong>あえて古いコードのままです。</strong>Vraki Language は 2017 年に Windows 10 向けのユニバーサル Windows プラットフォーム（UWP）アプリとして作られ、Microsoft Store で公開されました。そのソースを歴史的な記録としてここに復活させています。C# と XAML は変更しておらず、<code>legacy/</code> に移しただけです。"
+ },
+ "4bed336194a9": {
+  "en": "Output",
+  "t": "出力"
+ },
+ "509a0c11c170": {
+  "en": "To open the 2017 project you need Visual Studio with the Universal Windows Platform workload; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Downloads of the source are on the <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">releases page</a>.",
+  "t": "2017 年のプロジェクトを開くには、ユニバーサル Windows プラットフォームのワークロードを入れた Visual Studio が必要です。<a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a> をご覧ください。ソースのダウンロードは<a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">リリースページ</a>にあります。"
+ },
+ "5c5e4fddede4": {
+  "en": "Switch direction. Currently converting text to Vraki.",
+  "t": "方向を切り替えます。現在はテキストからヴラキに変換しています。"
+ },
+ "5d96154a0774": {
+  "en": "The 2017 app, version 1.1, with an orange accent color instead of crimson",
+  "t": "2017 年のアプリのバージョン 1.1。アクセントカラーがクリムゾンではなくオレンジ"
+ },
+ "5eaa5c80a056": {
+  "en": "Char reverse, shift all by −3, letter case",
+  "t": "文字の反転、全体を −3 シフト、大文字・小文字"
+ },
+ "67035439a32a": {
+  "en": "The Vraki alphabet, upper case",
+  "t": "ヴラキのアルファベット（大文字）"
+ },
+ "6882ba4c8aa6": {
+  "en": "Fixed issues #2 and #3. The version on the Store today.",
+  "t": "issue #2 と #3 を修正。現在 Store にあるバージョンです。"
+ },
+ "6aacaec4b94e": {
+  "en": "Vraki Structuring",
+  "t": "ヴラキ構造化"
+ },
+ "6b01ab0039e2": {
+  "en": "The full write-up, with the 2017 diagrams for every reverse algorithm and the Vraki structure table, is in <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md\">docs/ALGORITHMS.md</a>.",
+  "t": "反転アルゴリズムごとの 2017 年の図とヴラキ構造の表を含む詳しい解説は、<a href=\"https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md\">docs/ALGORITHMS.md</a> にあります。"
+ },
+ "6b45805e00c9": {
+  "en": "Version 1.1, May 2017, with an orange accent.",
+  "t": "バージョン 1.1、2017 年 5 月。オレンジのアクセント。"
+ },
+ "76d715243767": {
+  "en": "Letter Case Fix",
+  "t": "大文字・小文字の修正"
+ },
+ "7717cf1db38e": {
+  "en": "Char + Word",
+  "t": "文字 + 単語"
+ },
+ "808d7dca8a74": {
+  "en": "Default",
+  "t": "デフォルト"
+ },
+ "8212d2448792": {
+  "en": "The app stores nothing about you; the text you convert stays on your device. This website has no cookies, no analytics and no ads, and the converter and typeface preview run entirely in your browser. It's hosted on GitHub Pages, so <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\">GitHub</a> sees your IP address when it sends you the page. Questions go to <a href=\"https://github.com/Deovandski/vraki-windows/issues\">GitHub issues</a>.",
+  "t": "アプリはあなたについて何も保存しません。変換したテキストはあなたの端末に残ります。このサイトには Cookie も解析もなく、広告もありません。コンバーターと書体のプレビューはすべてブラウザ内で動きます。GitHub Pages でホストしているため、ページを送るときに <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\">GitHub</a> があなたの IP アドレスを知ることになります。質問は <a href=\"https://github.com/Deovandski/vraki-windows/issues\">GitHub の issue</a> へどうぞ。"
+ },
+ "8481bc4c75d0": {
+  "en": "Reverse Configuration",
+  "t": "反転の設定"
+ },
+ "86526182c8aa": {
+  "en": "Vraki Language for Windows (2017)",
+  "t": "Vraki Language for Windows（2017年）"
+ },
+ "87a97817e32b": {
+  "en": "Each letter is a line drawn across a dotted grid. <strong>Upper case</strong> letters carry small circle markers; <strong>lower case</strong> is the same stroke without them.",
+  "t": "各文字は点の格子の上に引かれた 1 本の線です。<strong>大文字</strong>には小さな丸印が付き、<strong>小文字</strong>は同じ線から丸印を除いたものです。"
+ },
+ "8991b34090fd": {
+  "en": "Vraki West March Campaign",
+  "t": "ヴラキ・ウェストマーチ・キャンペーン"
+ },
+ "8aa57de6dce6": {
+  "en": "Changes",
+  "t": "変更点"
+ },
+ "90731c7fa707": {
+  "en": "Get it from Microsoft Store",
+  "t": "Microsoft Store で入手"
+ },
+ "9077b4f91840": {
+  "en": "The 2017 Vraki Language app, back from the archive. Try the original converter and see English written in the Vraki typeface.",
+  "t": "2017 年の Vraki Language アプリがアーカイブから戻ってきました。当時のコンバーターを試し、英語がヴラキ書体で書かれる様子を見てみましょう。"
+ },
+ "91f86581f16b": {
+  "en": "Version history",
+  "t": "バージョン履歴"
+ },
+ "98f355d768ba": {
+  "en": "Try it in your browser",
+  "t": "ブラウザで試す"
+ },
+ "99c08ea62081": {
+  "en": "Source code at <a href=\"https://github.com/Deovandski/vraki-windows\" translate=\"no\">github.com/Deovandski/vraki-windows</a>",
+  "t": "ソースコード：<a href=\"https://github.com/Deovandski/vraki-windows\" translate=\"no\">github.com/Deovandski/vraki-windows</a>"
+ },
+ "9a96dc2d5d12": {
+  "en": "Differential Shift Rate",
+  "t": "シフト量を分ける"
+ },
+ "a485fd837a64": {
+  "en": "Complex Vraki",
+  "t": "複雑なヴラキ"
+ },
+ "a50c37aa3021": {
+  "en": "Vraki is English with a different skin: same alphabet, same order, same words. Type in English and it's written in Vraki.",
+  "t": "ヴラキは見た目の違う英語です。同じアルファベット、同じ順序、同じ単語。英語で入力すれば、ヴラキで書かれます。"
+ },
+ "a6b8067f62d4": {
+  "en": "Since then, Vraki has become the writing system of the #HusbandOutWorld series, written <strong>1:1 with English</strong>: one Vraki glyph per English letter, instead of the 2017 app's reversing and shifting. A modern version built around that idea is the next step for this repository.",
+  "t": "その後ヴラキは #HusbandOutWorld シリーズの文字体系となり、<strong>英語と 1 対 1</strong> で書かれるようになりました。2017 年のアプリのように反転やずらしをするのではなく、英語の 1 文字につきヴラキの字形が 1 つです。この考え方に基づく新しいバージョンが、このリポジトリの次のステップです。"
+ },
+ "a6cb354b5f2a": {
+  "en": "Vraki Language, a 2017 Windows app that turns English into Vraki, the writing behind the #HusbandOutWorld series. Resurrected for historical purposes, with the Vraki typeface and a working 2017 converter in your browser.",
+  "t": "Vraki Language は、英語をヴラキに変える 2017 年の Windows アプリです。ヴラキは #HusbandOutWorld シリーズの文字です。歴史的な記録として復活させ、ヴラキ書体と、ブラウザで動く 2017 年のコンバーターを添えました。"
+ },
+ "a711cca9a4a9": {
+  "en": "Minimal",
+  "t": "最小"
+ },
+ "a808520107fe": {
+  "en": "Deovandski always dreamed of coming up with a language. As a child he doodled the alphabets of alien civilizations, and the more he traveled the world and soaked up its cultures, the closer those doodles drifted to the Vraki writing you see here.",
+  "t": "Deovandski はずっと、自分の言語を作ることを夢見ていました。子どもの頃は異星文明のアルファベットを落書きし、世界を旅してさまざまな文化に触れるほど、その落書きはここで見られるヴラキの文字へと近づいていきました。"
+ },
+ "a940b67b9d76": {
+  "en": "The 2017 app: the Text panel with an English sentence and the Settings pane open, with the Default conversion type",
+  "t": "2017 年のアプリ：英語の文が入ったテキストパネルと、変換タイプがデフォルトの設定ペイン"
+ },
+ "aa7ea458ee21": {
+  "en": "(upper case). Lower case is the same without the circle markers.",
+  "t": "（大文字）。小文字は同じ形で、丸印がありません。"
+ },
+ "ab1b95aa4094": {
+  "en": "The hand-drawn reference sheet (v2) the font was built from.",
+  "t": "このフォントの元になった手描きの参考シート（v2）。"
+ },
+ "ab4fe9e222c8": {
+  "en": "Switch direction. Currently converting Vraki to text.",
+  "t": "方向を切り替えます。現在はヴラキからテキストに変換しています。"
+ },
+ "ac9041e76816": {
+  "en": "Automatic",
+  "t": "自動"
+ },
+ "ae5b95eda2c5": {
+  "en": "Simple Vraki",
+  "t": "シンプルなヴラキ"
+ },
+ "b138c327dc56": {
+  "en": "Vraki",
+  "t": "ヴラキ"
+ },
+ "b1bd460b6a0a": {
+  "en": "D&amp;D 5e campaign",
+  "t": "D&amp;D 5e キャンペーン"
+ },
+ "b886e999b650": {
+  "en": "A Text panel, a Vraki panel, a direction switch and a Settings pane full of toggles. Recorded while it was being built in May 2017.",
+  "t": "テキストパネル、ヴラキパネル、方向スイッチ、そしてトグルが並ぶ設定ペイン。2017 年 5 月、開発中に録画したものです。"
+ },
+ "bcf7b1111733": {
+  "en": "Opens on Paulin 14th, 1039 A.G. (After Ganyrami, the Vraki calendar's count from the year Ganyrami fell), when Harry is summoned out of our world into the world of Vraki, in the Prosperity Treaty era, the long peace that followed the overthrow of the old kingdoms.",
+  "t": "物語はパウリン14日、1039 A.G.（ガニラミ紀元。ガニラミが滅んだ年から数えるヴラキの暦）に始まります。プロスペリティ・トリーティの時代、古い王国が倒されたあとに続いた長い平和のなか、ハリーは私たちの世界からヴラキの世界へと召喚されます。"
+ },
+ "bd1c365d9b88": {
+  "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
+  "t": "2017 年 5 月。残っている唯一のビルドがこのサイドロード用パッケージで、記録として <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub のリリース</a>に添付しています（証明書は 2018 年に期限切れのため、インストールは Store から）。"
+ },
+ "c00a9cb389cf": {
+  "en": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
+  "t": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>：アルファベット、数字と記号、そしてシリーズのほかの言語のなかでのヴラキの位置づけ。"
+ },
+ "c3328c39b0e2": {
+  "en": "Text",
+  "t": "テキスト"
+ },
+ "c60f2f817f12": {
+  "en": "Source on GitHub",
+  "t": "GitHub のソース"
+ },
+ "c697bb6ff5e2": {
+  "en": "Shift Vowels By",
+  "t": "母音のシフト量"
+ },
+ "cd9ba08526ff": {
+  "en": "Conversion Type",
+  "t": "変換タイプ"
+ },
+ "cdde4f20ba31": {
+  "en": "Steps",
+  "t": "手順"
+ },
+ "cf01481f626d": {
+  "en": "Privacy",
+  "t": "プライバシー"
+ },
+ "cf9dc0383a41": {
+  "en": "Char + Word Pair",
+  "t": "文字 + 単語ペア"
+ },
+ "d36d5516dbff": {
+  "en": "The Vraki typeface",
+  "t": "ヴラキ書体"
+ },
+ "d89e229419df": {
+  "en": "Word Pair",
+  "t": "単語ペア"
+ },
+ "d8a46b94ae4f": {
+  "en": "Shift by",
+  "t": "シフト量"
+ },
+ "db91db843ba0": {
+  "en": "Where Vraki came from",
+  "t": "ヴラキの生まれ"
+ },
+ "dbb744b70772": {
+  "en": "Text Panel",
+  "t": "テキストパネル"
+ },
+ "dd6ab2a8e8f9": {
+  "en": "The app in 2017",
+  "t": "2017 年のアプリ"
+ },
+ "dd9e4aee2fef": {
+  "en": "Originally from 2017 · resurrected for historical purposes",
+  "t": "2017 年のオリジナル · 歴史的な記録として復活"
+ },
+ "dfb6b2189cd8": {
+  "en": "Vraki Panel",
+  "t": "ヴラキパネル"
+ },
+ "e0049a66519c": {
+  "en": "On",
+  "t": "オン"
+ },
+ "e29701f4e234": {
+  "en": "Light novel series",
+  "t": "ライトノベルシリーズ"
+ },
+ "e33cf3599fc5": {
+  "en": "Shift all by +1, letter case",
+  "t": "全体を +1 シフト、大文字・小文字"
+ },
+ "e3dc2b25944f": {
+  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
+  "t": "2017 年、ヴラキは英語を反転し、ずらし、組み替えて、新しい言語のように読めるようにする小さな Windows アプリでした。そのアイデアは <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> シリーズの文字と、その専用書体へと育ちました。記録として、当時のアプリをそのままの形で復活させています。"
+ },
+ "e3de5ab0ca4c": {
+  "en": "Off",
+  "t": "オフ"
+ },
+ "e410a09ec390": {
+  "en": "Hand-drawn reference sheet of the Vraki typeface: A to Z, lower case a and b, digits 0 to 9, and punctuation, each drawn on a dotted grid",
+  "t": "ヴラキ書体の手描きの参考シート：A から Z、小文字の a と b、0 から 9 の数字、句読点。それぞれ点の格子の上に描かれています"
+ },
+ "e47983e40a6b": {
+  "en": "Conversion type",
+  "t": "変換タイプ"
+ },
+ "e8083ad0cf19": {
+  "en": "MIT-licensed. The repository keeps the 2017 app intact and leaves room for the modern one.",
+  "t": "MIT ライセンス。リポジトリは 2017 年のアプリをそのまま残し、新しいアプリのための場所も空けています。"
+ },
+ "e9b6dd68fd20": {
+  "en": "The typeface is © 2024 Deovandski Skibinski Junior. Non-commercial use is free with attribution. Commercial use needs approval and a fee, kept small for artists and creators to support the community; ask on <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> or email <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>. It may not be altered without permission. See the <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. This site uses an unaltered copy to show Vraki text.",
+  "t": "この書体は © 2024 Deovandski Skibinski Junior です。非商用の利用はクレジット表記があれば無料です。商用利用には承認と料金が必要で、アーティストやクリエイターがコミュニティを支えられるよう料金は少額にしています。<a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> またはメール <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a> でご相談ください。許可なく改変することはできません。<a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">フォントライセンス</a>をご覧ください。このサイトはヴラキの文字を表示するため、改変していないコピーを使っています。"
+ },
+ "f39fd52191ee": {
+  "en": "Four building blocks, run in order: Reverse, Shift, Vraki Structure, then Letter Case Fix. Each conversion type is a preset of them. Here's what each does to the app's sample sentence, <em>\"Look at my Horse! My horse is amazing! -Gentleman\"</em>:",
+  "t": "4 つの構成要素が順に実行されます：反転、シフト、ヴラキ構造、そして大文字・小文字の修正。変換タイプはそれぞれ、これらのプリセットです。アプリのサンプル文 <em>\"Look at my Horse! My horse is amazing! -Gentleman\"</em> にそれぞれが何をするかを示します："
+ },
+ "f3e46e1a79d5": {
+  "en": "Vraki Language 2017 converter",
+  "t": "Vraki Language 2017 コンバーター"
+ },
+ "fdf936b2bc81": {
+  "en": "An open-table, West Marches-style campaign set in the same world in the 1040s A.G., with lore summaries, quests, stat blocks and ready-made adventurers.",
+  "t": "同じ世界の 1040 年代 A.G. を舞台にした、オープンテーブルのウェストマーチ形式キャンペーン。世界観のまとめ、クエスト、ステータスブロック、すぐに使える冒険者がそろっています。"
+ },
+ "ff578165fc1a": {
+  "en": "Char + word pair reverse, consonants −10, vowels +2, Vraki structure, letter case",
+  "t": "文字 + 単語ペアの反転、子音 −10、母音 +2、ヴラキ構造、大文字・小文字"
+ }
+}

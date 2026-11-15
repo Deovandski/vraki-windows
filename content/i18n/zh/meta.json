@@ -1,0 +1,8 @@
+{
+ "_about": "Strings tools/i18n.mjs writes itself for this language. \"banner\" is the AI-translation notice on every page (the author asked for: AI-Translated to <language> from Original work by Deovandski).",
+ "name": "中文",
+ "html_lang": "zh-Hans",
+ "dir": "ltr",
+ "banner": "本页由 AI 根据 Deovandski 的原作翻译成简体中文。可在右上角的设置（⚙）中更改语言。",
+ "english": "English"
+}

@@ -1,0 +1,414 @@
+{
+ "004ce47c8fa4": {
+  "en": "The writing behind #HusbandOutWorld, on Windows since 2017",
+  "t": "Chữ viết đằng sau #HusbandOutWorld, có trên Windows từ năm 2017"
+ },
+ "010bbbc5982e": {
+  "en": "\"The quick brown fox jumps over the lazy dog\" in Vraki",
+  "t": "\"The quick brown fox jumps over the lazy dog\" bằng Vraki"
+ },
+ "0295995602fb": {
+  "en": "Shift Consonants by",
+  "t": "Dịch chuyển phụ âm"
+ },
+ "049aa5073c7b": {
+  "en": "The 2017 README ended with a hand-drawn sketch and a promise: <em>\"If time allows, I will develop a cleaner version of the following drawing followed by a font.\"</em> That font now exists, made for the #HusbandOutWorld series, and it lives in the HusbandOutWorld repository.",
+  "t": "README năm 2017 kết thúc bằng một bản phác thảo tay và một lời hứa: <em>\"Nếu có thời gian, tôi sẽ làm một phiên bản gọn gàng hơn của hình vẽ sau đây, rồi làm thành phông chữ.\"</em> Phông chữ đó giờ đã có, được tạo cho loạt truyện #HusbandOutWorld, và nằm trong kho mã HusbandOutWorld."
+ },
+ "081ae3fdc403": {
+  "en": "Custom",
+  "t": "Tùy chỉnh"
+ },
+ "097be51be337": {
+  "en": "Red marks the writable panel, as in the app. Quirks of the 2017 code are kept; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md\">how the conversions work</a>.",
+  "t": "Màu đỏ đánh dấu khung có thể ghi, giống trong ứng dụng. Những điểm kỳ quặc của mã năm 2017 vẫn được giữ; xem <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md\">cách các phép chuyển đổi hoạt động</a>."
+ },
+ "0c1716207542": {
+  "en": "Vraki structure, letter case",
+  "t": "Cấu trúc Vraki, chữ hoa/thường"
+ },
+ "0c8df973e24e": {
+  "en": "Your Language and Text size choices are saved in this browser only, so the site remembers them next time. They never leave your device.",
+  "t": "Lựa chọn Ngôn ngữ và Cỡ chữ của bạn chỉ được lưu trong trình duyệt này, để trang web nhớ cho lần sau. Chúng không bao giờ rời khỏi thiết bị của bạn."
+ },
+ "0efb2d6b3410": {
+  "en": "Chars Shift Configuration",
+  "t": "Cấu hình dịch chuyển ký tự"
+ },
+ "0f9ba953e351": {
+  "en": "Char",
+  "t": "Ký tự"
+ },
+ "15531e3065a5": {
+  "en": "Development recording, May 2017 (46 seconds, no sound).",
+  "t": "Bản ghi quá trình phát triển, tháng 5 năm 2017 (46 giây, không có tiếng)."
+ },
+ "165047664701": {
+  "en": "Changed the header image to support VisualStates, and updated the GitHub links.",
+  "t": "Đổi ảnh tiêu đề để hỗ trợ VisualStates và cập nhật các liên kết GitHub."
+ },
+ "1697a41e2cb5": {
+  "en": "Version 1.3, June 2017: the Text panel and Settings.",
+  "t": "Phiên bản 1.3, tháng 6 năm 2017: khung Văn bản và Cài đặt."
+ },
+ "1c3f7ae2391c": {
+  "en": "Reverse Type",
+  "t": "Kiểu đảo ngược"
+ },
+ "1cbe0e5551ed": {
+  "en": "Get the typeface",
+  "t": "Tải phông chữ"
+ },
+ "1f17ac3c6c0d": {
+  "en": "Video from May 2017: the Vraki Language app running beside Visual Studio, switching settings and translating text",
+  "t": "Video từ tháng 5 năm 2017: ứng dụng Vraki Language chạy cạnh Visual Studio, đổi cài đặt và dịch văn bản"
+ },
+ "22a35fbebff4": {
+  "en": "Source code",
+  "t": "Mã nguồn"
+ },
+ "2373f56e6d90": {
+  "en": "The Vraki Panel, in the Vraki typeface",
+  "t": "Khung Vraki, bằng phông chữ Vraki"
+ },
+ "2481e34e5025": {
+  "en": "Type anything in English. It's written letter for letter in the Vraki typeface:",
+  "t": "Gõ bất cứ thứ gì bằng tiếng Anh. Nó được viết từng chữ cái bằng phông chữ Vraki:"
+ },
+ "25246a23b40e": {
+  "en": "He didn't expect it to grow into an entire world with extensive lore, and from there into several stories. This app is where the writing first went digital, back in 2017.",
+  "t": "Anh không ngờ nó lại phát triển thành cả một thế giới với kho truyền thuyết đồ sộ, rồi từ đó thành nhiều câu chuyện. Ứng dụng này là nơi chữ viết ấy lần đầu được số hóa, vào năm 2017."
+ },
+ "2788945b52c2": {
+  "en": "Changed how the current panel and the writable panel are shown.",
+  "t": "Đổi cách hiển thị khung hiện tại và khung có thể ghi."
+ },
+ "2be17aa181d8": {
+  "en": "Translate",
+  "t": "Dịch"
+ },
+ "2c3f3395ba15": {
+  "en": "How the 2017 conversions work",
+  "t": "Cách các phép chuyển đổi năm 2017 hoạt động"
+ },
+ "2c7365f43c93": {
+  "en": "Digits mark a single dot on a 3×3 grid (zero marks all nine), and punctuation has its own marks.",
+  "t": "Chữ số đánh dấu một chấm duy nhất trên lưới 3×3 (số không đánh dấu cả chín), và dấu câu có ký hiệu riêng."
+ },
+ "2da600bf9404": {
+  "en": "Version",
+  "t": "Phiên bản"
+ },
+ "301c8c5eb185": {
+  "en": "In the series' lore, Vraki is the common language inherited from the Finaies: mostly English, because English is the common language for business and the language the books were written in.",
+  "t": "Trong truyền thuyết của loạt truyện, Vraki là ngôn ngữ chung được thừa hưởng từ Finaies: phần lớn là tiếng Anh, vì tiếng Anh là ngôn ngữ chung trong kinh doanh và là ngôn ngữ dùng để viết các cuốn sách."
+ },
+ "31b28abf4e09": {
+  "en": "One glyph per English letter",
+  "t": "Mỗi chữ cái tiếng Anh một ký tự"
+ },
+ "3855931425eb": {
+  "en": "This is the app's own conversion code, ported line by line to JavaScript and checked against output captured from the 2017 app. Pick a conversion type, press Translate, and flip the arrows to convert back. Everything runs in your browser.",
+  "t": "Đây là chính mã chuyển đổi của ứng dụng, được chuyển từng dòng sang JavaScript và đối chiếu với kết quả lấy từ ứng dụng năm 2017. Chọn kiểu chuyển đổi, bấm Dịch, rồi đảo mũi tên để chuyển ngược lại. Mọi thứ chạy trong trình duyệt của bạn."
+ },
+ "40b1a4d1811f": {
+  "en": "Try the 2017 converter",
+  "t": "Dùng thử bộ chuyển đổi năm 2017"
+ },
+ "41e10583cc30": {
+  "en": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/tree/main/Legacy/Behind%20The%20Scenes/Logo%20and%20Font\">Deovandski/HusbandOutWorld › Logo and Font</a>: <code>VrakiHusbandOutWorldSeries-Rg</code> as <code>.otf</code>, <code>.ttf</code> and <code>.woff2</code>, plus the reference sheet.",
+  "t": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/tree/main/Legacy/Behind%20The%20Scenes/Logo%20and%20Font\">Deovandski/HusbandOutWorld › Logo and Font</a>: <code>VrakiHusbandOutWorldSeries-Rg</code> dạng <code>.otf</code>, <code>.ttf</code> và <code>.woff2</code>, cùng bảng tham chiếu."
+ },
+ "44363ccb8230": {
+  "en": "Word",
+  "t": "Từ"
+ },
+ "444ac7c63f89": {
+  "en": "<strong>This is old code, on purpose.</strong> Vraki Language was written in 2017 as a Universal Windows Platform app for Windows 10 and published on the Microsoft Store. Its source is resurrected here for historical purposes: the C# and XAML are unchanged, only moved into <code>legacy/</code>.",
+  "t": "<strong>Đây là mã cũ, và cố ý giữ như vậy.</strong> Vraki Language được viết năm 2017 dưới dạng ứng dụng Universal Windows Platform cho Windows 10 và phát hành trên Microsoft Store. Mã nguồn của nó được hồi sinh ở đây vì mục đích lịch sử: C# và XAML không thay đổi, chỉ được chuyển vào <code>legacy/</code>."
+ },
+ "4bed336194a9": {
+  "en": "Output",
+  "t": "Kết quả"
+ },
+ "509a0c11c170": {
+  "en": "To open the 2017 project you need Visual Studio with the Universal Windows Platform workload; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Downloads of the source are on the <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">releases page</a>.",
+  "t": "Để mở dự án năm 2017, bạn cần Visual Studio có workload Universal Windows Platform; xem <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Bản tải mã nguồn có ở <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">trang phát hành</a>."
+ },
+ "5c5e4fddede4": {
+  "en": "Switch direction. Currently converting text to Vraki.",
+  "t": "Đổi chiều. Hiện đang chuyển văn bản sang Vraki."
+ },
+ "5d96154a0774": {
+  "en": "The 2017 app, version 1.1, with an orange accent color instead of crimson",
+  "t": "Ứng dụng năm 2017, phiên bản 1.1, với màu nhấn cam thay vì đỏ thẫm"
+ },
+ "5eaa5c80a056": {
+  "en": "Char reverse, shift all by −3, letter case",
+  "t": "Đảo ngược ký tự, dịch chuyển tất cả −3, chữ hoa/thường"
+ },
+ "67035439a32a": {
+  "en": "The Vraki alphabet, upper case",
+  "t": "Bảng chữ cái Vraki, chữ hoa"
+ },
+ "6882ba4c8aa6": {
+  "en": "Fixed issues #2 and #3. The version on the Store today.",
+  "t": "Sửa lỗi #2 và #3. Phiên bản hiện có trên Store."
+ },
+ "6aacaec4b94e": {
+  "en": "Vraki Structuring",
+  "t": "Cấu trúc Vraki"
+ },
+ "6b01ab0039e2": {
+  "en": "The full write-up, with the 2017 diagrams for every reverse algorithm and the Vraki structure table, is in <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md\">docs/ALGORITHMS.md</a>.",
+  "t": "Bản giải thích đầy đủ, kèm sơ đồ năm 2017 cho từng thuật toán đảo ngược và bảng cấu trúc Vraki, có trong <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md\">docs/ALGORITHMS.md</a>."
+ },
+ "6b45805e00c9": {
+  "en": "Version 1.1, May 2017, with an orange accent.",
+  "t": "Phiên bản 1.1, tháng 5 năm 2017, với màu nhấn cam."
+ },
+ "76d715243767": {
+  "en": "Letter Case Fix",
+  "t": "Sửa chữ hoa/thường"
+ },
+ "7717cf1db38e": {
+  "en": "Char + Word",
+  "t": "Ký tự + Từ"
+ },
+ "808d7dca8a74": {
+  "en": "Default",
+  "t": "Mặc định"
+ },
+ "8212d2448792": {
+  "en": "The app stores nothing about you; the text you convert stays on your device. This website has no cookies, no analytics and no ads, and the converter and typeface preview run entirely in your browser. It's hosted on GitHub Pages, so <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\">GitHub</a> sees your IP address when it sends you the page. Questions go to <a href=\"https://github.com/Deovandski/vraki-windows/issues\">GitHub issues</a>.",
+  "t": "Ứng dụng không lưu gì về bạn; văn bản bạn chuyển đổi vẫn nằm trên thiết bị của bạn. Trang web này không có cookie, không có phân tích và không có quảng cáo, bộ chuyển đổi và bản xem trước phông chữ chạy hoàn toàn trong trình duyệt của bạn. Trang được lưu trữ trên GitHub Pages, nên <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\">GitHub</a> thấy địa chỉ IP của bạn khi gửi trang cho bạn. Có câu hỏi xin gửi vào <a href=\"https://github.com/Deovandski/vraki-windows/issues\">GitHub issues</a>."
+ },
+ "8481bc4c75d0": {
+  "en": "Reverse Configuration",
+  "t": "Cấu hình đảo ngược"
+ },
+ "86526182c8aa": {
+  "en": "Vraki Language for Windows (2017)",
+  "t": "Vraki Language cho Windows (2017)"
+ },
+ "87a97817e32b": {
+  "en": "Each letter is a line drawn across a dotted grid. <strong>Upper case</strong> letters carry small circle markers; <strong>lower case</strong> is the same stroke without them.",
+  "t": "Mỗi chữ cái là một nét vẽ trên lưới chấm. Chữ <strong>hoa</strong> có những vòng tròn nhỏ đánh dấu; chữ <strong>thường</strong> là cùng nét đó nhưng không có vòng tròn."
+ },
+ "8991b34090fd": {
+  "en": "Vraki West March Campaign",
+  "t": "Chiến dịch Vraki West March"
+ },
+ "8aa57de6dce6": {
+  "en": "Changes",
+  "t": "Thay đổi"
+ },
+ "90731c7fa707": {
+  "en": "Get it from Microsoft Store",
+  "t": "Tải từ Microsoft Store"
+ },
+ "9077b4f91840": {
+  "en": "The 2017 Vraki Language app, back from the archive. Try the original converter and see English written in the Vraki typeface.",
+  "t": "Ứng dụng Vraki Language năm 2017 trở lại từ kho lưu trữ. Hãy thử bộ chuyển đổi gốc và xem tiếng Anh được viết bằng phông chữ Vraki."
+ },
+ "91f86581f16b": {
+  "en": "Version history",
+  "t": "Lịch sử phiên bản"
+ },
+ "98f355d768ba": {
+  "en": "Try it in your browser",
+  "t": "Dùng thử trong trình duyệt"
+ },
+ "99c08ea62081": {
+  "en": "Source code at <a href=\"https://github.com/Deovandski/vraki-windows\" translate=\"no\">github.com/Deovandski/vraki-windows</a>",
+  "t": "Mã nguồn tại <a href=\"https://github.com/Deovandski/vraki-windows\" translate=\"no\">github.com/Deovandski/vraki-windows</a>"
+ },
+ "9a96dc2d5d12": {
+  "en": "Differential Shift Rate",
+  "t": "Dịch chuyển riêng"
+ },
+ "a485fd837a64": {
+  "en": "Complex Vraki",
+  "t": "Vraki phức tạp"
+ },
+ "a50c37aa3021": {
+  "en": "Vraki is English with a different skin: same alphabet, same order, same words. Type in English and it's written in Vraki.",
+  "t": "Vraki là tiếng Anh khoác lớp áo khác: cùng bảng chữ cái, cùng thứ tự, cùng từ ngữ. Gõ bằng tiếng Anh và nó được viết bằng Vraki."
+ },
+ "a6b8067f62d4": {
+  "en": "Since then, Vraki has become the writing system of the #HusbandOutWorld series, written <strong>1:1 with English</strong>: one Vraki glyph per English letter, instead of the 2017 app's reversing and shifting. A modern version built around that idea is the next step for this repository.",
+  "t": "Từ đó, Vraki đã trở thành hệ chữ viết của loạt truyện #HusbandOutWorld, viết <strong>1:1 với tiếng Anh</strong>: mỗi chữ cái tiếng Anh một ký tự Vraki, thay vì đảo ngược và dịch chuyển như ứng dụng năm 2017. Một phiên bản hiện đại xây dựng quanh ý tưởng đó là bước tiếp theo của kho mã này."
+ },
+ "a6cb354b5f2a": {
+  "en": "Vraki Language, a 2017 Windows app that turns English into Vraki, the writing behind the #HusbandOutWorld series. Resurrected for historical purposes, with the Vraki typeface and a working 2017 converter in your browser.",
+  "t": "Vraki Language, một ứng dụng Windows năm 2017 biến tiếng Anh thành Vraki, chữ viết đằng sau loạt truyện #HusbandOutWorld. Được hồi sinh vì mục đích lịch sử, kèm phông chữ Vraki và bộ chuyển đổi năm 2017 chạy ngay trong trình duyệt của bạn."
+ },
+ "a711cca9a4a9": {
+  "en": "Minimal",
+  "t": "Tối thiểu"
+ },
+ "a808520107fe": {
+  "en": "Deovandski always dreamed of coming up with a language. As a child he doodled the alphabets of alien civilizations, and the more he traveled the world and soaked up its cultures, the closer those doodles drifted to the Vraki writing you see here.",
+  "t": "Deovandski luôn mơ ước tự tạo ra một ngôn ngữ. Khi còn nhỏ, anh vẽ nguệch ngoạc bảng chữ cái của những nền văn minh ngoài hành tinh, và càng đi khắp thế giới, thấm đẫm các nền văn hóa, những nét vẽ ấy càng gần với chữ Vraki mà bạn thấy ở đây."
+ },
+ "a940b67b9d76": {
+  "en": "The 2017 app: the Text panel with an English sentence and the Settings pane open, with the Default conversion type",
+  "t": "Ứng dụng năm 2017: khung Văn bản chứa một câu tiếng Anh và khung Cài đặt đang mở, với kiểu chuyển đổi Mặc định"
+ },
+ "aa7ea458ee21": {
+  "en": "(upper case). Lower case is the same without the circle markers.",
+  "t": "(chữ hoa). Chữ thường giống hệt, chỉ không có vòng tròn đánh dấu."
+ },
+ "ab1b95aa4094": {
+  "en": "The hand-drawn reference sheet (v2) the font was built from.",
+  "t": "Bảng tham chiếu vẽ tay (v2) mà phông chữ được dựng từ đó."
+ },
+ "ab4fe9e222c8": {
+  "en": "Switch direction. Currently converting Vraki to text.",
+  "t": "Đổi chiều. Hiện đang chuyển Vraki sang văn bản."
+ },
+ "ac9041e76816": {
+  "en": "Automatic",
+  "t": "Tự động"
+ },
+ "ae5b95eda2c5": {
+  "en": "Simple Vraki",
+  "t": "Vraki đơn giản"
+ },
+ "b138c327dc56": {
+  "en": "Vraki",
+  "t": "Vraki"
+ },
+ "b1bd460b6a0a": {
+  "en": "D&amp;D 5e campaign",
+  "t": "Chiến dịch D&amp;D 5e"
+ },
+ "b886e999b650": {
+  "en": "A Text panel, a Vraki panel, a direction switch and a Settings pane full of toggles. Recorded while it was being built in May 2017.",
+  "t": "Một khung Văn bản, một khung Vraki, một công tắc đổi chiều và một khung Cài đặt đầy nút bật tắt. Được quay khi đang phát triển vào tháng 5 năm 2017."
+ },
+ "bcf7b1111733": {
+  "en": "Opens on Paulin 14th, 1039 A.G. (After Ganyrami, the Vraki calendar's count from the year Ganyrami fell), when Harry is summoned out of our world into the world of Vraki, in the Prosperity Treaty era, the long peace that followed the overthrow of the old kingdoms.",
+  "t": "Câu chuyện mở đầu vào ngày 14 tháng Paulin năm 1039 A.G. (After Ganyrami, cách lịch Vraki tính năm từ năm Ganyrami sụp đổ), khi Harry bị triệu hồi khỏi thế giới của chúng ta sang thế giới Vraki, trong thời kỳ Hiệp ước Thịnh vượng, nền hòa bình dài lâu sau khi các vương quốc cũ bị lật đổ."
+ },
+ "bd1c365d9b88": {
+  "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
+  "t": "Tháng 5 năm 2017. Gói sideload của nó là bản dựng duy nhất còn sót lại; được đính kèm vào <a href=\"https://github.com/Deovandski/vraki-windows/releases\">bản phát hành trên GitHub</a> để lưu lại (chứng chỉ đã hết hạn năm 2018, nên hãy cài từ Store)."
+ },
+ "c00a9cb389cf": {
+  "en": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
+  "t": "<a href=\"https://github.com/Deovandski/HusbandOutWorld/blob/main/World%20Lore/Language.md\">World Lore › Language</a>: bảng chữ cái, chữ số và ký hiệu, và vị trí của Vraki giữa các ngôn ngữ khác của loạt truyện."
+ },
+ "c3328c39b0e2": {
+  "en": "Text",
+  "t": "Văn bản"
+ },
+ "c60f2f817f12": {
+  "en": "Source on GitHub",
+  "t": "Mã nguồn trên GitHub"
+ },
+ "c697bb6ff5e2": {
+  "en": "Shift Vowels By",
+  "t": "Dịch chuyển nguyên âm"
+ },
+ "cd9ba08526ff": {
+  "en": "Conversion Type",
+  "t": "Kiểu chuyển đổi"
+ },
+ "cdde4f20ba31": {
+  "en": "Steps",
+  "t": "Các bước"
+ },
+ "cf01481f626d": {
+  "en": "Privacy",
+  "t": "Quyền riêng tư"
+ },
+ "cf9dc0383a41": {
+  "en": "Char + Word Pair",
+  "t": "Ký tự + Cặp từ"
+ },
+ "d36d5516dbff": {
+  "en": "The Vraki typeface",
+  "t": "Phông chữ Vraki"
+ },
+ "d89e229419df": {
+  "en": "Word Pair",
+  "t": "Cặp từ"
+ },
+ "d8a46b94ae4f": {
+  "en": "Shift by",
+  "t": "Dịch chuyển"
+ },
+ "db91db843ba0": {
+  "en": "Where Vraki came from",
+  "t": "Vraki đến từ đâu"
+ },
+ "dbb744b70772": {
+  "en": "Text Panel",
+  "t": "Khung Văn bản"
+ },
+ "dd6ab2a8e8f9": {
+  "en": "The app in 2017",
+  "t": "Ứng dụng năm 2017"
+ },
+ "dd9e4aee2fef": {
+  "en": "Originally from 2017 · resurrected for historical purposes",
+  "t": "Bản gốc từ năm 2017 · hồi sinh vì mục đích lịch sử"
+ },
+ "dfb6b2189cd8": {
+  "en": "Vraki Panel",
+  "t": "Khung Vraki"
+ },
+ "e0049a66519c": {
+  "en": "On",
+  "t": "Bật"
+ },
+ "e29701f4e234": {
+  "en": "Light novel series",
+  "t": "Loạt light novel"
+ },
+ "e33cf3599fc5": {
+  "en": "Shift all by +1, letter case",
+  "t": "Dịch chuyển tất cả +1, chữ hoa/thường"
+ },
+ "e3dc2b25944f": {
+  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
+  "t": "Năm 2017, Vraki là một ứng dụng Windows nhỏ đảo ngược, dịch chuyển và sắp xếp lại tiếng Anh cho đến khi đọc lên như một ngôn ngữ mới. Ý tưởng đó lớn dần thành chữ viết của loạt truyện <a href=\"https://github.com/Deovandski/HusbandOutWorld\">#HusbandOutWorld</a> và phông chữ riêng của nó. Ứng dụng gốc đã trở lại, đúng như ngày trước, để lưu lại."
+ },
+ "e3de5ab0ca4c": {
+  "en": "Off",
+  "t": "Tắt"
+ },
+ "e410a09ec390": {
+  "en": "Hand-drawn reference sheet of the Vraki typeface: A to Z, lower case a and b, digits 0 to 9, and punctuation, each drawn on a dotted grid",
+  "t": "Bảng tham chiếu vẽ tay của phông chữ Vraki: A đến Z, chữ thường a và b, chữ số 0 đến 9 và dấu câu, mỗi ký tự được vẽ trên lưới chấm"
+ },
+ "e47983e40a6b": {
+  "en": "Conversion type",
+  "t": "Kiểu chuyển đổi"
+ },
+ "e8083ad0cf19": {
+  "en": "MIT-licensed. The repository keeps the 2017 app intact and leaves room for the modern one.",
+  "t": "Giấy phép MIT. Kho mã giữ nguyên ứng dụng năm 2017 và chừa chỗ cho phiên bản hiện đại."
+ },
+ "e9b6dd68fd20": {
+  "en": "The typeface is © 2024 Deovandski Skibinski Junior. Non-commercial use is free with attribution. Commercial use needs approval and a fee, kept small for artists and creators to support the community; ask on <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> or email <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>. It may not be altered without permission. See the <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">font license</a>. This site uses an unaltered copy to show Vraki text.",
+  "t": "Phông chữ này © 2024 Deovandski Skibinski Junior. Sử dụng phi thương mại miễn phí, kèm ghi công. Sử dụng thương mại cần được chấp thuận và trả phí, mức phí được giữ thấp để nghệ sĩ và nhà sáng tạo có thể ủng hộ cộng đồng; hãy hỏi qua <a href=\"https://www.linkedin.com/in/deovandski/\">LinkedIn</a> hoặc email <a href=\"mailto:Deovandski@outlook.com\">Deovandski@outlook.com</a>. Không được chỉnh sửa khi chưa được phép. Xem <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md\">giấy phép phông chữ</a>. Trang web này dùng một bản sao chưa chỉnh sửa để hiển thị chữ Vraki."
+ },
+ "f39fd52191ee": {
+  "en": "Four building blocks, run in order: Reverse, Shift, Vraki Structure, then Letter Case Fix. Each conversion type is a preset of them. Here's what each does to the app's sample sentence, <em>\"Look at my Horse! My horse is amazing! -Gentleman\"</em>:",
+  "t": "Bốn khối, chạy theo thứ tự: Đảo ngược, Dịch chuyển, Cấu trúc Vraki, rồi Sửa chữ hoa/thường. Mỗi kiểu chuyển đổi là một thiết lập sẵn của chúng. Đây là những gì mỗi kiểu làm với câu mẫu của ứng dụng, <em>\"Look at my Horse! My horse is amazing! -Gentleman\"</em>:"
+ },
+ "f3e46e1a79d5": {
+  "en": "Vraki Language 2017 converter",
+  "t": "Bộ chuyển đổi Vraki Language 2017"
+ },
+ "fdf936b2bc81": {
+  "en": "An open-table, West Marches-style campaign set in the same world in the 1040s A.G., with lore summaries, quests, stat blocks and ready-made adventurers.",
+  "t": "Một chiến dịch bàn mở theo phong cách West Marches, lấy bối cảnh cùng thế giới vào những năm 1040 A.G., có tóm tắt truyền thuyết, nhiệm vụ, khối chỉ số và các nhà thám hiểm dựng sẵn."
+ },
+ "ff578165fc1a": {
+  "en": "Char + word pair reverse, consonants −10, vowels +2, Vraki structure, letter case",
+  "t": "Đảo ngược ký tự + cặp từ, phụ âm −10, nguyên âm +2, cấu trúc Vraki, chữ hoa/thường"
+ }
+}

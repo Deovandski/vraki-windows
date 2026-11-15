@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-root="./">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +8,20 @@
   <meta property="og:title" content="Vraki Language for Windows (2017)">
   <meta property="og:description" content="The 2017 Vraki Language app, back from the archive. Try the original converter and see English written in the Vraki typeface.">
   <meta property="og:image" content="https://deovandski.github.io/vraki-windows/media/og-tile.png">
+  <link rel="canonical" href="https://deovandski.github.io/vraki-windows/">
   <link rel="icon" type="image/png" href="icon.png">
+  <script>
+    // Settings before first paint: text size, and on a first visit the browser's language (once it's 90% translated).
+    try {
+      var d = document.documentElement, s = JSON.parse(localStorage.getItem("vraki-site") || "{}");
+      if (s.size) d.style.setProperty("--scale", s.size / 17);
+      if (!d.dataset.lang) {
+        var ok = (d.dataset.langs || "").split(" "), w = s.lang, n = navigator.languages || [navigator.language || ""];
+        for (var i = 0; i < n.length && !w; i++) { var c = String(n[i]).toLowerCase().split("-")[0]; if (c === "en" || ok.indexOf(c) >= 0) w = c; }
+        if (w && w !== "en" && ok.indexOf(w) >= 0) location.replace(w + "/" + location.search + location.hash);
+      }
+    } catch (e) { /* private mode: no saved settings */ }
+  </script>
   <link rel="preload" href="fonts/VrakiHusbandOutWorldSeries-Rg.woff2" as="font" type="font/woff2" crossorigin>
   <style>
     @font-face {
@@ -30,6 +43,8 @@
       --mint: #ddfdfd;         /* the 2017 settings pane */
       --focus: #2f7df6;
       --radius: 18px;
+      --scale: 1;              /* Settings › Text size (17px = 1) */
+      --sans: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
     }
     @media (prefers-color-scheme: dark) {
       :root {
@@ -49,8 +64,8 @@
       margin: 0;
       background: var(--paper);
       color: var(--ink);
-      font-family: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
-      font-size: 17px;
+      font-family: var(--sans);
+      font-size: calc(17px * var(--scale));
       line-height: 1.6;
     }
     a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
@@ -61,8 +76,9 @@
 
     /* ---------- Top bar ---------- */
     .top { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; gap: 16px; }
-    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; line-height: 1.2; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; line-height: 1.2; white-space: nowrap; }
     .brand img { width: 30px; height: 30px; border-radius: 6px; }
+    .top-end { display: flex; align-items: center; gap: 18px; }
     .top nav { display: flex; gap: 22px; font-size: 15px; flex-wrap: wrap; justify-content: flex-end; }
 
     /* ---------- Hero: dot-grid paper at night ---------- */
@@ -71,10 +87,11 @@
       overflow: hidden;
       background-color: var(--night);
       background-image:
+        linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),   /* 50% darker, so the text reads better */
         radial-gradient(circle at center, rgba(160, 230, 232, .32) 1.3px, transparent 1.6px),
         linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,0) 50%);
-      background-size: 26px 26px, auto;
-      background-position: 13px 13px, 0 0;
+      background-size: auto, 26px 26px, auto;
+      background-position: 0 0, 13px 13px, 0 0;
       color: #e9f4f4;
       border-radius: var(--radius);
       padding: 48px 44px 40px;
@@ -85,14 +102,14 @@
       display: inline-flex; align-items: center; gap: 8px;
       background: rgba(201, 40, 90, .16); color: #ffb3c9;
       border: 1px solid rgba(201, 40, 90, .55);
-      border-radius: 999px; padding: 4px 12px; font-size: 14px; font-weight: 600;
+      border-radius: 999px; padding: 4px 12px; font-size: calc(14px * var(--scale)); font-weight: 600;
     }
     .hero h1 {
-      font-size: clamp(38px, 5.6vw, 66px); line-height: 1.02; letter-spacing: -0.02em;
+      font-size: calc(clamp(38px, 5.6vw, 66px) * var(--scale)); line-height: 1.02; letter-spacing: -0.02em;
       margin: 18px 0 14px; font-weight: 800;
     }
     .hero h1 .sub { display: block; font-size: .42em; letter-spacing: 0; font-weight: 600; color: var(--glyph); margin-top: 10px; }
-    .hero p.lead { max-width: 40rem; color: #b9c8c9; font-size: 18px; margin: 0 0 26px; }
+    .hero p.lead { max-width: 40rem; color: #b9c8c9; font-size: calc(18px * var(--scale)); margin: 0 0 26px; }
     .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
     .btn {
       display: inline-flex; align-items: center; gap: 10px;
@@ -110,7 +127,7 @@
       padding-top: 26px;
       display: grid; gap: 10px;
     }
-    .scribe label { font-size: 14px; color: #8fa3a5; }
+    .scribe label { font-size: calc(14px * var(--scale)); color: #8fa3a5; }
     .scribe input {
       width: 100%; max-width: 34rem;
       background: rgba(0,0,0,.55); color: #e9f4f4;
@@ -118,7 +135,7 @@
       padding: 11px 14px; font: inherit;
     }
     .scribe-out {
-      font-size: clamp(30px, 4.6vw, 54px);
+      font-size: calc(clamp(30px, 4.6vw, 54px) * var(--scale));
       line-height: 1.45;
       color: var(--glyph);
       min-height: 1.5em;
@@ -128,8 +145,8 @@
 
     /* ---------- Sections ---------- */
     section { padding: 76px 0 8px; }
-    h2 { font-size: 32px; line-height: 1.15; letter-spacing: -0.01em; margin: 0 0 18px; font-weight: 800; }
-    h3 { font-size: 19px; margin: 0 0 6px; font-weight: 700; }
+    h2 { font-size: calc(32px * var(--scale)); line-height: 1.15; letter-spacing: -0.01em; margin: 0 0 18px; font-weight: 800; }
+    h3 { font-size: calc(19px * var(--scale)); margin: 0 0 6px; font-weight: 700; }
     .lede { max-width: 44rem; color: var(--ink-soft); margin: -4px 0 28px; }
     .muted { color: var(--ink-soft); }
     code { font-size: .9em; background: var(--paper-2); padding: 1px 6px; border-radius: 5px; overflow-wrap: anywhere; }
@@ -139,7 +156,7 @@
       background: var(--mint); border: 1px solid var(--rule); border-left: 6px solid var(--crimson);
       border-radius: 12px; padding: 22px 24px; max-width: 60rem;
     }
-    .notice .year { font-size: 40px; font-weight: 800; line-height: 1; color: var(--crimson); }
+    .notice .year { font-size: calc(40px * var(--scale)); font-weight: 800; line-height: 1; color: var(--crimson); }
     .notice p { margin: 0 0 10px; }
     .notice p:last-child { margin-bottom: 0; }
 
@@ -151,10 +168,10 @@
       background: var(--paper-2); border: 1px solid var(--rule); border-radius: 12px; padding: 18px 20px;
     }
     .world:hover { border-color: var(--glyph); }
-    .world .kicker { font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--crimson); }
+    .world .kicker { font-size: calc(13px * var(--scale)); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--crimson); }
     .world h3 { margin: 4px 0 6px; }
-    .world p { margin: 0; color: var(--ink-soft); font-size: 15.5px; }
-    .doodle { font-size: 26px; color: var(--glyph); line-height: 1.3; margin: 4px 0 18px; overflow-wrap: anywhere; }
+    .world p { margin: 0; color: var(--ink-soft); font-size: calc(15.5px * var(--scale)); }
+    .doodle { font-size: calc(26px * var(--scale)); color: var(--glyph); line-height: 1.3; margin: 4px 0 18px; overflow-wrap: anywhere; }
     @media (prefers-color-scheme: light) { .doodle { color: #0a8f93; } }
 
     /* ---------- The converter (laid out like the 2017 app) ---------- */
@@ -164,7 +181,7 @@
       box-shadow: 0 24px 50px -34px rgba(0,0,0,.45);
     }
     .app-bar {
-      background: var(--crimson); color: #fff; font-size: 13px; padding: 6px 14px;
+      background: var(--crimson); color: #fff; font-size: calc(13px * var(--scale)); padding: 6px 14px;
       display: flex; justify-content: space-between;
     }
     .app-head {
@@ -174,7 +191,7 @@
     .app-head img { width: min(420px, 90%); height: auto; display: block; }
     .tabs { display: flex; gap: 2px; }
     .tabs span, .tabs button {
-      background: #e8e8e8; color: #111; border: 0; font: inherit; font-size: 15px;
+      background: #e8e8e8; color: #111; border: 0; font: inherit; font-size: calc(15px * var(--scale));
       padding: 4px 16px; min-width: 64px;
     }
     .tabs .writable { color: #d4102e; }
@@ -183,34 +200,34 @@
     }
     .app-body { display: grid; grid-template-columns: minmax(0, 1fr) 320px; }
     .panels { padding: 16px; display: grid; gap: 14px; align-content: start; }
-    .panel h3 { font-size: 14px; margin: 0 0 6px; text-align: center; }
+    .panel h3 { font-size: calc(14px * var(--scale)); margin: 0 0 6px; text-align: center; }
     .panel textarea, .panel output {
       display: block; width: 100%; min-height: 108px; resize: vertical;
       border: 1px solid #9aa4a6; background: #fff; color: #111;
-      padding: 10px 12px; font: 15px/1.5 "Segoe UI", system-ui, sans-serif; border-radius: 2px;
+      padding: 10px 12px; font: calc(15px * var(--scale))/1.5 "Segoe UI", system-ui, sans-serif; border-radius: 2px;
       white-space: pre-wrap; overflow-wrap: anywhere;
     }
     .panel textarea[readonly] { background: #f0f2f2; }
     .panel output.vraki-render {
-      font-family: "Vraki", monospace; font-size: 30px; line-height: 1.5;
+      font-family: "Vraki", monospace; font-size: calc(30px * var(--scale)); line-height: 1.5;
       background: #000; color: var(--glyph); border-color: #000; min-height: 80px;
     }
     .translate-row { display: flex; justify-content: center; }
     .translate {
-      background: #c9cdce; color: #111; border: 0; font: 600 16px "Segoe UI", system-ui, sans-serif;
+      background: #c9cdce; color: #111; border: 0; font: 600 calc(16px * var(--scale)) "Segoe UI", system-ui, sans-serif;
       padding: 10px 34px; cursor: pointer;
     }
     .translate:hover { background: #b8bdbe; }
     .settings {
       background: #ddfdfd; color: #111; border-left: 4px solid #000; padding: 14px 16px 18px;
-      font-size: 15px;
+      font-size: calc(15px * var(--scale));
     }
     .settings h3 {
-      text-align: center; font-size: 22px; margin: 0 0 12px;
+      text-align: center; font-size: calc(22px * var(--scale)); margin: 0 0 12px;
       border: 3px solid #0a8f93; background: #fff; padding: 2px 0;
     }
     .settings fieldset { border: 0; padding: 0; margin: 0 0 12px; }
-    .settings legend { font-size: 17px; font-weight: 600; padding: 0; margin-bottom: 4px; }
+    .settings legend { font-size: calc(17px * var(--scale)); font-weight: 600; padding: 0; margin-bottom: 4px; }
     .settings select {
       font: inherit; padding: 4px 6px; background: #cfe5e5; border: 1px solid #9bbcbc; border-radius: 2px; color: #111;
     }
@@ -228,9 +245,9 @@
     }
     .toggle input:checked { background: var(--crimson); border-color: var(--crimson); }
     .toggle input:checked::after { background: #fff; transform: translateX(22px); }
-    .current { font-size: 14px; }
-    .current b { font-size: 15px; }
-    .app-foot { background: #000; color: #f0c24b; display: flex; justify-content: space-between; font-size: 13px; padding: 4px 10px; }
+    .current { font-size: calc(14px * var(--scale)); }
+    .current b { font-size: calc(15px * var(--scale)); }
+    .app-foot { background: #000; color: #f0c24b; display: flex; justify-content: space-between; font-size: calc(13px * var(--scale)); padding: 4px 10px; }
     .app-foot a { color: #f0c24b; }
     [hidden] { display: none !important; }
 
@@ -238,36 +255,75 @@
     .type-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 36px; align-items: start; }
     .specimen {
       background: #000; color: var(--glyph); border-radius: 12px; padding: 18px 20px;
-      font-size: 34px; line-height: 1.5; overflow-wrap: anywhere;
+      font-size: calc(34px * var(--scale)); line-height: 1.5; overflow-wrap: anywhere;
     }
-    .specimen small { display: block; font-family: "Segoe UI", system-ui, sans-serif; font-size: 13px; color: #7f9799; margin-top: 6px; }
+    .specimen small { display: block; font-family: "Segoe UI", system-ui, sans-serif; font-size: calc(13px * var(--scale)); color: #7f9799; margin-top: 6px; }
     .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0 0; }
     .chip {
       display: grid; justify-items: center; gap: 2px; width: 62px; padding: 8px 4px 6px;
       background: var(--paper-2); border: 1px solid var(--rule); border-radius: 8px;
     }
-    .chip .vraki { font-size: 28px; line-height: 1.2; color: var(--ink); }
-    .chip span:last-child { font-size: 13px; color: var(--ink-soft); }
+    .chip .vraki { font-size: calc(28px * var(--scale)); line-height: 1.2; color: var(--ink); }
+    .chip span:last-child { font-size: calc(13px * var(--scale)); color: var(--ink-soft); }
     figure { margin: 0; }
     figure img, figure video { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--rule); background: #000; }
-    figcaption { margin-top: 8px; color: var(--ink-soft); font-size: 15px; }
+    figcaption { margin-top: 8px; color: var(--ink-soft); font-size: calc(15px * var(--scale)); }
     ul.plain { padding-left: 1.2em; max-width: 46rem; margin: 0 0 16px; }
     ul.plain li { margin: 0 0 8px; }
 
     .shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; margin-top: 26px; }
 
-    table { border-collapse: collapse; width: 100%; max-width: 60rem; font-size: 16px; }
+    table { border-collapse: collapse; width: 100%; max-width: 60rem; font-size: calc(16px * var(--scale)); }
     th, td { text-align: left; padding: 11px 14px 11px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
     th { font-weight: 700; }
-    td.out { font-family: Consolas, "Cascadia Mono", ui-monospace, monospace; font-size: 14.5px; overflow-wrap: anywhere; }
+    td.out { font-family: Consolas, "Cascadia Mono", ui-monospace, monospace; font-size: calc(14.5px * var(--scale)); overflow-wrap: anywhere; }
 
     pre {
       background: var(--paper-2); border: 1px solid var(--rule); border-radius: 10px;
-      padding: 14px 16px; overflow-x: auto; font-size: 14px; line-height: 1.5; max-width: 60rem;
+      padding: 14px 16px; overflow-x: auto; font-size: calc(14px * var(--scale)); line-height: 1.5; max-width: 60rem;
     }
 
-    footer { padding: 72px 0 48px; font-size: 14px; color: var(--ink-soft); }
+    footer { padding: 72px 0 48px; font-size: calc(14px * var(--scale)); color: var(--ink-soft); }
     footer p { margin: 4px 0; max-width: 52rem; }
+
+    /* ---------- Site settings (gear, top right) ---------- */
+    .gear {
+      display: inline-grid; place-items: center; flex: none; width: 36px; height: 36px; padding: 0;
+      border-radius: 50%; border: 1px solid var(--rule); background: var(--paper-2); color: var(--ink); cursor: pointer;
+    }
+    .gear:hover { border-color: var(--glyph); }
+    .site-settings {
+      border: 1px solid var(--rule); border-radius: 14px; background: var(--paper); color: var(--ink);
+      width: min(26rem, calc(100vw - 32px)); padding: 22px 24px; font: 16px/1.5 var(--sans);
+    }
+    .site-settings::backdrop { background: rgba(5, 8, 9, .65); backdrop-filter: blur(3px); }
+    .site-settings h2 { font-size: 24px; margin: 0 0 8px; }
+    .site-settings .setting { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+    .site-settings select { font: inherit; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--rule); background: var(--paper-2); color: var(--ink); max-width: 60%; }
+    .site-settings input[type="range"] { accent-color: var(--crimson); width: 9rem; }
+    .site-settings .setting-link { margin: 0; padding: 6px 0 12px; border-bottom: 1px solid var(--rule); font-size: 14px; text-align: end; }
+    .site-settings .done { margin-top: 18px; display: flex; justify-content: flex-end; }
+    .site-settings .done button { font: 700 15px var(--sans); padding: 9px 20px; border-radius: 10px; border: 0; background: var(--ink); color: var(--paper); cursor: pointer; }
+
+    /* ---------- Translations (tools/i18n.mjs) ---------- */
+    .i18n-banner {
+      background: var(--paper-2); color: var(--ink-soft); border: 1px solid var(--rule); border-radius: 10px;
+      text-align: center; font-size: calc(13.5px * var(--scale)); line-height: 1.45; padding: 7px 14px; margin: 0 0 18px;
+    }
+    .i18n-banner a { color: var(--ink); font-weight: 700; margin-inline-start: 6px; white-space: nowrap; }
+    /* system fonts for scripts Segoe UI doesn't cover well */
+    html[lang^="zh"] { --sans: system-ui, "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", "Microsoft YaHei", sans-serif; }
+    html[lang="ja"] { --sans: system-ui, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", "Meiryo", sans-serif; }
+    html[lang="ko"] { --sans: system-ui, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; }
+    html[lang="ar"] { --sans: system-ui, "Segoe UI", "Geeza Pro", "Noto Sans Arabic", "Tahoma", sans-serif; }
+    html[lang="th"] { --sans: system-ui, "Leelawadee UI", "Thonburi", "Noto Sans Thai", sans-serif; }
+    html[lang="hi"] { --sans: system-ui, "Nirmala UI", "Kohinoor Devanagari", "Noto Sans Devanagari", sans-serif; }
+    html[lang^="zh"] body, html[lang="ja"] body, html[lang="ko"] body, html[lang="th"] body, html[lang="hi"] body { line-height: 1.75; }
+    html[lang^="zh"] .hero h1, html[lang="ja"] .hero h1, html[lang="ko"] .hero h1 { line-height: 1.15; }
+    /* right to left (Arabic). The 2017 app replica keeps its left-to-right Windows layout. */
+    html[dir="rtl"] .notice { border-left: 1px solid var(--rule); border-right: 6px solid var(--crimson); }
+    html[dir="rtl"] ul.plain { padding-left: 0; padding-right: 1.2em; }
+    html[dir="rtl"] th, html[dir="rtl"] td { text-align: right; padding: 11px 0 11px 14px; }
 
     /* ---------- Small screens ---------- */
     @media (max-width: 900px) {
@@ -279,6 +335,8 @@
     @media (max-width: 520px) {
       .wrap { padding: 0 14px; }
       .top nav a.hide-sm { display: none; }
+      .top-end { gap: 12px; }
+      .gear { width: 32px; height: 32px; }
       .notice { grid-template-columns: 1fr; }
     }
   </style>
@@ -286,35 +344,38 @@
 <body>
   <div class="wrap">
     <header class="top">
-      <a class="brand" href="./"><img src="icon.png" alt="" width="30" height="30">Vraki Language</a>
+      <a class="brand" href="./" translate="no"><img src="icon.png" alt="" width="30" height="30">Vraki Language</a>
+      <div class="top-end">
       <nav aria-label="Main">
         <a href="#origin" class="hide-sm">Origin</a>
         <a href="#try">Try it</a>
         <a href="#typeface">Typeface</a>
         <a href="#history" class="hide-sm">2017</a>
-        <a href="https://github.com/Deovandski/vraki-windows">GitHub</a>
+        <a href="https://github.com/Deovandski/vraki-windows" translate="no">GitHub</a>
       </nav>
+      <button class="gear" id="gear" type="button" aria-haspopup="dialog" aria-label="Settings" title="Settings"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><path fill="currentColor" d="M19.4 13a7.6 7.6 0 0 0 0-2l2.1-1.6a.5.5 0 0 0 .1-.6l-2-3.5a.5.5 0 0 0-.6-.2l-2.5 1a7.5 7.5 0 0 0-1.7-1l-.4-2.6a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 0-.5.4l-.4 2.7c-.6.2-1.2.6-1.7 1l-2.5-1a.5.5 0 0 0-.6.2l-2 3.5a.5.5 0 0 0 .1.6L4.6 11a7.6 7.6 0 0 0 0 2l-2.1 1.6a.5.5 0 0 0-.1.6l2 3.5c.1.2.4.3.6.2l2.5-1c.5.4 1.1.8 1.7 1l.4 2.6c0 .3.2.5.5.5h4c.3 0 .5-.2.5-.4l.4-2.7c.6-.2 1.2-.6 1.7-1l2.5 1c.2.1.5 0 .6-.2l2-3.5a.5.5 0 0 0-.1-.6L19.4 13ZM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z"/></svg></button>
+      </div>
     </header>
 
     <main>
       <div class="hero">
         <span class="badge">Originally from 2017 · resurrected for historical purposes</span>
-        <h1>Vraki Language
+        <h1><span translate="no">Vraki Language</span>
           <span class="sub">The writing behind #HusbandOutWorld, on Windows since 2017</span>
         </h1>
         <p class="lead">In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href="https://github.com/Deovandski/HusbandOutWorld">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.</p>
         <div class="actions">
           <a class="btn" href="https://apps.microsoft.com/detail/9P41XHS4HMLX">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 3h8.5v8.5H3zM12.5 3H21v8.5h-8.5zM3 12.5h8.5V21H3zM12.5 12.5H21V21h-8.5z"/></svg>
-            Get it from Microsoft Store</a>
+            <span>Get it from Microsoft Store</span></a>
           <a class="btn ghost" href="https://github.com/Deovandski/vraki-windows">Source on GitHub</a>
           <a class="btn ghost" href="#try">Try it in your browser</a>
         </div>
 
         <div class="scribe">
           <label for="scribe-in">Type anything in English. It's written letter for letter in the Vraki typeface:</label>
-          <input id="scribe-in" type="text" value="Vraki" maxlength="60" autocomplete="off" spellcheck="false">
-          <div class="scribe-out vraki" id="scribe-out" aria-live="polite">Vraki</div>
+          <input id="scribe-in" type="text" value="Vraki" maxlength="60" autocomplete="off" spellcheck="false" dir="ltr">
+          <div class="scribe-out vraki" id="scribe-out" aria-live="polite" translate="no" dir="ltr">Vraki</div>
         </div>
       </div>
 
@@ -333,13 +394,13 @@
         <div class="story">
           <div>
             <p>Deovandski always dreamed of coming up with a language. As a child he doodled the alphabets of alien civilizations, and the more he traveled the world and soaked up its cultures, the closer those doodles drifted to the Vraki writing you see here.</p>
-            <div class="doodle vraki" aria-hidden="true">From doodles to a world</div>
+            <div class="doodle vraki" aria-hidden="true" translate="no" dir="ltr">From doodles to a world</div>
             <p>He didn't expect it to grow into an entire world with extensive lore, and from there into several stories. This app is where the writing first went digital, back in 2017.</p>
           </div>
           <div class="worlds">
             <a class="world" href="https://github.com/Deovandski/HusbandOutWorld">
               <span class="kicker">Light novel series</span>
-              <h3>A Husband Out of This World <span class="muted">#HusbandOutWorld</span></h3>
+              <h3 translate="no">A Husband Out of This World <span class="muted">#HusbandOutWorld</span></h3>
               <p>Opens on Paulin 14th, 1039 A.G. (After Ganyrami, the Vraki calendar's count from the year Ganyrami fell), when Harry is summoned out of our world into the world of Vraki, in the Prosperity Treaty era, the long peace that followed the overthrow of the old kingdoms.</p>
             </a>
             <a class="world" href="https://github.com/Deovandski/Vraki-West-March-Campaign-D-D">
@@ -355,8 +416,8 @@
         <h2>Try the 2017 converter</h2>
         <p class="lede">This is the app's own conversion code, ported line by line to JavaScript and checked against output captured from the 2017 app. Pick a conversion type, press Translate, and flip the arrows to convert back. Everything runs in your browser.</p>
 
-        <div class="app" role="group" aria-label="Vraki Language 2017 converter">
-          <div class="app-bar"><span>Vraki Language</span><span aria-hidden="true">— ☐ ✕</span></div>
+        <div class="app" dir="ltr" role="group" aria-label="Vraki Language 2017 converter">
+          <div class="app-bar"><span translate="no">Vraki Language</span><span aria-hidden="true">— ☐ ✕</span></div>
           <div class="app-head">
             <img src="media/vraki-language-line.png" alt="" width="1416" height="102">
             <div class="tabs">
@@ -387,11 +448,11 @@
               <div class="row current">
                 <label for="preset">Conversion Type</label>
                 <select id="preset">
-                  <option>Default</option>
-                  <option>Simple Vraki</option>
-                  <option>Complex Vraki</option>
-                  <option>Minimal</option>
-                  <option disabled>Custom</option>
+                  <option value="Default">Default</option>
+                  <option value="Simple Vraki">Simple Vraki</option>
+                  <option value="Complex Vraki">Complex Vraki</option>
+                  <option value="Minimal">Minimal</option>
+                  <option value="Custom" disabled>Custom</option>
                 </select>
               </div>
 
@@ -436,9 +497,9 @@
               </fieldset>
             </form>
           </div>
-          <div class="app-foot"><span>Source code at <a href="https://github.com/Deovandski/vraki-windows">github.com/Deovandski/vraki-windows</a></span><span>2017</span></div>
+          <div class="app-foot"><span>Source code at <a href="https://github.com/Deovandski/vraki-windows" translate="no">github.com/Deovandski/vraki-windows</a></span><span>2017</span></div>
         </div>
-        <p class="muted" style="margin-top:14px;font-size:15px">Red marks the writable panel, as in the app. Quirks of the 2017 code are kept; see <a href="https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md">how the conversions work</a>.</p>
+        <p class="muted" style="margin-top:14px;font-size:calc(15px * var(--scale))">Red marks the writable panel, as in the app. Quirks of the 2017 code are kept; see <a href="https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md">how the conversions work</a>.</p>
       </section>
 
       <section id="typeface">
@@ -454,7 +515,7 @@
               <li>Digits mark a single dot on a 3×3 grid (zero marks all nine), and punctuation has its own marks.</li>
               <li>In the series' lore, Vraki is the common language inherited from the Finaies: mostly English, because English is the common language for business and the language the books were written in.</li>
             </ul>
-            <div class="specimen vraki" id="specimen">The quick brown fox jumps over the lazy dog<small>"The quick brown fox jumps over the lazy dog" in Vraki</small></div>
+            <div class="specimen" id="specimen"><span class="vraki" translate="no" dir="ltr">The quick brown fox jumps over the lazy dog</span><small>"The quick brown fox jumps over the lazy dog" in Vraki</small></div>
             <div class="chips" id="chips" aria-label="The Vraki alphabet, upper case"></div>
           </div>
           <figure>
@@ -508,10 +569,10 @@
         <table>
           <thead><tr><th scope="col">Conversion type</th><th scope="col">Steps</th><th scope="col">Output</th></tr></thead>
           <tbody>
-            <tr><td><strong>Default</strong></td><td>Char reverse, shift all by −3, letter case</td><td class="out">Kxjbiqkbd- !Dkfwxjx pf bpole vj !Bpole vj qx hlli</td></tr>
-            <tr><td><strong>Simple Vraki</strong></td><td>Vraki structure, letter case</td><td class="out">Look at my hol-li`lde! My hol-li`lde is amazing! -Gentleman</td></tr>
-            <tr><td><strong>Complex Vraki</strong></td><td>Char + word pair reverse, consonants −10, vowels +2, Vraki structure, letter case</td><td class="out">Tbi-rg`ldbzhoy- !Itzbiun ug voagf zm !Voagf zm ih yxaa</td></tr>
-            <tr><td><strong>Minimal</strong></td><td>Shift all by +1, letter case</td><td class="out">Mppl bu nz ipstf! Nz ipstf jt bnbajoh! -Hfoumfnbo</td></tr>
+            <tr><td><strong>Default</strong></td><td>Char reverse, shift all by −3, letter case</td><td class="out" translate="no" dir="ltr">Kxjbiqkbd- !Dkfwxjx pf bpole vj !Bpole vj qx hlli</td></tr>
+            <tr><td><strong>Simple Vraki</strong></td><td>Vraki structure, letter case</td><td class="out" translate="no" dir="ltr">Look at my hol-li`lde! My hol-li`lde is amazing! -Gentleman</td></tr>
+            <tr><td><strong>Complex Vraki</strong></td><td>Char + word pair reverse, consonants −10, vowels +2, Vraki structure, letter case</td><td class="out" translate="no" dir="ltr">Tbi-rg`ldbzhoy- !Itzbiun ug voagf zm !Voagf zm ih yxaa</td></tr>
+            <tr><td><strong>Minimal</strong></td><td>Shift all by +1, letter case</td><td class="out" translate="no" dir="ltr">Mppl bu nz ipstf! Nz ipstf jt bnbajoh! -Hfoumfnbo</td></tr>
           </tbody>
         </table>
         <p class="muted">The full write-up, with the 2017 diagrams for every reverse algorithm and the Vraki structure table, is in <a href="https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md">docs/ALGORITHMS.md</a>.</p>
@@ -532,6 +593,7 @@ tools/                   tests for the port, checked against the 2017 app's outp
       <section id="privacy">
         <h2>Privacy</h2>
         <p class="lede">The app stores nothing about you; the text you convert stays on your device. This website has no cookies, no analytics and no ads, and the converter and typeface preview run entirely in your browser. It's hosted on GitHub Pages, so <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a> sees your IP address when it sends you the page. Questions go to <a href="https://github.com/Deovandski/vraki-windows/issues">GitHub issues</a>.</p>
+        <p class="lede">Your Language and Text size choices are saved in this browser only, so the site remembers them next time. They never leave your device.</p>
       </section>
     </main>
 
@@ -542,11 +604,62 @@ tools/                   tests for the port, checked against the 2017 app's outp
     </footer>
   </div>
 
+  <div id="ui-strings" hidden>
+    <span data-k="on">On</span>
+    <span data-k="off">Off</span>
+    <span data-k="automatic">Automatic</span>
+    <span data-k="shift-by">Shift by</span>
+    <span data-k="shift-consonants-by">Shift Consonants by</span>
+    <span data-k="dir-to-vraki">Switch direction. Currently converting text to Vraki.</span>
+    <span data-k="dir-to-text">Switch direction. Currently converting Vraki to text.</span>
+    <span data-k="chip-title">(upper case). Lower case is the same without the circle markers.</span>
+  </div>
+
+  <dialog id="site-settings" class="site-settings" aria-labelledby="site-settings-title">
+    <form method="dialog">
+      <h2 id="site-settings-title">Settings</h2>
+      <label class="setting"><span>Language</span><select data-setting="lang" translate="no"><option value="en" lang="en">English</option></select></label>
+      <p class="setting-link"><a href="https://github.com/Deovandski/vraki-windows/issues/2" rel="noopener">Want a language added?</a></p>
+      <label class="setting"><span>Text size</span><input data-setting="size" type="range" min="13" max="26" step="1" value="17"></label>
+      <div class="done"><button value="close">Done</button></div>
+    </form>
+  </dialog>
+
   <script src="vraki-2017.js"></script>
   <script>
     (function () {
       "use strict";
       var $ = function (id) { return document.getElementById(id); };
+      // Text the script writes (translated with the page, see #ui-strings)
+      function t(k) { var e = document.querySelector('#ui-strings [data-k="' + k + '"]'); return e ? e.textContent.trim() : k; }
+
+      // ---------- Settings (gear, top right): language and text size, remembered in this browser ----------
+      var root = document.documentElement, KEY = "vraki-site";
+      function load() { try { return JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { return {}; } }
+      function save(patch) {
+        var s = load();
+        for (var k in patch) s[k] = patch[k];
+        try { localStorage.setItem(KEY, JSON.stringify(s)); } catch (e) { /* private mode: lasts for this page only */ }
+      }
+      // English is at ./, every other language at ./<code>/; data-root is "./" or "../"
+      function langHref(code) { return (root.dataset.root || "./") + (code === "en" ? "" : code + "/") + location.hash; }
+      function goLang(code) { save({ lang: code }); location.href = langHref(code); }
+      var sd = $("site-settings");
+      $("gear").addEventListener("click", function () {
+        if (typeof sd.showModal === "function") sd.showModal(); else sd.setAttribute("open", "");
+      });
+      document.addEventListener("click", function (e) {
+        var a = e.target.closest && e.target.closest("[data-lang-switch]");
+        if (a) { e.preventDefault(); goLang(a.dataset.langSwitch); }
+      });
+      var langSel = sd.querySelector('[data-setting="lang"]'), sizeIn = sd.querySelector('[data-setting="size"]');
+      langSel.value = root.dataset.lang || "en";
+      langSel.addEventListener("change", function () { goLang(langSel.value); });
+      sizeIn.value = load().size || 17;
+      sizeIn.addEventListener("input", function () {
+        root.style.setProperty("--scale", sizeIn.value / 17);
+        save({ size: +sizeIn.value });
+      });
 
       // ---------- Hero: English written in the Vraki typeface ----------
       var scribeIn = $("scribe-in"), scribeOut = $("scribe-out");
@@ -562,7 +675,7 @@ tools/                   tests for the port, checked against the 2017 app's outp
         d.innerHTML = '<span class="vraki" aria-hidden="true"></span><span></span>';
         d.firstChild.textContent = ch;
         d.lastChild.textContent = ch + " " + ch.toLowerCase();
-        d.title = ch + " (upper case). Lower case is the same without the circle markers.";
+        d.title = ch + " " + t("chip-title");
         chips.appendChild(d);
       });
 
@@ -599,21 +712,21 @@ tools/                   tests for the port, checked against the 2017 app's outp
         el.reverseRow.hidden = !el.reverse.checked;
         el.shiftOptions.hidden = !el.shift.checked;
         if (el.vowelSeparately.checked) {
-          el.shiftByLabel.textContent = "Shift Consonants by";
+          el.shiftByLabel.textContent = t("shift-consonants-by");
           if (+el.shiftBy.value < -20 || +el.shiftBy.value > 20) el.shiftBy.value = 0;
           el.shiftBy.min = -20; el.shiftBy.max = 20;
         } else {
-          el.shiftByLabel.textContent = "Shift by";
+          el.shiftByLabel.textContent = t("shift-by");
           el.shiftBy.min = -25; el.shiftBy.max = 25;
         }
         el.vowelRow.hidden = !el.vowelSeparately.checked;
         el.shiftByVal.textContent = el.shiftBy.value;
         el.vowelByVal.textContent = el.vowelBy.value;
-        label(el.reverse, "On", "Off");
-        label(el.shift, "On", "Off");
-        label(el.vowelSeparately, "On", "Off");
-        label(el.structure, "On", "Off");
-        label(el.letterCase, "Automatic", "Off");
+        label(el.reverse, t("on"), t("off"));
+        label(el.shift, t("on"), t("off"));
+        label(el.vowelSeparately, t("on"), t("off"));
+        label(el.structure, t("on"), t("off"));
+        label(el.letterCase, t("automatic"), t("off"));
         el.preset.value = V.presetName(read());
       }
 
@@ -643,7 +756,7 @@ tools/                   tests for the port, checked against the 2017 app's outp
       function flip() {
         toVraki = !toVraki;
         el.direction.textContent = toVraki ? ">>>" : "<<<";
-        el.direction.setAttribute("aria-label", "Switch direction. Currently converting " + (toVraki ? "text to Vraki." : "Vraki to text."));
+        el.direction.setAttribute("aria-label", t(toVraki ? "dir-to-vraki" : "dir-to-text"));
         el.text.readOnly = !toVraki;
         el.vraki.readOnly = toVraki;
         if (toVraki) el.vraki.value = ""; else el.text.value = "";
