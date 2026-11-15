@@ -21,5 +21,14 @@ The website is also published in 14 languages (`/zh/`, `/ja/`, `/pt/`, `/es/`, `
 - **The banner** on translated pages comes from `content/i18n/<lang>/meta.json`: "AI-Translated to <language> from Original work by Deovandski".
 - A language is offered to search engines (`hreflang`) and to the browser-language auto-select only once a page is 90% translated (`INDEX_COVERAGE` in tools/i18n.mjs).
 
+## Build reusable components
+If a piece of UI could be useful twice, in this repo or in another of Deovandski's repos, build it as a reusable component instead of one-off code in a page. Examples: a clock, a counter or score card, a board, a gallery, a map, a picker.
+- **Where:** its own script and stylesheet in `site/` (for example `site/<name>.js` and `site/<name>.css`), set up from data attributes on its HTML. Any text its script shows lives in `#ui-strings` so it gets translated. List it in a "Reusable components" section of README.md.
+- **Self-contained:** everything it needs comes in as options/props or data attributes, with no reliance on page-specific code. Its styles are scoped to its own class and themed with CSS custom properties (with fallbacks). It works when used several times on one page.
+- **Accessible:** text for screen readers, keyboard-friendly, and it respects `prefers-reduced-motion`.
+- **Documented:** a comment at the top with a usage example and its options, plus a row in the list of reusable components.
+- **Look before you build:** check the reusable components here and in the other repos first. The same rule is in Deovandski/Deovandski (`src/components/reusable/`: `SplitFlap`, a split-flap board, and `LedClock`, an LED countdown), Deovandski-repo-template, HusbandOutWorld, vraki-windows and Vraki-West-March-Campaign-D-D. Copy and adapt an existing component instead of starting over, and note where it came from.
+- **Extract when you touch it:** when you change one-off UI that fits this rule, pull it out into a reusable component in the same PR.
+
 ## Website settings
 The gear (top right) opens Settings: Language, "Want a language added?" (links to #2) and Text size. Choices are saved in `localStorage` under `vraki-site` (`lang`, `size`); PRIVACY.md and the site's Privacy section say so. Text size scales every font size through the `--scale` CSS variable (17px = 1), so new CSS font sizes should be written as `calc(Npx * var(--scale))`.
