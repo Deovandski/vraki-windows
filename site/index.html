@@ -9,6 +9,9 @@
   <meta property="og:description" content="The 2017 Vraki Language app, back from the archive. Try the original converter and see English written in the Vraki typeface.">
   <meta property="og:image" content="https://deovandski.github.io/vraki-windows/media/og-tile.png">
   <link rel="canonical" href="https://deovandski.github.io/vraki-windows/">
+  <!-- For AI tools and crawlers: plain-text versions of this page (written by tools/llms.mjs at build time). -->
+  <link rel="alternate" type="text/markdown" href="llms.txt" title="llms.txt: index for AI tools" translate="no">
+  <link rel="alternate" type="text/markdown" href="index.md" title="This page as Markdown" translate="no">
   <link rel="icon" type="image/png" href="icon.png">
   <script>
     // Settings before first paint: text size, and on a first visit the browser's language (once it's 90% translated).
@@ -372,7 +375,7 @@
           <a class="btn ghost" href="#try">Try it in your browser</a>
         </div>
 
-        <div class="scribe">
+        <div class="scribe" data-llms-skip data-llms-note="On the website, a text box writes whatever English you type in the Vraki typeface, letter for letter.">
           <label for="scribe-in">Type anything in English. It's written letter for letter in the Vraki typeface:</label>
           <input id="scribe-in" type="text" value="Vraki" maxlength="60" autocomplete="off" spellcheck="false" dir="ltr">
           <div class="scribe-out vraki" id="scribe-out" aria-live="polite" translate="no" dir="ltr">Vraki</div>
@@ -381,7 +384,7 @@
 
       <section id="about">
         <div class="notice">
-          <div class="year">2017</div>
+          <div class="year" data-llms-skip>2017</div>
           <div>
             <p><strong>This is old code, on purpose.</strong> Vraki Language was written in 2017 as a Universal Windows Platform app for Windows 10 and published on the Microsoft Store. Its source is resurrected here for historical purposes: the C# and XAML are unchanged, only moved into <code>legacy/</code>.</p>
             <p>Since then, Vraki has become the writing system of the #HusbandOutWorld series, written <strong>1:1 with English</strong>: one Vraki glyph per English letter, instead of the 2017 app's reversing and shifting. A modern version built around that idea is the next step for this repository.</p>
@@ -416,7 +419,7 @@
         <h2>Try the 2017 converter</h2>
         <p class="lede">This is the app's own conversion code, ported line by line to JavaScript and checked against output captured from the 2017 app. Pick a conversion type, press Translate, and flip the arrows to convert back. Everything runs in your browser.</p>
 
-        <div class="app" dir="ltr" role="group" aria-label="Vraki Language 2017 converter">
+        <div class="app" dir="ltr" data-llms-skip data-llms-note="On the website, the interactive 2017 converter appears here: a Text panel, a Vraki panel, a Translate button, a direction switch, and the app's Settings pane (Conversion Type, Reverse, Chars Shift, Vraki Structuring and Letter Case Fix)." role="group" aria-label="Vraki Language 2017 converter">
           <div class="app-bar"><span translate="no">Vraki Language</span><span aria-hidden="true">— ☐ ✕</span></div>
           <div class="app-head">
             <img src="media/vraki-language-line.png" alt="" width="1416" height="102">
@@ -516,7 +519,7 @@
               <li>In the series' lore, Vraki is the common language inherited from the Finaies: mostly English, because English is the common language for business and the language the books were written in.</li>
             </ul>
             <div class="specimen" id="specimen"><span class="vraki" translate="no" dir="ltr">The quick brown fox jumps over the lazy dog</span><small>"The quick brown fox jumps over the lazy dog" in Vraki</small></div>
-            <div class="chips" id="chips" aria-label="The Vraki alphabet, upper case"></div>
+            <div class="chips" id="chips" data-llms-skip aria-label="The Vraki alphabet, upper case"></div>
           </div>
           <figure>
             <img src="media/vraki-typeface-v2-sheet.jpg" alt="Hand-drawn reference sheet of the Vraki typeface: A to Z, lower case a and b, digits 0 to 9, and punctuation, each drawn on a dotted grid" width="1260" height="1473" loading="lazy">
@@ -569,10 +572,10 @@
         <table>
           <thead><tr><th scope="col">Conversion type</th><th scope="col">Steps</th><th scope="col">Output</th></tr></thead>
           <tbody>
-            <tr><td><strong>Default</strong></td><td>Char reverse, shift all by −3, letter case</td><td class="out" translate="no" dir="ltr">Kxjbiqkbd- !Dkfwxjx pf bpole vj !Bpole vj qx hlli</td></tr>
-            <tr><td><strong>Simple Vraki</strong></td><td>Vraki structure, letter case</td><td class="out" translate="no" dir="ltr">Look at my hol-li`lde! My hol-li`lde is amazing! -Gentleman</td></tr>
-            <tr><td><strong>Complex Vraki</strong></td><td>Char + word pair reverse, consonants −10, vowels +2, Vraki structure, letter case</td><td class="out" translate="no" dir="ltr">Tbi-rg`ldbzhoy- !Itzbiun ug voagf zm !Voagf zm ih yxaa</td></tr>
-            <tr><td><strong>Minimal</strong></td><td>Shift all by +1, letter case</td><td class="out" translate="no" dir="ltr">Mppl bu nz ipstf! Nz ipstf jt bnbajoh! -Hfoumfnbo</td></tr>
+            <tr><td><strong>Default</strong></td><td>Char reverse, shift all by −3, letter case</td><td class="out" translate="no" dir="ltr" data-llms-code>Kxjbiqkbd- !Dkfwxjx pf bpole vj !Bpole vj qx hlli</td></tr>
+            <tr><td><strong>Simple Vraki</strong></td><td>Vraki structure, letter case</td><td class="out" translate="no" dir="ltr" data-llms-code>Look at my hol-li`lde! My hol-li`lde is amazing! -Gentleman</td></tr>
+            <tr><td><strong>Complex Vraki</strong></td><td>Char + word pair reverse, consonants −10, vowels +2, Vraki structure, letter case</td><td class="out" translate="no" dir="ltr" data-llms-code>Tbi-rg`ldbzhoy- !Itzbiun ug voagf zm !Voagf zm ih yxaa</td></tr>
+            <tr><td><strong>Minimal</strong></td><td>Shift all by +1, letter case</td><td class="out" translate="no" dir="ltr" data-llms-code>Mppl bu nz ipstf! Nz ipstf jt bnbajoh! -Hfoumfnbo</td></tr>
           </tbody>
         </table>
         <p class="muted">The full write-up, with the 2017 diagrams for every reverse algorithm and the Vraki structure table, is in <a href="https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md">docs/ALGORITHMS.md</a>.</p>
@@ -601,6 +604,7 @@ tools/                   tests for the port, checked against the 2017 app's outp
       <p>Made by <a href="https://deovandski.github.io/Deovandski/">Deovandski</a>. App code © 2017 Deovandski Skibinski Junior, MIT license. Vraki typeface © 2024 Deovandski Skibinski Junior, <a href="https://github.com/Deovandski/vraki-windows/blob/main/site/fonts/LICENSE.md">font license</a>. The #HusbandOutWorld series © Deovandski Skibinski Junior; <em>A Husband Out of This World</em> and #HusbandOutWorld are his trademarks.</p>
       <p>Monetized videos and posts about the series are welcome; other commercial use needs approval: <a href="https://www.linkedin.com/in/deovandski/">LinkedIn</a> or <a href="mailto:Deovandski@outlook.com">Deovandski@outlook.com</a>.</p>
       <p>Part of the world of <a href="https://deovandski.github.io/HusbandOutWorld/">#HusbandOutWorld</a> and the <a href="https://deovandski.github.io/Vraki-West-March-Campaign-D-D/">Vraki West March Campaign</a>. Source and issues on <a href="https://github.com/Deovandski/vraki-windows">GitHub</a>. <a href="#privacy">Privacy</a>.</p>
+      <p translate="no"><a href="llms.txt">llms.txt</a> · <a href="llms-full.txt">llms-full.txt</a> · <a href="index.md">index.md</a></p>
     </footer>
   </div>
 
