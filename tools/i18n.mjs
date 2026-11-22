@@ -19,7 +19,8 @@
 //   pages/<page>.json everything else, one file per page: {"<hash>": {"en": "<English HTML>", "t": "<translation>"}}
 //
 // Command line
-//   node tools/i18n.mjs build [--out _site]         copy site/ to _site/ and write /<lang>/ versions of every page
+//   node tools/i18n.mjs build [--out _site]         copy site/ to _site/ and write /<lang>/ versions of every page,
+//                                                   then the files for AI tools and search engines (tools/llms.mjs)
 //   node tools/i18n.mjs status                      what's translated, per language
 //   node tools/i18n.mjs todo --lang ja [--max-words 6000] > work.json
 //                                                   only the segments that still need translating
@@ -32,6 +33,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseHTML } from 'linkedom';
+import { writeAiFiles } from './llms.mjs';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const SRC = path.join(ROOT, 'site');
@@ -234,6 +236,7 @@ function cmdBuild(args) {
   copyDir(SRC, out);
   const langs = languages().map((code) => ({ code, meta: loadMeta(code), store: loadStore(code) }));
   const lines = [];
+  let homeCov = {};
   for (const page of sourcePages()) {
     const src = fs.readFileSync(path.join(SRC, page), 'utf8');
     const cov = {}, outs = {};
@@ -251,8 +254,36 @@ function cmdBuild(args) {
       fs.writeFileSync(path.join(out, code, page), outs[code].toString());
     }
     lines.push(`${page}: ` + langs.map(({ code }) => `${code} ${Math.round(100 * cov[code])}%`).join(' · '));
+    if (page === 'index.html') homeCov = cov;
   }
   console.log(`built ${path.relative(ROOT, out) || '.'}/ with ${langs.length} languages\n` + lines.join('\n'));
+  const ai = writeAiFiles({
+    out, page: 'index.html', root: BASE_URL,
+    title: 'Vraki Language for Windows (2017)',
+    summary: 'Vraki Language is a 2017 Universal Windows Platform app by Deovandski Skibinski Junior that turns English into Vraki, the writing\n' +
+      'behind the #HusbandOutWorld light novel series, by reversing, shifting and restructuring it. Kept for historical purposes;\n' +
+      'today Vraki is written 1:1 with English, one glyph per letter, in its own typeface.',
+    details: [
+      'Microsoft Store: https://apps.microsoft.com/detail/9P41XHS4HMLX. Source: https://github.com/Deovandski/vraki-windows (app code MIT;',
+      'the Vraki typeface has its own license). The website was built with AI assistance (Claude) under Deovandski\'s direction.',
+    ],
+    sections: [
+      { heading: 'On the page', links: [
+        { label: 'Try the 2017 converter', url: `${BASE_URL}/#try`, note: 'the app\'s conversion code, ported to JavaScript; runs in the browser' },
+        { label: 'The Vraki typeface', url: `${BASE_URL}/#typeface`, note: 'one glyph per English letter, and where to get the font' },
+        { label: 'How the 2017 conversions work', url: 'https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md' },
+      ] },
+      { heading: 'Related', links: [
+        { label: 'Vraki Language & Font (HusbandOutWorld World Lore)', url: 'https://deovandski.github.io/HusbandOutWorld/lore/language/', note: 'the language in the series\' lore' },
+        { label: '#HusbandOutWorld', url: 'https://www.husbandoutworld.com/llms.txt', note: 'the light novel series, with its own llms.txt' },
+        { label: 'Vraki West March Campaign', url: 'https://deovandski.github.io/Vraki-West-March-Campaign-D-D/', note: 'a D&D 5e campaign set in the same world' },
+        { label: "Deovandski's Blog", url: 'https://deovandski.github.io/Deovandski/llms.txt', note: 'the author, with his own llms.txt' },
+      ] },
+    ],
+    languages: langs.filter(({ code }) => (homeCov[code] || 0) >= INDEX_COVERAGE)
+      .map(({ code, meta }) => ({ code, name: meta.name || code, url: `${BASE_URL}/${code}/` })),
+  });
+  console.log(`llms.txt, llms-full.txt, index.md (${ai.markdownChars} characters of Markdown), sitemap.xml (${ai.sitemapUrls} URLs)`);
 }
 
 // ---------------------------------------------------------------- command line

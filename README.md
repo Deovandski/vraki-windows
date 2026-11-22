@@ -82,10 +82,27 @@ docs/STORE.md            the Store listing, and keeping its identity out of git
 packaging/               store-identity.example.json (the real one is git-ignored)
 site/                    GitHub Pages website (English source), with the JavaScript port of the converter
 content/i18n/            the website's translations, one folder per language (written ahead of time)
-tools/                   tests for the port; i18n.mjs builds the translated site
+tools/                   tests for the port; i18n.mjs builds the translated site, llms.mjs the files for AI tools
 ```
 
 Docs: [How the conversions work](docs/ALGORITHMS.md) · [Microsoft Store](docs/STORE.md) · [Releasing](docs/RELEASING.md) · [Privacy](PRIVACY.md) · [Security](SECURITY.md)
+
+## Files for AI tools and search engines
+
+The build (`node tools/i18n.mjs build`) also writes plain-text copies of the website, because many AI tools and fetchers can't read the page itself: some block `*.github.io`, most don't run JavaScript, and they drop hidden content and `#fragments`. Same idea as the [Deovandski site](https://deovandski.github.io/Deovandski/llms.txt) and HusbandOutWorld.
+
+| File | What it is |
+|---|---|
+| [`llms.txt`](https://deovandski.github.io/vraki-windows/llms.txt) | An index, following [llmstxt.org](https://llmstxt.org/): what the app is, and links to everything below, the related sites and each language |
+| [`index.md`](https://deovandski.github.io/vraki-windows/index.md) | The English page as Markdown. Text shown in the Vraki typeface is written as `[Vraki typeface: …]`, so a reader knows it's English letters, not words |
+| [`llms-full.txt`](https://deovandski.github.io/vraki-windows/llms-full.txt) | The same text in one plain-text file, with the summary on top |
+| [`sitemap.xml`](https://deovandski.github.io/vraki-windows/sitemap.xml) | The English page, every language translated enough to offer (90%), and the files above |
+
+The page's head links the Markdown files with `rel="alternate"`, and the footer links them too. The page decides what goes in: `data-llms-skip` leaves an element out (the interactive converter, the typing box), `data-llms-note` says what was there instead, and `data-llms-code` writes sample output as code. See the top of `tools/llms.mjs`, which is written to be copied into other repos as-is.
+
+**Test it:** `npm ci`, `node tools/i18n.mjs build`, then `node tools/test-llms.mjs` (CI runs the same) and read `_site/index.md`.
+
+A project site's own `robots.txt` is ignored (crawlers only read the domain root), so the sitemap has to be submitted by hand in [Google Search Console](https://search.google.com/search-console) and [Bing Webmaster Tools](https://www.bing.com/webmasters).
 
 ## Store identity
 

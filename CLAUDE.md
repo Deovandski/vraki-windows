@@ -21,6 +21,12 @@ The website is also published in 14 languages (`/zh/`, `/ja/`, `/pt/`, `/es/`, `
 - **The banner** on translated pages comes from `content/i18n/<lang>/meta.json`: "AI-Translated to <language> from Original work by Deovandski".
 - A language is offered to search engines (`hreflang`) and to the browser-language auto-select only once a page is 90% translated (`INDEX_COVERAGE` in tools/i18n.mjs).
 
+## Files for AI tools (llms.txt, index.md, sitemap)
+`node tools/i18n.mjs build` also writes `llms.txt`, `llms-full.txt`, `index.md` and `sitemap.xml` from the English page (`tools/llms.mjs`, issue #6). They are English only.
+- When you add something interactive or decorative to the page, mark it `data-llms-skip`, with `data-llms-note="…"` saying what a visitor sees there. Sample output that isn't real words gets `data-llms-code`. Vraki-typeface text (`class="vraki"`) is written as `[Vraki typeface: …]` automatically.
+- After a page change, run `node tools/test-llms.mjs` and read `_site/index.md`: it should read like the page, top to bottom, with nothing missing and no HTML left over.
+- The `llms.txt` summary and link lists live in the `writeAiFiles()` call in `tools/i18n.mjs`. Keep them in step with the page.
+
 ## Build reusable components
 If a piece of UI could be useful twice, in this repo or in another of Deovandski's repos, build it as a reusable component instead of one-off code in a page. Examples: a clock, a counter or score card, a board, a gallery, a map, a picker.
 - **Where:** its own script and stylesheet in `site/` (for example `site/<name>.js` and `site/<name>.css`), set up from data attributes on its HTML. Any text its script shows lives in `#ui-strings` so it gets translated. List it in a "Reusable components" section of README.md.
