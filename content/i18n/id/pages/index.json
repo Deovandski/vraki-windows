@@ -15,6 +15,10 @@
   "en": "The 2017 README ended with a hand-drawn sketch and a promise: <em>\"If time allows, I will develop a cleaner version of the following drawing followed by a font.\"</em> That font now exists, made for the #HusbandOutWorld series, and it lives in the HusbandOutWorld repository.",
   "t": "README 2017 diakhiri dengan sketsa tangan dan sebuah janji: <em>\"Jika waktu memungkinkan, saya akan membuat versi yang lebih rapi dari gambar berikut, lalu sebuah fon.\"</em> Fon itu kini sudah ada, dibuat untuk seri #HusbandOutWorld, dan tersimpan di repositori HusbandOutWorld."
  },
+ "05c7663fe3f6": {
+  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://www.husbandoutworld.com/\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
+  "t": "Pada 2017, Vraki adalah aplikasi Windows kecil yang membalik, menggeser, dan menyusun ulang bahasa Inggris hingga terbaca seperti bahasa baru. Ide itu tumbuh menjadi aksara seri <a href=\"https://www.husbandoutworld.com/\">#HusbandOutWorld</a> beserta fonnya sendiri. Aplikasi aslinya kembali, apa adanya, sebagai catatan."
+ },
  "081ae3fdc403": {
   "en": "Custom",
   "t": "Kustom"
@@ -134,10 +138,6 @@
  "509a0c11c170": {
   "en": "To open the 2017 project you need Visual Studio with the Universal Windows Platform workload; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Downloads of the source are on the <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">releases page</a>.",
   "t": "Untuk membuka proyek 2017, Anda memerlukan Visual Studio dengan workload Universal Windows Platform; lihat <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Unduhan kode sumber ada di <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">halaman rilis</a>."
- },
- "544ec96d0c5b": {
-  "en": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
-  "t": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: abjad, angka dan tanda, serta posisi Vraki di antara bahasa-bahasa lain dalam seri ini."
  },
  "5c5e4fddede4": {
   "en": "Switch direction. Currently converting text to Vraki.",
@@ -327,10 +327,6 @@
   "en": "Char + Word Pair",
   "t": "Karakter + Pasangan Kata"
  },
- "d26f9b5e2e9d": {
-  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
-  "t": "Pada 2017, Vraki adalah aplikasi Windows kecil yang membalik, menggeser, dan menyusun ulang bahasa Inggris hingga terbaca seperti bahasa baru. Ide itu tumbuh menjadi aksara seri <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> beserta fonnya sendiri. Aplikasi aslinya kembali, apa adanya, sebagai catatan."
- },
  "d36d5516dbff": {
   "en": "The Vraki typeface",
   "t": "Fon Vraki"
@@ -406,6 +402,10 @@
  "fdf936b2bc81": {
   "en": "An open-table, West Marches-style campaign set in the same world in the 1040s A.G., with lore summaries, quests, stat blocks and ready-made adventurers.",
   "t": "Kampanye meja terbuka bergaya West Marches yang berlatar di dunia yang sama pada tahun 1040-an A.G., dengan ringkasan lore, misi, blok statistik, dan petualang siap pakai."
+ },
+ "ff1a811df9e9": {
+  "en": "<a href=\"https://www.husbandoutworld.com/lore/language/\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
+  "t": "<a href=\"https://www.husbandoutworld.com/lore/language/\">World Lore › Language</a>: abjad, angka dan tanda, serta posisi Vraki di antara bahasa-bahasa lain dalam seri ini."
  },
  "ff578165fc1a": {
   "en": "Char + word pair reverse, consonants −10, vowels +2, Vraki structure, letter case",
