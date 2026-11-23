@@ -15,6 +15,10 @@
   "en": "The 2017 README ended with a hand-drawn sketch and a promise: <em>\"If time allows, I will develop a cleaner version of the following drawing followed by a font.\"</em> That font now exists, made for the #HusbandOutWorld series, and it lives in the HusbandOutWorld repository.",
   "t": "README ปี 2017 จบด้วยภาพสเก็ตช์ลายมือและคำสัญญา: <em>\"ถ้ามีเวลา ผมจะพัฒนาภาพวาดต่อไปนี้ให้สะอาดขึ้น แล้วตามด้วยฟอนต์\"</em> ตอนนี้ฟอนต์นั้นมีอยู่จริงแล้ว สร้างขึ้นสำหรับซีรีส์ #HusbandOutWorld และอยู่ในรีโพสิทอรี HusbandOutWorld"
  },
+ "05c7663fe3f6": {
+  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://www.husbandoutworld.com/\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
+  "t": "ในปี 2017 วรากีเป็นแอป Windows เล็ก ๆ ที่กลับด้าน เลื่อน และจัดโครงสร้างภาษาอังกฤษใหม่จนอ่านเหมือนภาษาใหม่ แนวคิดนั้นเติบโตเป็นอักษรของซีรีส์ <a href=\"https://www.husbandoutworld.com/\">#HusbandOutWorld</a> และฟอนต์ของตัวเอง แอปต้นฉบับกลับมาแล้วในแบบที่มันเคยเป็น เพื่อเป็นบันทึก"
+ },
  "081ae3fdc403": {
   "en": "Custom",
   "t": "กำหนดเอง"
@@ -134,10 +138,6 @@
  "509a0c11c170": {
   "en": "To open the 2017 project you need Visual Studio with the Universal Windows Platform workload; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Downloads of the source are on the <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">releases page</a>.",
   "t": "การเปิดโปรเจกต์ปี 2017 ต้องใช้ Visual Studio ที่ติดตั้งเวิร์กโหลด Universal Windows Platform ดู <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a> ดาวน์โหลดซอร์สโค้ดได้ที่<a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">หน้ารีลีส</a>"
- },
- "544ec96d0c5b": {
-  "en": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
-  "t": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: ตัวอักษร ตัวเลขและเครื่องหมาย และตำแหน่งของวรากีท่ามกลางภาษาอื่น ๆ ของซีรีส์"
  },
  "5c5e4fddede4": {
   "en": "Switch direction. Currently converting text to Vraki.",
@@ -327,10 +327,6 @@
   "en": "Char + Word Pair",
   "t": "อักขระ + คู่คำ"
  },
- "d26f9b5e2e9d": {
-  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
-  "t": "ในปี 2017 วรากีเป็นแอป Windows เล็ก ๆ ที่กลับด้าน เลื่อน และจัดโครงสร้างภาษาอังกฤษใหม่จนอ่านเหมือนภาษาใหม่ แนวคิดนั้นเติบโตเป็นอักษรของซีรีส์ <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> และฟอนต์ของตัวเอง แอปต้นฉบับกลับมาแล้วในแบบที่มันเคยเป็น เพื่อเป็นบันทึก"
- },
  "d36d5516dbff": {
   "en": "The Vraki typeface",
   "t": "ฟอนต์วรากี"
@@ -406,6 +402,10 @@
  "fdf936b2bc81": {
   "en": "An open-table, West Marches-style campaign set in the same world in the 1040s A.G., with lore summaries, quests, stat blocks and ready-made adventurers.",
   "t": "แคมเปญแบบโต๊ะเปิดสไตล์ West Marches ในโลกเดียวกันช่วงทศวรรษ 1040 A.G. มีสรุปเรื่องราวของโลก เควสต์ สเตตบล็อก และนักผจญภัยพร้อมเล่น"
+ },
+ "ff1a811df9e9": {
+  "en": "<a href=\"https://www.husbandoutworld.com/lore/language/\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
+  "t": "<a href=\"https://www.husbandoutworld.com/lore/language/\">World Lore › Language</a>: ตัวอักษร ตัวเลขและเครื่องหมาย และตำแหน่งของวรากีท่ามกลางภาษาอื่น ๆ ของซีรีส์"
  },
  "ff578165fc1a": {
   "en": "Char + word pair reverse, consonants −10, vowels +2, Vraki structure, letter case",

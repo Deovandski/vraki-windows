@@ -19,6 +19,10 @@
   "en": "Main",
   "t": "메인"
  },
+ "675f0801b772": {
+  "en": "Part of the world of <a href=\"https://www.husbandoutworld.com/\">#HusbandOutWorld</a> and the <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
+  "t": "<a href=\"https://www.husbandoutworld.com/\">#HusbandOutWorld</a>와 <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">브라키 웨스트 마치 캠페인</a>의 세계에 속합니다. 소스와 이슈는 <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>에. <a href=\"#privacy\">개인정보</a>."
+ },
  "7ddd66b689c9": {
   "en": "Try it",
   "t": "체험하기"
@@ -42,9 +46,5 @@
  "eb29514de833": {
   "en": "Typeface",
   "t": "서체"
- },
- "f630425e994c": {
-  "en": "Part of the world of <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> and the <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
-  "t": "<a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a>와 <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">브라키 웨스트 마치 캠페인</a>의 세계에 속합니다. 소스와 이슈는 <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>에. <a href=\"#privacy\">개인정보</a>."
  }
 }

@@ -274,7 +274,7 @@ function cmdBuild(args) {
         { label: 'How the 2017 conversions work', url: 'https://github.com/Deovandski/vraki-windows/blob/main/docs/ALGORITHMS.md' },
       ] },
       { heading: 'Related', links: [
-        { label: 'Vraki Language & Font (HusbandOutWorld World Lore)', url: 'https://deovandski.github.io/HusbandOutWorld/lore/language/', note: 'the language in the series\' lore' },
+        { label: 'Vraki Language & Font (HusbandOutWorld World Lore)', url: 'https://www.husbandoutworld.com/lore/language/', note: 'the language in the series\' lore' },
         { label: '#HusbandOutWorld', url: 'https://www.husbandoutworld.com/llms.txt', note: 'the light novel series, with its own llms.txt' },
         { label: 'Vraki West March Campaign', url: 'https://deovandski.github.io/Vraki-West-March-Campaign-D-D/', note: 'a D&D 5e campaign set in the same world' },
         { label: "Deovandski's Blog", url: 'https://deovandski.github.io/Deovandski/llms.txt', note: 'the author, with his own llms.txt' },

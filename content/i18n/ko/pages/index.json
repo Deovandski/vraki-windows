@@ -15,6 +15,10 @@
   "en": "The 2017 README ended with a hand-drawn sketch and a promise: <em>\"If time allows, I will develop a cleaner version of the following drawing followed by a font.\"</em> That font now exists, made for the #HusbandOutWorld series, and it lives in the HusbandOutWorld repository.",
   "t": "2017년 README는 손으로 그린 스케치와 약속으로 끝났습니다: <em>\"시간이 허락한다면, 아래 그림을 더 깔끔하게 다듬고 이어서 폰트로 만들겠습니다.\"</em> 그 폰트는 이제 #HusbandOutWorld 시리즈를 위해 만들어져 HusbandOutWorld 저장소에 있습니다."
  },
+ "05c7663fe3f6": {
+  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://www.husbandoutworld.com/\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
+  "t": "2017년, 브라키는 영어를 뒤집고, 밀고, 재구성해서 새로운 언어처럼 읽히게 만드는 작은 Windows 앱이었습니다. 그 아이디어는 <a href=\"https://www.husbandoutworld.com/\">#HusbandOutWorld</a> 시리즈의 문자와 전용 서체로 자라났습니다. 원래 앱은 기록을 위해 당시 모습 그대로 돌아왔습니다."
+ },
  "081ae3fdc403": {
   "en": "Custom",
   "t": "사용자 지정"
@@ -134,10 +138,6 @@
  "509a0c11c170": {
   "en": "To open the 2017 project you need Visual Studio with the Universal Windows Platform workload; see <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>. Downloads of the source are on the <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">releases page</a>.",
   "t": "2017년 프로젝트를 열려면 유니버설 Windows 플랫폼 워크로드가 설치된 Visual Studio가 필요합니다. <a href=\"https://github.com/Deovandski/vraki-windows/blob/main/legacy/README.md\">legacy/README.md</a>를 참고하세요. 소스 다운로드는 <a href=\"https://github.com/Deovandski/vraki-windows/releases/latest\">릴리스 페이지</a>에 있습니다."
- },
- "544ec96d0c5b": {
-  "en": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
-  "t": "<a href=\"https://deovandski.github.io/HusbandOutWorld/lore/language/\">World Lore › Language</a>: 알파벳, 숫자와 기호, 그리고 시리즈의 다른 언어들 사이에서 브라키의 위치."
  },
  "5c5e4fddede4": {
   "en": "Switch direction. Currently converting text to Vraki.",
@@ -327,10 +327,6 @@
   "en": "Char + Word Pair",
   "t": "글자 + 단어 쌍"
  },
- "d26f9b5e2e9d": {
-  "en": "In 2017, Vraki was a small Windows app that reversed, shifted and restructured English until it read like a new language. That idea grew into the script of the <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> series and its own typeface. The original app is back, as it was, for the record.",
-  "t": "2017년, 브라키는 영어를 뒤집고, 밀고, 재구성해서 새로운 언어처럼 읽히게 만드는 작은 Windows 앱이었습니다. 그 아이디어는 <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> 시리즈의 문자와 전용 서체로 자라났습니다. 원래 앱은 기록을 위해 당시 모습 그대로 돌아왔습니다."
- },
  "d36d5516dbff": {
   "en": "The Vraki typeface",
   "t": "브라키 서체"
@@ -406,6 +402,10 @@
  "fdf936b2bc81": {
   "en": "An open-table, West Marches-style campaign set in the same world in the 1040s A.G., with lore summaries, quests, stat blocks and ready-made adventurers.",
   "t": "같은 세계의 1040년대 A.G.를 배경으로 한 오픈 테이블, West Marches 방식의 캠페인입니다. 설정 요약, 퀘스트, 스탯 블록, 바로 쓸 수 있는 모험가가 준비되어 있습니다."
+ },
+ "ff1a811df9e9": {
+  "en": "<a href=\"https://www.husbandoutworld.com/lore/language/\">World Lore › Language</a>: the alphabet, numerals and marks, and where Vraki sits among the series' other languages.",
+  "t": "<a href=\"https://www.husbandoutworld.com/lore/language/\">World Lore › Language</a>: 알파벳, 숫자와 기호, 그리고 시리즈의 다른 언어들 사이에서 브라키의 위치."
  },
  "ff578165fc1a": {
   "en": "Char + word pair reverse, consonants −10, vowels +2, Vraki structure, letter case",

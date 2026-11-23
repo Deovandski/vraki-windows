@@ -19,6 +19,10 @@
   "en": "Main",
   "t": "主菜单"
  },
+ "675f0801b772": {
+  "en": "Part of the world of <a href=\"https://www.husbandoutworld.com/\">#HusbandOutWorld</a> and the <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
+  "t": "属于 <a href=\"https://www.husbandoutworld.com/\">#HusbandOutWorld</a> 和<a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">弗拉基·韦斯特马奇战役</a>的世界。源代码和 issue 在 <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a> 上。<a href=\"#privacy\">隐私</a>。"
+ },
  "7ddd66b689c9": {
   "en": "Try it",
   "t": "试用"
@@ -42,9 +46,5 @@
  "eb29514de833": {
   "en": "Typeface",
   "t": "字体"
- },
- "f630425e994c": {
-  "en": "Part of the world of <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> and the <a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">Vraki West March Campaign</a>. Source and issues on <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a>. <a href=\"#privacy\">Privacy</a>.",
-  "t": "属于 <a href=\"https://deovandski.github.io/HusbandOutWorld/\">#HusbandOutWorld</a> 和<a href=\"https://deovandski.github.io/Vraki-West-March-Campaign-D-D/\">弗拉基·韦斯特马奇战役</a>的世界。源代码和 issue 在 <a href=\"https://github.com/Deovandski/vraki-windows\">GitHub</a> 上。<a href=\"#privacy\">隐私</a>。"
  }
 }
