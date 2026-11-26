@@ -47,6 +47,10 @@
   "en": "Development recording, May 2017 (46 seconds, no sound).",
   "t": "Bản ghi quá trình phát triển, tháng 5 năm 2017 (46 giây, không có tiếng)."
  },
+ "15c61d430df1": {
+  "en": "You’re using the installed app.",
+  "t": "Bạn đang dùng ứng dụng đã cài."
+ },
  "165047664701": {
   "en": "Changed the header image to support VisualStates, and updated the GitHub links.",
   "t": "Đổi ảnh tiêu đề để hỗ trợ VisualStates và cập nhật các liên kết GitHub."
@@ -231,6 +235,10 @@
   "en": "Differential Shift Rate",
   "t": "Dịch chuyển riêng"
  },
+ "9e3f4c60afcd": {
+  "en": "No install button? Open this page in Chrome (⋮ → Open in Chrome), then ⋮ → Install app.",
+  "t": "Không thấy nút cài đặt? Mở trang này bằng Chrome (⋮ → Mở trong Chrome), rồi ⋮ → Cài đặt ứng dụng."
+ },
  "a485fd837a64": {
   "en": "Complex Vraki",
   "t": "Vraki phức tạp"
@@ -299,6 +307,14 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "Tháng 5 năm 2017. Gói sideload của nó là bản dựng duy nhất còn sót lại; được đính kèm vào <a href=\"https://github.com/Deovandski/vraki-windows/releases\">bản phát hành trên GitHub</a> để lưu lại (chứng chỉ đã hết hạn năm 2018, nên hãy cài từ Store)."
  },
+ "bd1cf21678f6": {
+  "en": "Installed! Open it from your home screen or app list.",
+  "t": "Đã cài xong! Mở nó từ màn hình chính hoặc danh sách ứng dụng."
+ },
+ "bd323974df6f": {
+  "en": "So the site opens without a connection, and as an app if you install it, this browser keeps copies of the pages you open, with their scripts and font. Images and video are never saved, and nothing is sent anywhere.",
+  "t": "Để trang web mở được khi không có mạng, và mở như một ứng dụng nếu bạn cài đặt, trình duyệt này lưu bản sao các trang bạn đã mở, cùng tập lệnh và phông chữ. Hình ảnh và video không bao giờ được lưu, và không có gì được gửi đi đâu cả."
+ },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "Văn bản"
@@ -310,6 +326,10 @@
  "c697bb6ff5e2": {
   "en": "Shift Vowels By",
   "t": "Dịch chuyển nguyên âm"
+ },
+ "ccd62e5d37a0": {
+  "en": "To install it, open this page in Chrome, Edge or Samsung Internet. On iPhone or iPad: Share, then Add to Home Screen.",
+  "t": "Để cài đặt, hãy mở trang này bằng Chrome, Edge hoặc Samsung Internet. Trên iPhone hoặc iPad: Chia sẻ → Thêm vào MH chính."
  },
  "cd9ba08526ff": {
   "en": "Conversion Type",
@@ -330,6 +350,10 @@
  "d36d5516dbff": {
   "en": "The Vraki typeface",
   "t": "Phông chữ Vraki"
+ },
+ "d5636c56abfd": {
+  "en": "On iPhone or iPad: tap Share, then Add to Home Screen.",
+  "t": "Trên iPhone hoặc iPad: chạm Chia sẻ, rồi Thêm vào MH chính."
  },
  "d89e229419df": {
   "en": "Word Pair",

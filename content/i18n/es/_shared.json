@@ -39,6 +39,10 @@
   "en": "Want a language added?",
   "t": "¿Quieres que añadamos un idioma?"
  },
+ "e5f79aa13bd5": {
+  "en": "Install app",
+  "t": "Instalar aplicación"
+ },
  "e9b450d14bc2": {
   "en": "Done",
   "t": "Listo"
@@ -46,5 +50,9 @@
  "eb29514de833": {
   "en": "Typeface",
   "t": "Tipografía"
+ },
+ "fc4a695f02a8": {
+  "en": "App",
+  "t": "App"
  }
 }

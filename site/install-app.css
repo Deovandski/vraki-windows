@@ -1,0 +1,14 @@
+/* Install app button: see site/install-app.js for usage and options.
+   Theming: --install-accent (button colour), --install-ink (button text), --install-muted (the hint line). */
+.install-app { display: grid; gap: 0.35rem; justify-items: start; }
+.install-app__btn {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  font: inherit; font-weight: 700; padding: 0.45rem 1rem;
+  border-radius: 999px; border: 0; cursor: pointer;
+  background: var(--install-accent, #39c5bb); color: var(--install-ink, #07040d);
+}
+.install-app__btn[hidden] { display: none; }
+.install-app__btn:focus-visible { outline: 2px solid var(--install-accent, #39c5bb); outline-offset: 3px; }
+.install-app__btn svg { width: 18px; height: 18px; flex: none; }
+.install-app__note { margin: 0; font-size: 0.9em; color: var(--install-muted, #9aa6b8); }
+.install-app__note:empty { display: none; }

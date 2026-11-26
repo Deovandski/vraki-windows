@@ -47,6 +47,10 @@
   "en": "Development recording, May 2017 (46 seconds, no sound).",
   "t": "开发录屏，2017 年 5 月（46 秒，无声）。"
  },
+ "15c61d430df1": {
+  "en": "You’re using the installed app.",
+  "t": "你正在使用已安装的应用。"
+ },
  "165047664701": {
   "en": "Changed the header image to support VisualStates, and updated the GitHub links.",
   "t": "让标题图片支持 VisualStates，并更新了 GitHub 链接。"
@@ -231,6 +235,10 @@
   "en": "Differential Shift Rate",
   "t": "分别设置移位量"
  },
+ "9e3f4c60afcd": {
+  "en": "No install button? Open this page in Chrome (⋮ → Open in Chrome), then ⋮ → Install app.",
+  "t": "没有安装按钮？用 Chrome 打开此页面（⋮ → 在 Chrome 中打开），然后 ⋮ → 安装应用。"
+ },
  "a485fd837a64": {
   "en": "Complex Vraki",
   "t": "复杂弗拉基"
@@ -299,6 +307,14 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "2017 年 5 月。它的旁加载安装包是唯一留存下来的构建，作为记录附在 <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub 发布</a>中（其证书已于 2018 年过期，请从 Store 安装）。"
  },
+ "bd1cf21678f6": {
+  "en": "Installed! Open it from your home screen or app list.",
+  "t": "已安装！从主屏幕或应用列表中打开它。"
+ },
+ "bd323974df6f": {
+  "en": "So the site opens without a connection, and as an app if you install it, this browser keeps copies of the pages you open, with their scripts and font. Images and video are never saved, and nothing is sent anywhere.",
+  "t": "为了让网站在没有网络时也能打开（安装为应用后也一样），这个浏览器会保存你打开过的页面副本，以及它们的脚本和字体。图片和视频从不保存，也不会向任何地方发送任何内容。"
+ },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "文本"
@@ -310,6 +326,10 @@
  "c697bb6ff5e2": {
   "en": "Shift Vowels By",
   "t": "元音移位量"
+ },
+ "ccd62e5d37a0": {
+  "en": "To install it, open this page in Chrome, Edge or Samsung Internet. On iPhone or iPad: Share, then Add to Home Screen.",
+  "t": "要安装，请用 Chrome、Edge 或 Samsung Internet 打开此页面。在 iPhone 或 iPad 上：共享 → 添加到主屏幕。"
  },
  "cd9ba08526ff": {
   "en": "Conversion Type",
@@ -330,6 +350,10 @@
  "d36d5516dbff": {
   "en": "The Vraki typeface",
   "t": "弗拉基字体"
+ },
+ "d5636c56abfd": {
+  "en": "On iPhone or iPad: tap Share, then Add to Home Screen.",
+  "t": "在 iPhone 或 iPad 上：点“共享”，然后“添加到主屏幕”。"
  },
  "d89e229419df": {
   "en": "Word Pair",

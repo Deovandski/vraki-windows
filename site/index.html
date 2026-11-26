@@ -13,6 +13,30 @@
   <link rel="alternate" type="text/markdown" href="llms.txt" title="llms.txt: index for AI tools" translate="no">
   <link rel="alternate" type="text/markdown" href="index.md" title="This page as Markdown" translate="no">
   <link rel="icon" type="image/png" href="icon.png">
+  <!-- Installable app (PWA): the manifest, icons (icons/) and the worker that keeps pages readable offline (sw.js).
+       The worker's scope is the site's root, so it covers every language folder too. -->
+  <meta name="theme-color" content="#07090a">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="install-app.css">
+  <script>
+    // Keep the browser's install offer for the Install app button (install-app.js), even if it comes early.
+    if (!window.__installAppPrompt) {
+      window.__installAppPrompt = { event: null };
+      addEventListener("beforeinstallprompt", function (e) {
+        window.__installAppPrompt.event = e;
+        document.dispatchEvent(new CustomEvent("install-app:ready"));
+      });
+    }
+    // Register the worker. On a first visit this page loaded before the worker existed, so ask it to save this page too.
+    if ("serviceWorker" in navigator) addEventListener("load", function () {
+      var root = document.documentElement.dataset.root || "./", first = !navigator.serviceWorker.controller;
+      navigator.serviceWorker.register(root + "sw.js", { scope: root })
+        .then(function () { return first && navigator.serviceWorker.ready; })
+        .then(function (r) { if (r && r.active) r.active.postMessage({ type: "save-page", url: location.href }); })
+        .catch(function () { /* no worker (private mode, old browser): the site works as before */ });
+    });
+  </script>
   <script>
     // Settings before first paint: text size, and on a first visit the browser's language (once it's 90% translated).
     try {
@@ -305,6 +329,8 @@
     .site-settings select { font: inherit; padding: 4px 8px; border-radius: 6px; border: 1px solid var(--rule); background: var(--paper-2); color: var(--ink); max-width: 60%; }
     .site-settings input[type="range"] { accent-color: var(--crimson); width: 9rem; }
     .site-settings .setting-link { margin: 0; padding: 6px 0 12px; border-bottom: 1px solid var(--rule); font-size: 14px; text-align: end; }
+    .site-settings { --install-accent: var(--crimson); --install-ink: #fff; --install-muted: var(--ink-soft); }
+    .site-settings .setting .install-app { justify-items: end; text-align: end; max-width: 70%; }
     .site-settings .done { margin-top: 18px; display: flex; justify-content: flex-end; }
     .site-settings .done button { font: 700 15px var(--sans); padding: 9px 20px; border-radius: 10px; border: 0; background: var(--ink); color: var(--paper); cursor: pointer; }
 
@@ -597,6 +623,7 @@ tools/                   tests for the port, checked against the 2017 app's outp
         <h2>Privacy</h2>
         <p class="lede">The app stores nothing about you; the text you convert stays on your device. This website has no cookies, no analytics and no ads, and the converter and typeface preview run entirely in your browser. It's hosted on GitHub Pages, so <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a> sees your IP address when it sends you the page. Questions go to <a href="https://github.com/Deovandski/vraki-windows/issues">GitHub issues</a>.</p>
         <p class="lede">Your Language and Text size choices are saved in this browser only, so the site remembers them next time. They never leave your device.</p>
+        <p class="lede">So the site opens without a connection, and as an app if you install it, this browser keeps copies of the pages you open, with their scripts and font. Images and video are never saved, and nothing is sent anywhere.</p>
       </section>
     </main>
 
@@ -616,6 +643,11 @@ tools/                   tests for the port, checked against the 2017 app's outp
     <span data-k="shift-consonants-by">Shift Consonants by</span>
     <span data-k="dir-to-vraki">Switch direction. Currently converting text to Vraki.</span>
     <span data-k="dir-to-text">Switch direction. Currently converting Vraki to text.</span>
+    <span data-k="install-app.installed">You’re using the installed app.</span>
+    <span data-k="install-app.done">Installed! Open it from your home screen or app list.</span>
+    <span data-k="install-app.android">No install button? Open this page in Chrome (⋮ → Open in Chrome), then ⋮ → Install app.</span>
+    <span data-k="install-app.ios">On iPhone or iPad: tap Share, then Add to Home Screen.</span>
+    <span data-k="install-app.other">To install it, open this page in Chrome, Edge or Samsung Internet. On iPhone or iPad: Share, then Add to Home Screen.</span>
     <span data-k="chip-title">(upper case). Lower case is the same without the circle markers.</span>
   </div>
 
@@ -625,11 +657,18 @@ tools/                   tests for the port, checked against the 2017 app's outp
       <label class="setting"><span>Language</span><select data-setting="lang" translate="no"><option value="en" lang="en">English</option></select></label>
       <p class="setting-link"><a href="https://github.com/Deovandski/vraki-windows/issues/2" rel="noopener">Want a language added?</a></p>
       <label class="setting"><span>Text size</span><input data-setting="size" type="range" min="13" max="26" step="1" value="17"></label>
+      <div class="setting"><span>App</span>
+        <div class="install-app" data-install-app>
+          <button type="button" class="install-app__btn" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M11 3h2v9.6l3.3-3.3 1.4 1.4L12 16.4l-5.7-5.7 1.4-1.4 3.3 3.3V3Zm-6 15h14v2H5v-2Z"/></svg><span>Install app</span></button>
+          <p class="install-app__note" aria-live="polite"></p>
+        </div>
+      </div>
       <div class="done"><button value="close">Done</button></div>
     </form>
   </dialog>
 
   <script src="vraki-2017.js"></script>
+  <script src="install-app.js" defer></script>
   <script>
     (function () {
       "use strict";

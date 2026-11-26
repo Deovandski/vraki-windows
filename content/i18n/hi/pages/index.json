@@ -47,6 +47,10 @@
   "en": "Development recording, May 2017 (46 seconds, no sound).",
   "t": "डेवलपमेंट रिकॉर्डिंग, मई 2017 (46 सेकंड, बिना आवाज़)।"
  },
+ "15c61d430df1": {
+  "en": "You’re using the installed app.",
+  "t": "आप इंस्टॉल किया हुआ ऐप इस्तेमाल कर रहे हैं।"
+ },
  "165047664701": {
   "en": "Changed the header image to support VisualStates, and updated the GitHub links.",
   "t": "हेडर इमेज को VisualStates के लिए तैयार किया, और GitHub लिंक अपडेट किए।"
@@ -231,6 +235,10 @@
   "en": "Differential Shift Rate",
   "t": "अलग-अलग खिसकाव दर"
  },
+ "9e3f4c60afcd": {
+  "en": "No install button? Open this page in Chrome (⋮ → Open in Chrome), then ⋮ → Install app.",
+  "t": "इंस्टॉल बटन नहीं दिख रहा? यह पेज Chrome में खोलें (⋮ → Chrome में खोलें), फिर ⋮ → ऐप इंस्टॉल करें।"
+ },
  "a485fd837a64": {
   "en": "Complex Vraki",
   "t": "जटिल व्राकी"
@@ -299,6 +307,14 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "मई 2017। इसका साइडलोड पैकेज ही अकेला बिल्ड है जो बचा रहा; इसे रिकॉर्ड के लिए <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub रिलीज़</a> से जोड़ा गया है (इसका सर्टिफ़िकेट 2018 में समाप्त हो गया, इसलिए Store से इंस्टॉल करें)।"
  },
+ "bd1cf21678f6": {
+  "en": "Installed! Open it from your home screen or app list.",
+  "t": "इंस्टॉल हो गया! इसे होम स्क्रीन या ऐप सूची से खोलें।"
+ },
+ "bd323974df6f": {
+  "en": "So the site opens without a connection, and as an app if you install it, this browser keeps copies of the pages you open, with their scripts and font. Images and video are never saved, and nothing is sent anywhere.",
+  "t": "ताकि साइट बिना इंटरनेट के भी खुले, और इंस्टॉल करने पर ऐप की तरह भी, यह ब्राउज़र आपके खोले गए पेजों की कॉपी उनकी स्क्रिप्ट और फ़ॉन्ट के साथ रखता है। तस्वीरें और वीडियो कभी सेव नहीं होते, और कुछ भी कहीं नहीं भेजा जाता।"
+ },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "टेक्स्ट"
@@ -310,6 +326,10 @@
  "c697bb6ff5e2": {
   "en": "Shift Vowels By",
   "t": "स्वरों को इतना खिसकाएँ"
+ },
+ "ccd62e5d37a0": {
+  "en": "To install it, open this page in Chrome, Edge or Samsung Internet. On iPhone or iPad: Share, then Add to Home Screen.",
+  "t": "इंस्टॉल करने के लिए यह पेज Chrome, Edge या Samsung Internet में खोलें। iPhone या iPad पर: शेयर करें → होम स्क्रीन में जोड़ें।"
  },
  "cd9ba08526ff": {
   "en": "Conversion Type",
@@ -330,6 +350,10 @@
  "d36d5516dbff": {
   "en": "The Vraki typeface",
   "t": "व्राकी टाइपफ़ेस"
+ },
+ "d5636c56abfd": {
+  "en": "On iPhone or iPad: tap Share, then Add to Home Screen.",
+  "t": "iPhone या iPad पर: शेयर करें दबाएँ, फिर होम स्क्रीन में जोड़ें।"
  },
  "d89e229419df": {
   "en": "Word Pair",

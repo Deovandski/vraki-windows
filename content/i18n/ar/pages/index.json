@@ -47,6 +47,10 @@
   "en": "Development recording, May 2017 (46 seconds, no sound).",
   "t": "تسجيل أثناء التطوير، مايو 2017 (46 ثانية، بلا صوت)."
  },
+ "15c61d430df1": {
+  "en": "You’re using the installed app.",
+  "t": "أنت تستخدم التطبيق المثبَّت."
+ },
  "165047664701": {
   "en": "Changed the header image to support VisualStates, and updated the GitHub links.",
   "t": "غيّر صورة الترويسة لتدعم VisualStates، وحدّث روابط GitHub."
@@ -231,6 +235,10 @@
   "en": "Differential Shift Rate",
   "t": "معدل إزاحة متفاوت"
  },
+ "9e3f4c60afcd": {
+  "en": "No install button? Open this page in Chrome (⋮ → Open in Chrome), then ⋮ → Install app.",
+  "t": "لا يوجد زر تثبيت؟ افتح هذه الصفحة في Chrome (⋮ ← فتح في Chrome)، ثم ⋮ ← تثبيت التطبيق."
+ },
  "a485fd837a64": {
   "en": "Complex Vraki",
   "t": "فراكي معقّد"
@@ -299,6 +307,14 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "مايو 2017. حزمة التثبيت الجانبي الخاصة به هي البنية الوحيدة التي نجت، وهي مرفقة <a href=\"https://github.com/Deovandski/vraki-windows/releases\">بإصدار GitHub</a> للتوثيق (انتهت صلاحية شهادتها في 2018، لذا ثبّته من Store)."
  },
+ "bd1cf21678f6": {
+  "en": "Installed! Open it from your home screen or app list.",
+  "t": "تم التثبيت! افتحه من الشاشة الرئيسية أو قائمة التطبيقات."
+ },
+ "bd323974df6f": {
+  "en": "So the site opens without a connection, and as an app if you install it, this browser keeps copies of the pages you open, with their scripts and font. Images and video are never saved, and nothing is sent anywhere.",
+  "t": "لكي يفتح الموقع دون اتصال، وكتطبيق إن ثبّتّه، يحتفظ هذا المتصفح بنسخ من الصفحات التي تفتحها، مع نصوصها البرمجية والخط. لا تُحفظ الصور ولا مقاطع الفيديو أبدًا، ولا يُرسل أي شيء إلى أي مكان."
+ },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "النص"
@@ -310,6 +326,10 @@
  "c697bb6ff5e2": {
   "en": "Shift Vowels By",
   "t": "إزاحة حروف العلة بمقدار"
+ },
+ "ccd62e5d37a0": {
+  "en": "To install it, open this page in Chrome, Edge or Samsung Internet. On iPhone or iPad: Share, then Add to Home Screen.",
+  "t": "لتثبيته، افتح هذه الصفحة في Chrome أو Edge أو Samsung Internet. على iPhone أو iPad: مشاركة ← إضافة إلى الشاشة الرئيسية."
  },
  "cd9ba08526ff": {
   "en": "Conversion Type",
@@ -330,6 +350,10 @@
  "d36d5516dbff": {
   "en": "The Vraki typeface",
   "t": "خط فراكي الطباعي"
+ },
+ "d5636c56abfd": {
+  "en": "On iPhone or iPad: tap Share, then Add to Home Screen.",
+  "t": "على iPhone أو iPad: اضغط مشاركة، ثم إضافة إلى الشاشة الرئيسية."
  },
  "d89e229419df": {
   "en": "Word Pair",

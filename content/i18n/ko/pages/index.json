@@ -47,6 +47,10 @@
   "en": "Development recording, May 2017 (46 seconds, no sound).",
   "t": "개발 녹화, 2017년 5월 (46초, 소리 없음)."
  },
+ "15c61d430df1": {
+  "en": "You’re using the installed app.",
+  "t": "설치된 앱으로 보고 있어요."
+ },
  "165047664701": {
   "en": "Changed the header image to support VisualStates, and updated the GitHub links.",
   "t": "헤더 이미지가 VisualStates를 지원하도록 바꾸고 GitHub 링크를 업데이트했습니다."
@@ -231,6 +235,10 @@
   "en": "Differential Shift Rate",
   "t": "따로 밀기"
  },
+ "9e3f4c60afcd": {
+  "en": "No install button? Open this page in Chrome (⋮ → Open in Chrome), then ⋮ → Install app.",
+  "t": "설치 버튼이 없나요? 이 페이지를 Chrome에서 열고(⋮ → Chrome에서 열기), ⋮ → 앱 설치."
+ },
  "a485fd837a64": {
   "en": "Complex Vraki",
   "t": "복잡한 브라키"
@@ -299,6 +307,14 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "2017년 5월. 사이드로드 패키지가 유일하게 남은 빌드이며, 기록으로 <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub 릴리스</a>에 첨부했습니다(인증서가 2018년에 만료되었으니 Store에서 설치하세요)."
  },
+ "bd1cf21678f6": {
+  "en": "Installed! Open it from your home screen or app list.",
+  "t": "설치됐어요! 홈 화면이나 앱 목록에서 열어 주세요."
+ },
+ "bd323974df6f": {
+  "en": "So the site opens without a connection, and as an app if you install it, this browser keeps copies of the pages you open, with their scripts and font. Images and video are never saved, and nothing is sent anywhere.",
+  "t": "연결 없이도 사이트가 열리도록(앱으로 설치했다면 앱으로도), 이 브라우저는 여러분이 연 페이지의 사본을 스크립트와 글꼴과 함께 보관합니다. 이미지와 동영상은 저장하지 않으며, 어디로도 아무것도 보내지 않습니다."
+ },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "텍스트"
@@ -310,6 +326,10 @@
  "c697bb6ff5e2": {
   "en": "Shift Vowels By",
   "t": "모음 밀기 값"
+ },
+ "ccd62e5d37a0": {
+  "en": "To install it, open this page in Chrome, Edge or Samsung Internet. On iPhone or iPad: Share, then Add to Home Screen.",
+  "t": "설치하려면 이 페이지를 Chrome, Edge 또는 Samsung Internet에서 여세요. iPhone이나 iPad에서는: 공유 → 홈 화면에 추가."
  },
  "cd9ba08526ff": {
   "en": "Conversion Type",
@@ -330,6 +350,10 @@
  "d36d5516dbff": {
   "en": "The Vraki typeface",
   "t": "브라키 서체"
+ },
+ "d5636c56abfd": {
+  "en": "On iPhone or iPad: tap Share, then Add to Home Screen.",
+  "t": "iPhone이나 iPad에서는: 공유를 누른 뒤 홈 화면에 추가."
  },
  "d89e229419df": {
   "en": "Word Pair",

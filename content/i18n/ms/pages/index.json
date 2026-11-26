@@ -47,6 +47,10 @@
   "en": "Development recording, May 2017 (46 seconds, no sound).",
   "t": "Rakaman pembangunan, Mei 2017 (46 saat, tanpa bunyi)."
  },
+ "15c61d430df1": {
+  "en": "You’re using the installed app.",
+  "t": "Anda sedang menggunakan apl yang dipasang."
+ },
  "165047664701": {
   "en": "Changed the header image to support VisualStates, and updated the GitHub links.",
   "t": "Menukar imej pengepala untuk menyokong VisualStates, dan mengemas kini pautan GitHub."
@@ -231,6 +235,10 @@
   "en": "Differential Shift Rate",
   "t": "Kadar Anjakan Berbeza"
  },
+ "9e3f4c60afcd": {
+  "en": "No install button? Open this page in Chrome (⋮ → Open in Chrome), then ⋮ → Install app.",
+  "t": "Tiada butang pasang? Buka halaman ini dalam Chrome (⋮ → Buka dalam Chrome), kemudian ⋮ → Pasang apl."
+ },
  "a485fd837a64": {
   "en": "Complex Vraki",
   "t": "Vraki Kompleks"
@@ -299,6 +307,14 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "Mei 2017. Pakej sideload-nya ialah satu-satunya binaan yang terselamat; ia dilampirkan pada <a href=\"https://github.com/Deovandski/vraki-windows/releases\">keluaran GitHub</a> sebagai rekod (sijilnya tamat tempoh pada 2018, jadi pasang dari Store)."
  },
+ "bd1cf21678f6": {
+  "en": "Installed! Open it from your home screen or app list.",
+  "t": "Sudah dipasang! Buka dari skrin utama atau senarai apl."
+ },
+ "bd323974df6f": {
+  "en": "So the site opens without a connection, and as an app if you install it, this browser keeps copies of the pages you open, with their scripts and font. Images and video are never saved, and nothing is sent anywhere.",
+  "t": "Supaya laman ini boleh dibuka tanpa sambungan, dan sebagai aplikasi jika anda memasangnya, pelayar ini menyimpan salinan halaman yang anda buka, bersama skrip dan fonnya. Imej dan video tidak pernah disimpan, dan tiada apa-apa dihantar ke mana-mana."
+ },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "Teks"
@@ -310,6 +326,10 @@
  "c697bb6ff5e2": {
   "en": "Shift Vowels By",
   "t": "Anjak Vokal Sebanyak"
+ },
+ "ccd62e5d37a0": {
+  "en": "To install it, open this page in Chrome, Edge or Samsung Internet. On iPhone or iPad: Share, then Add to Home Screen.",
+  "t": "Untuk memasangnya, buka halaman ini dalam Chrome, Edge atau Samsung Internet. Pada iPhone atau iPad: Kongsi → Tambah ke Skrin Utama."
  },
  "cd9ba08526ff": {
   "en": "Conversion Type",
@@ -330,6 +350,10 @@
  "d36d5516dbff": {
   "en": "The Vraki typeface",
   "t": "Fon Vraki"
+ },
+ "d5636c56abfd": {
+  "en": "On iPhone or iPad: tap Share, then Add to Home Screen.",
+  "t": "Pada iPhone atau iPad: ketik Kongsi, kemudian Tambah ke Skrin Utama."
  },
  "d89e229419df": {
   "en": "Word Pair",
