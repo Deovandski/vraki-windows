@@ -47,6 +47,10 @@
   "en": "Development recording, May 2017 (46 seconds, no sound).",
   "t": "Registrazione dello sviluppo, maggio 2017 (46 secondi, senza audio)."
  },
+ "15c61d430df1": {
+  "en": "You’re using the installed app.",
+  "t": "Stai usando l’app installata."
+ },
  "165047664701": {
   "en": "Changed the header image to support VisualStates, and updated the GitHub links.",
   "t": "L'immagine dell'intestazione ora supporta i VisualStates, e i link a GitHub sono aggiornati."
@@ -231,6 +235,10 @@
   "en": "Differential Shift Rate",
   "t": "Spostamento differenziato"
  },
+ "9e3f4c60afcd": {
+  "en": "No install button? Open this page in Chrome (⋮ → Open in Chrome), then ⋮ → Install app.",
+  "t": "Non vedi il pulsante per installare? Apri questa pagina in Chrome (⋮ → Apri in Chrome), poi ⋮ → Installa app."
+ },
  "a485fd837a64": {
   "en": "Complex Vraki",
   "t": "Vraki complesso"
@@ -299,6 +307,14 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "Maggio 2017. Il suo pacchetto di sideload è l'unica build sopravvissuta; è allegato alla <a href=\"https://github.com/Deovandski/vraki-windows/releases\">release su GitHub</a> per memoria (il certificato è scaduto nel 2018, quindi installala dallo Store)."
  },
+ "bd1cf21678f6": {
+  "en": "Installed! Open it from your home screen or app list.",
+  "t": "Installata! Aprila dalla schermata Home o dall’elenco delle app."
+ },
+ "bd323974df6f": {
+  "en": "So the site opens without a connection, and as an app if you install it, this browser keeps copies of the pages you open, with their scripts and font. Images and video are never saved, and nothing is sent anywhere.",
+  "t": "Perché il sito si apra senza connessione, e come app se lo installi, questo browser conserva copie delle pagine che apri, con i loro script e il carattere. Immagini e video non vengono mai salvati, e nulla viene inviato da nessuna parte."
+ },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "Testo"
@@ -310,6 +326,10 @@
  "c697bb6ff5e2": {
   "en": "Shift Vowels By",
   "t": "Sposta le vocali di"
+ },
+ "ccd62e5d37a0": {
+  "en": "To install it, open this page in Chrome, Edge or Samsung Internet. On iPhone or iPad: Share, then Add to Home Screen.",
+  "t": "Per installarla, apri questa pagina in Chrome, Edge o Samsung Internet. Su iPhone o iPad: Condividi → Aggiungi alla schermata Home."
  },
  "cd9ba08526ff": {
   "en": "Conversion Type",
@@ -330,6 +350,10 @@
  "d36d5516dbff": {
   "en": "The Vraki typeface",
   "t": "Il carattere Vraki"
+ },
+ "d5636c56abfd": {
+  "en": "On iPhone or iPad: tap Share, then Add to Home Screen.",
+  "t": "Su iPhone o iPad: tocca Condividi, poi Aggiungi alla schermata Home."
  },
  "d89e229419df": {
   "en": "Word Pair",

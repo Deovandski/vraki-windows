@@ -47,6 +47,10 @@
   "en": "Development recording, May 2017 (46 seconds, no sound).",
   "t": "บันทึกระหว่างพัฒนา พฤษภาคม 2017 (46 วินาที ไม่มีเสียง)"
  },
+ "15c61d430df1": {
+  "en": "You’re using the installed app.",
+  "t": "คุณกำลังใช้แอปที่ติดตั้งแล้ว"
+ },
  "165047664701": {
   "en": "Changed the header image to support VisualStates, and updated the GitHub links.",
   "t": "เปลี่ยนภาพส่วนหัวให้รองรับ VisualStates และอัปเดตลิงก์ GitHub"
@@ -231,6 +235,10 @@
   "en": "Differential Shift Rate",
   "t": "อัตราการเลื่อนแยกกัน"
  },
+ "9e3f4c60afcd": {
+  "en": "No install button? Open this page in Chrome (⋮ → Open in Chrome), then ⋮ → Install app.",
+  "t": "ไม่เห็นปุ่มติดตั้ง? เปิดหน้านี้ใน Chrome (⋮ → เปิดใน Chrome) แล้ว ⋮ → ติดตั้งแอป"
+ },
  "a485fd837a64": {
   "en": "Complex Vraki",
   "t": "วรากีแบบซับซ้อน"
@@ -299,6 +307,14 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "พฤษภาคม 2017 แพ็กเกจ sideload ของเวอร์ชันนี้เป็นบิลด์เดียวที่เหลืออยู่ แนบไว้ใน<a href=\"https://github.com/Deovandski/vraki-windows/releases\">รีลีสบน GitHub</a> เพื่อเป็นบันทึก (ใบรับรองหมดอายุในปี 2018 จึงควรติดตั้งจาก Store)"
  },
+ "bd1cf21678f6": {
+  "en": "Installed! Open it from your home screen or app list.",
+  "t": "ติดตั้งแล้ว! เปิดได้จากหน้าจอโฮมหรือรายการแอป"
+ },
+ "bd323974df6f": {
+  "en": "So the site opens without a connection, and as an app if you install it, this browser keeps copies of the pages you open, with their scripts and font. Images and video are never saved, and nothing is sent anywhere.",
+  "t": "เพื่อให้เว็บไซต์เปิดได้แม้ไม่มีอินเทอร์เน็ต และเปิดเป็นแอปได้หากคุณติดตั้ง เบราว์เซอร์นี้จะเก็บสำเนาของหน้าที่คุณเปิด พร้อมสคริปต์และฟอนต์ไว้ ไม่มีการบันทึกรูปภาพและวิดีโอ และไม่มีการส่งข้อมูลใด ๆ ไปที่ไหน"
+ },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "ข้อความ"
@@ -310,6 +326,10 @@
  "c697bb6ff5e2": {
   "en": "Shift Vowels By",
   "t": "เลื่อนสระไป"
+ },
+ "ccd62e5d37a0": {
+  "en": "To install it, open this page in Chrome, Edge or Samsung Internet. On iPhone or iPad: Share, then Add to Home Screen.",
+  "t": "หากต้องการติดตั้ง ให้เปิดหน้านี้ใน Chrome, Edge หรือ Samsung Internet บน iPhone หรือ iPad: แชร์ → เพิ่มไปยังหน้าจอโฮม"
  },
  "cd9ba08526ff": {
   "en": "Conversion Type",
@@ -330,6 +350,10 @@
  "d36d5516dbff": {
   "en": "The Vraki typeface",
   "t": "ฟอนต์วรากี"
+ },
+ "d5636c56abfd": {
+  "en": "On iPhone or iPad: tap Share, then Add to Home Screen.",
+  "t": "บน iPhone หรือ iPad: แตะแชร์ แล้วเพิ่มไปยังหน้าจอโฮม"
  },
  "d89e229419df": {
   "en": "Word Pair",

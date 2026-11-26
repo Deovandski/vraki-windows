@@ -47,6 +47,10 @@
   "en": "Development recording, May 2017 (46 seconds, no sound).",
   "t": "Grabación del desarrollo, mayo de 2017 (46 segundos, sin sonido)."
  },
+ "15c61d430df1": {
+  "en": "You’re using the installed app.",
+  "t": "Estás usando la aplicación instalada."
+ },
  "165047664701": {
   "en": "Changed the header image to support VisualStates, and updated the GitHub links.",
   "t": "Cambió la imagen de cabecera para admitir VisualStates y actualizó los enlaces de GitHub."
@@ -231,6 +235,10 @@
   "en": "Differential Shift Rate",
   "t": "Desplazamiento diferenciado"
  },
+ "9e3f4c60afcd": {
+  "en": "No install button? Open this page in Chrome (⋮ → Open in Chrome), then ⋮ → Install app.",
+  "t": "¿No ves el botón de instalar? Abre esta página en Chrome (⋮ → Abrir en Chrome) y luego ⋮ → Instalar aplicación."
+ },
  "a485fd837a64": {
   "en": "Complex Vraki",
   "t": "Vraki complejo"
@@ -299,6 +307,14 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "Mayo de 2017. Su paquete de instalación local es la única compilación que sobrevivió; está adjunto a la <a href=\"https://github.com/Deovandski/vraki-windows/releases\">versión de GitHub</a> para que conste (su certificado caducó en 2018, así que instálala desde la Store)."
  },
+ "bd1cf21678f6": {
+  "en": "Installed! Open it from your home screen or app list.",
+  "t": "¡Instalada! Ábrela desde la pantalla de inicio o la lista de aplicaciones."
+ },
+ "bd323974df6f": {
+  "en": "So the site opens without a connection, and as an app if you install it, this browser keeps copies of the pages you open, with their scripts and font. Images and video are never saved, and nothing is sent anywhere.",
+  "t": "Para que el sitio se abra sin conexión, y como app si lo instalas, este navegador guarda copias de las páginas que abres, con sus scripts y la fuente. Las imágenes y los vídeos nunca se guardan, y no se envía nada a ningún sitio."
+ },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "Texto"
@@ -310,6 +326,10 @@
  "c697bb6ff5e2": {
   "en": "Shift Vowels By",
   "t": "Desplazar vocales"
+ },
+ "ccd62e5d37a0": {
+  "en": "To install it, open this page in Chrome, Edge or Samsung Internet. On iPhone or iPad: Share, then Add to Home Screen.",
+  "t": "Para instalarla, abre esta página en Chrome, Edge o Samsung Internet. En iPhone o iPad: Compartir → Añadir a pantalla de inicio."
  },
  "cd9ba08526ff": {
   "en": "Conversion Type",
@@ -330,6 +350,10 @@
  "d36d5516dbff": {
   "en": "The Vraki typeface",
   "t": "La tipografía Vraki"
+ },
+ "d5636c56abfd": {
+  "en": "On iPhone or iPad: tap Share, then Add to Home Screen.",
+  "t": "En iPhone o iPad: toca Compartir y luego Añadir a pantalla de inicio."
  },
  "d89e229419df": {
   "en": "Word Pair",

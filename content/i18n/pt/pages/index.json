@@ -47,6 +47,10 @@
   "en": "Development recording, May 2017 (46 seconds, no sound).",
   "t": "Gravação do desenvolvimento, maio de 2017 (46 segundos, sem som)."
  },
+ "15c61d430df1": {
+  "en": "You’re using the installed app.",
+  "t": "Você está usando o app instalado."
+ },
  "165047664701": {
   "en": "Changed the header image to support VisualStates, and updated the GitHub links.",
   "t": "Mudou a imagem do cabeçalho para suportar VisualStates e atualizou os links do GitHub."
@@ -231,6 +235,10 @@
   "en": "Differential Shift Rate",
   "t": "Taxa de Deslocamento Diferenciada"
  },
+ "9e3f4c60afcd": {
+  "en": "No install button? Open this page in Chrome (⋮ → Open in Chrome), then ⋮ → Install app.",
+  "t": "Sem botão de instalar? Abra esta página no Chrome (⋮ → Abrir no Chrome), depois ⋮ → Instalar app."
+ },
  "a485fd837a64": {
   "en": "Complex Vraki",
   "t": "Vraki Complexo"
@@ -299,6 +307,14 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "Maio de 2017. O pacote de sideload dela é a única build que sobreviveu; está anexado à <a href=\"https://github.com/Deovandski/vraki-windows/releases\">release do GitHub</a> para registro (o certificado expirou em 2018, então instale pela Store)."
  },
+ "bd1cf21678f6": {
+  "en": "Installed! Open it from your home screen or app list.",
+  "t": "Instalado! Abra pela tela inicial ou pela lista de apps."
+ },
+ "bd323974df6f": {
+  "en": "So the site opens without a connection, and as an app if you install it, this browser keeps copies of the pages you open, with their scripts and font. Images and video are never saved, and nothing is sent anywhere.",
+  "t": "Para o site abrir sem conexão, e como app se você instalar, este navegador guarda cópias das páginas que você abre, com seus scripts e a fonte. Imagens e vídeos nunca são salvos, e nada é enviado para lugar nenhum."
+ },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "Texto"
@@ -310,6 +326,10 @@
  "c697bb6ff5e2": {
   "en": "Shift Vowels By",
   "t": "Deslocar Vogais em"
+ },
+ "ccd62e5d37a0": {
+  "en": "To install it, open this page in Chrome, Edge or Samsung Internet. On iPhone or iPad: Share, then Add to Home Screen.",
+  "t": "Para instalar, abra esta página no Chrome, no Edge ou no Samsung Internet. No iPhone ou iPad: Compartilhar → Adicionar à Tela de Início."
  },
  "cd9ba08526ff": {
   "en": "Conversion Type",
@@ -330,6 +350,10 @@
  "d36d5516dbff": {
   "en": "The Vraki typeface",
   "t": "A fonte Vraki"
+ },
+ "d5636c56abfd": {
+  "en": "On iPhone or iPad: tap Share, then Add to Home Screen.",
+  "t": "No iPhone ou iPad: toque em Compartilhar e depois em Adicionar à Tela de Início."
  },
  "d89e229419df": {
   "en": "Word Pair",

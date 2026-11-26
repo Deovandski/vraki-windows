@@ -87,6 +87,20 @@ tools/                   tests for the port; i18n.mjs builds the translated site
 
 Docs: [How the conversions work](docs/ALGORITHMS.md) · [Microsoft Store](docs/STORE.md) · [Releasing](docs/RELEASING.md) · [Privacy](PRIVACY.md) · [Security](SECURITY.md)
 
+## Installable app
+
+The website can be installed as an app (Android, iPhone/iPad, Chrome and Edge on a computer), and it opens without a connection once you've visited. It's a web app: `site/manifest.webmanifest`, icons in `site/icons/` (made from the 2017 app's own 300px tile, `legacy/Vraki Language/Assets/Square150x150Logo.scale-200.png`), and a service worker, `site/sw.js`, adapted from Deovandski-repo-template. The worker asks the network first every time, so a new deploy always shows; it uses its saved copy only with no signal. It never saves images or video.
+
+**Settings › App** has an **Install app** button when the browser can install the site right now. Otherwise it says how: on Android, open the page in Chrome (links opened from WhatsApp, Instagram or Gmail land in a viewer with no install option); on iPhone or iPad, Share › Add to Home Screen. Inside the installed app it says so. This is separate from the 2017 Windows app on the Microsoft Store.
+
+## Reusable components
+
+UI built to be copied into Deovandski's other repos (see "Build reusable components" in CLAUDE.md).
+
+| Component | Files | What it does |
+|---|---|---|
+| Install app | `site/install-app.js`, `site/install-app.css` | An "Install app" button that shows only when the browser can install the site, and a hint otherwise (Android, iPhone/iPad, other browsers). Ported from the Deovandski site's `InstallApp.astro` (Deovandski/Deovandski#293). Usage and options are at the top of the script; its words live in `#ui-strings` as `install-app.<key>`. |
+
 ## Files for AI tools and search engines
 
 The build (`node tools/i18n.mjs build`) also writes plain-text copies of the website, because many AI tools and fetchers can't read the page itself: some block `*.github.io`, most don't run JavaScript, and they drop hidden content and `#fragments`. Same idea as the [Deovandski site](https://deovandski.github.io/Deovandski/llms.txt) and HusbandOutWorld.

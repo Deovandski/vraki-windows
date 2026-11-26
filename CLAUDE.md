@@ -37,4 +37,7 @@ If a piece of UI could be useful twice, in this repo or in another of Deovandski
 - **Extract when you touch it:** when you change one-off UI that fits this rule, pull it out into a reusable component in the same PR.
 
 ## Website settings
-The gear (top right) opens Settings: Language, "Want a language added?" (links to #2) and Text size. Choices are saved in `localStorage` under `vraki-site` (`lang`, `size`); PRIVACY.md and the site's Privacy section say so. Text size scales every font size through the `--scale` CSS variable (17px = 1), so new CSS font sizes should be written as `calc(Npx * var(--scale))`.
+The gear (top right) opens Settings: Language, "Want a language added?" (links to #2), Text size and App (the Install app button, `site/install-app.js`). Choices are saved in `localStorage` under `vraki-site` (`lang`, `size`); PRIVACY.md and the site's Privacy section say so. Text size scales every font size through the `--scale` CSS variable (17px = 1), so new CSS font sizes should be written as `calc(Npx * var(--scale))`.
+
+## Installable app (manifest, service worker)
+The site is installable: `site/manifest.webmanifest`, `site/icons/`, and `site/sw.js` (registered from the inline script in `site/index.html`'s head, with the site's root as its scope so it covers every language). The worker fetches everything network first with `cache: 'no-cache'`, so a deploy shows at once; it never saves images or video. Change `VERSION` in `sw.js` whenever its rules change. Anything new the worker saves must be listed in PRIVACY.md and the site's Privacy section.

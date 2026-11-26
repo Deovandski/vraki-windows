@@ -47,6 +47,10 @@
   "en": "Development recording, May 2017 (46 seconds, no sound).",
   "t": "Enregistrement du développement, mai 2017 (46 secondes, sans son)."
  },
+ "15c61d430df1": {
+  "en": "You’re using the installed app.",
+  "t": "Tu utilises l’application installée."
+ },
  "165047664701": {
   "en": "Changed the header image to support VisualStates, and updated the GitHub links.",
   "t": "L'image d'en-tête prend désormais en charge les VisualStates, et les liens GitHub ont été mis à jour."
@@ -231,6 +235,10 @@
   "en": "Differential Shift Rate",
   "t": "Décalage différencié"
  },
+ "9e3f4c60afcd": {
+  "en": "No install button? Open this page in Chrome (⋮ → Open in Chrome), then ⋮ → Install app.",
+  "t": "Pas de bouton d’installation ? Ouvre cette page dans Chrome (⋮ → Ouvrir dans Chrome), puis ⋮ → Installer l’application."
+ },
  "a485fd837a64": {
   "en": "Complex Vraki",
   "t": "Vraki complexe"
@@ -299,6 +307,14 @@
   "en": "May 2017. Its sideload package is the only build that survived; it's attached to the <a href=\"https://github.com/Deovandski/vraki-windows/releases\">GitHub release</a> for the record (its certificate expired in 2018, so install from the Store).",
   "t": "Mai 2017. Son paquet de chargement latéral est le seul build qui ait survécu ; il est joint à la <a href=\"https://github.com/Deovandski/vraki-windows/releases\">release GitHub</a> pour mémoire (son certificat a expiré en 2018, installez donc depuis le Store)."
  },
+ "bd1cf21678f6": {
+  "en": "Installed! Open it from your home screen or app list.",
+  "t": "Installée ! Ouvre-la depuis l’écran d’accueil ou la liste des applications."
+ },
+ "bd323974df6f": {
+  "en": "So the site opens without a connection, and as an app if you install it, this browser keeps copies of the pages you open, with their scripts and font. Images and video are never saved, and nothing is sent anywhere.",
+  "t": "Pour que le site s'ouvre sans connexion, et comme une application si vous l'installez, ce navigateur garde des copies des pages que vous ouvrez, avec leurs scripts et la police. Les images et les vidéos ne sont jamais enregistrées, et rien n'est envoyé nulle part."
+ },
  "c3328c39b0e2": {
   "en": "Text",
   "t": "Texte"
@@ -310,6 +326,10 @@
  "c697bb6ff5e2": {
   "en": "Shift Vowels By",
   "t": "Décaler les voyelles de"
+ },
+ "ccd62e5d37a0": {
+  "en": "To install it, open this page in Chrome, Edge or Samsung Internet. On iPhone or iPad: Share, then Add to Home Screen.",
+  "t": "Pour l’installer, ouvre cette page dans Chrome, Edge ou Samsung Internet. Sur iPhone ou iPad : Partager → Sur l’écran d’accueil."
  },
  "cd9ba08526ff": {
   "en": "Conversion Type",
@@ -330,6 +350,10 @@
  "d36d5516dbff": {
   "en": "The Vraki typeface",
   "t": "La police Vraki"
+ },
+ "d5636c56abfd": {
+  "en": "On iPhone or iPad: tap Share, then Add to Home Screen.",
+  "t": "Sur iPhone ou iPad : touche Partager, puis Sur l’écran d’accueil."
  },
  "d89e229419df": {
   "en": "Word Pair",

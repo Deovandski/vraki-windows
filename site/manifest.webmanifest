@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "Vraki Language (2017)",
+  "short_name": "Vraki",
+  "description": "The 2017 Vraki Language app, back from the archive: try the original converter and see English in the Vraki typeface.",
+  "lang": "en",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07090a",
+  "theme_color": "#07090a",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Try the 2017 converter", "short_name": "Converter", "url": "./#try", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] }
+  ]
+}
