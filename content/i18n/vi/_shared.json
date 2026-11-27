@@ -31,6 +31,14 @@
   "en": "Language",
   "t": "Ngôn ngữ"
  },
+ "b5608ea73b86": {
+  "en": "Stats for nerds",
+  "t": "Thống kê cho dân kỹ thuật"
+ },
+ "bbfa773e5a63": {
+  "en": "Close",
+  "t": "Đóng"
+ },
  "c7f73bb54d92": {
   "en": "Settings",
   "t": "Cài đặt"
@@ -42,10 +50,6 @@
  "e5f79aa13bd5": {
   "en": "Install app",
   "t": "Cài đặt ứng dụng"
- },
- "e9b450d14bc2": {
-  "en": "Done",
-  "t": "Xong"
  },
  "eb29514de833": {
   "en": "Typeface",

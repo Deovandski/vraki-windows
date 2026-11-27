@@ -31,6 +31,14 @@
   "en": "Language",
   "t": "Lingua"
  },
+ "b5608ea73b86": {
+  "en": "Stats for nerds",
+  "t": "Statistiche per nerd"
+ },
+ "bbfa773e5a63": {
+  "en": "Close",
+  "t": "Chiudi"
+ },
  "c7f73bb54d92": {
   "en": "Settings",
   "t": "Impostazioni"
@@ -42,10 +50,6 @@
  "e5f79aa13bd5": {
   "en": "Install app",
   "t": "Installa app"
- },
- "e9b450d14bc2": {
-  "en": "Done",
-  "t": "Fatto"
  },
  "eb29514de833": {
   "en": "Typeface",

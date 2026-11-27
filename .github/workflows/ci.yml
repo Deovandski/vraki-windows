@@ -37,6 +37,10 @@ jobs:
           node tools/i18n.mjs status | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Files for AI tools and search engines (llms.txt, index.md, sitemap)
         run: node tools/test-llms.mjs _site
+      - name: Pages, Settings and Stats for nerds (stats.json)
+        run: |
+          node tools/stats.mjs _site
+          node tools/test-site.mjs _site
 
   store-identity:
     name: Store identity guard

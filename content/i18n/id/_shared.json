@@ -31,6 +31,14 @@
   "en": "Language",
   "t": "Bahasa"
  },
+ "b5608ea73b86": {
+  "en": "Stats for nerds",
+  "t": "Statistik untuk nerd"
+ },
+ "bbfa773e5a63": {
+  "en": "Close",
+  "t": "Tutup"
+ },
  "c7f73bb54d92": {
   "en": "Settings",
   "t": "Pengaturan"
@@ -42,10 +50,6 @@
  "e5f79aa13bd5": {
   "en": "Install app",
   "t": "Instal aplikasi"
- },
- "e9b450d14bc2": {
-  "en": "Done",
-  "t": "Selesai"
  },
  "eb29514de833": {
   "en": "Typeface",
