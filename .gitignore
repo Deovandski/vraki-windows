@@ -4,6 +4,9 @@ obj/
 artifacts/
 publish/
 [Dd]ebug/
+# ...but not the website's Stats for nerds page and its translations
+!site/debug/
+!content/i18n/*/pages/debug/
 [Rr]elease/
 x64/
 x86/

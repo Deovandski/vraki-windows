@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" data-root="../" data-page="debug/" data-store="vraki-site">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stats for nerds · Vraki Language</title>
+  <meta name="description" content="Build, device, network and translation details for this site, typed out like an old computer terminal.">
+  <!-- Not indexed: kept out of search engines, sitemap.xml and llms.txt (tools/llms.mjs only reads the home page). -->
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://deovandski.github.io/vraki-windows/debug/">
+  <link rel="icon" type="image/png" href="../icon.png">
+  <meta name="theme-color" content="#000000">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../install-app.css">
+  <link rel="stylesheet" href="../terminal-screen.css">
+  <!-- Filled in by tools/i18n.mjs build from index.html (one source for the head script, header, Settings and footer). -->
+  <script data-shared="head"></script>
+</head>
+<body class="page-terminal">
+  <!-- "Stats for nerds" (#12, from Deovandski-repo-template#19): Settings › DEBUG opens this page. A terminal types out
+       what the build and the browser know. Build facts come from stats.json (tools/stats.mjs, after the build); the rest is
+       read in the browser by debug.js, which writes every line, fills it in, then starts the typing. Nothing is saved or
+       sent anywhere. The terminal is translate="no" (machine output); the page's title and description are translated. -->
+  <div class="wrap">
+    <header data-shared="header"></header>
+
+    <main>
+      <h1 class="visually-hidden">Stats for nerds</h1>
+      <noscript><p class="debug-noscript">Stats for nerds needs JavaScript: the browser fills in every value.</p></noscript>
+
+      <div class="terminal debug-terminal" role="region" dir="ltr" aria-label="Stats for nerds" data-terminal data-wait data-duration="1800">
+        <div class="terminal__bar" aria-hidden="true" translate="no"><span class="terminal__dots"><i></i><i></i><i></i></span><span class="terminal__title">stats-for-nerds</span></div>
+        <div class="terminal__screen" translate="no" tabindex="0">
+          <div class="term-hi">VRAKI LANGUAGE DIAGNOSTICS</div>
+          <div class="term-dim">Memory test <span data-v="memtest">...</span> OK · <span data-v="now">...</span></div>
+          <div class="term-dim">Click or press any key to skip the typing.</div>
+          <!-- debug.js adds a heading and a row per value here, then the languages -->
+          <div class="term-gap" data-sections-end></div>
+          <div class="term-hi">READY.</div>
+          <span class="terminal__cursor" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <!-- Words debug.js writes into the terminal (machine output, so not translated). -->
+      <div class="debug-words" hidden translate="no">
+        <span data-k="na">n/a</span><span data-k="local">local build</span><span data-k="public">public</span><span data-k="private">private (hidden)</span>
+        <span data-k="online">online</span><span data-k="offline">offline</span><span data-k="yes">yes</span><span data-k="no">no</span>
+        <span data-k="none">none</span><span data-k="network">network</span><span data-k="worker">offline worker (saved copy)</span>
+        <span data-k="memcache">browser cache</span><span data-k="charging">charging</span><span data-k="unplugged">on battery</span>
+        <span data-k="standalone">installed app</span><span data-k="tab">browser tab</span><span data-k="noStats">stats.json not found (run node tools/i18n.mjs build, then node tools/stats.mjs)</span>
+        <span data-k="controlled">active, controlling this page</span><span data-k="notControlled">not controlling this page yet</span>
+        <span data-k="noWorker">not supported</span><span data-k="reduce">reduced</span><span data-k="full">full</span>
+        <span data-k="indexed">indexed</span><span data-k="current">← this page</span>
+      </div>
+    </main>
+
+    <footer data-shared="footer"></footer>
+  </div>
+
+  <div data-shared="strings"></div>
+  <dialog data-shared="settings"></dialog>
+
+  <script src="../settings.js"></script>
+  <script src="../install-app.js" defer></script>
+  <script src="../terminal-screen.js"></script>
+  <script src="debug.js"></script>
+</body>
+</html>
