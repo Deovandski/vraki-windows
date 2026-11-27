@@ -8,6 +8,7 @@ The 2017 UWP app (`legacy/`, never edited beyond the manifest identity), its doc
 - **The Vraki typeface** in `site/fonts/` is not MIT and must not be altered (see `site/fonts/LICENSE.md`). Copy it unaltered from HusbandOutWorld when it changes there.
 - **Text shown in the Vraki typeface is English letters.** Mark it `translate="no"` so the translations never touch it; the same goes for the converter's sample text and outputs.
 - Commits Claude contributes to are marked `Co-Authored-By: Claude` (see the README's Disclosure section).
+- **Workflow actions** stay on their current major release (all run on Node 24 now). GitHub retires old Node versions and warns first, in the run's annotations; when it does, bump them in their own PR.
 
 ## Translations (Chinese, Japanese, Portuguese, Spanish, Arabic, Korean, Malay, Thai, German, Vietnamese, Italian, French, Hindi, Indonesian)
 The website is also published in 14 languages (`/zh/`, `/ja/`, `/pt/`, `/es/`, `/ar/`, `/ko/`, `/ms/`, `/th/`, `/de/`, `/vi/`, `/it/`, `/fr/`, `/hi/`, `/id/`), the same way as HusbandOutWorld (HusbandOutWorld#50) and the Deovandski site (Deovandski#87). Translations are written ahead of time by Claude and committed in `content/i18n/<lang>/`; English (`site/index.html`) is the source. See the top of [tools/i18n.mjs](tools/i18n.mjs) for how it works. Tracking issue: #2.

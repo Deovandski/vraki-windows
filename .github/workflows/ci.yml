@@ -14,8 +14,8 @@ jobs:
     name: 2017 converter port
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: "22"
       - name: Test the JavaScript port against the 2017 app's output
@@ -25,8 +25,8 @@ jobs:
     name: Translations (reports only, never blocks)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: "22"
           cache: npm
@@ -46,7 +46,7 @@ jobs:
     name: Store identity guard
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Manifest must carry the development identity only
         shell: bash
         run: |
