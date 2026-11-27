@@ -31,6 +31,14 @@
   "en": "Language",
   "t": "ภาษา"
  },
+ "b5608ea73b86": {
+  "en": "Stats for nerds",
+  "t": "สถิติสำหรับคนเนิร์ด"
+ },
+ "bbfa773e5a63": {
+  "en": "Close",
+  "t": "ปิด"
+ },
  "c7f73bb54d92": {
   "en": "Settings",
   "t": "การตั้งค่า"
@@ -42,10 +50,6 @@
  "e5f79aa13bd5": {
   "en": "Install app",
   "t": "ติดตั้งแอป"
- },
- "e9b450d14bc2": {
-  "en": "Done",
-  "t": "เสร็จ"
  },
  "eb29514de833": {
   "en": "Typeface",

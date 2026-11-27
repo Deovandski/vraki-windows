@@ -31,6 +31,14 @@
   "en": "Language",
   "t": "语言"
  },
+ "b5608ea73b86": {
+  "en": "Stats for nerds",
+  "t": "详细统计信息"
+ },
+ "bbfa773e5a63": {
+  "en": "Close",
+  "t": "关闭"
+ },
  "c7f73bb54d92": {
   "en": "Settings",
   "t": "设置"
@@ -42,10 +50,6 @@
  "e5f79aa13bd5": {
   "en": "Install app",
   "t": "安装应用"
- },
- "e9b450d14bc2": {
-  "en": "Done",
-  "t": "完成"
  },
  "eb29514de833": {
   "en": "Typeface",

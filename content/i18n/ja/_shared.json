@@ -31,6 +31,14 @@
   "en": "Language",
   "t": "言語"
  },
+ "b5608ea73b86": {
+  "en": "Stats for nerds",
+  "t": "詳細統計情報"
+ },
+ "bbfa773e5a63": {
+  "en": "Close",
+  "t": "閉じる"
+ },
  "c7f73bb54d92": {
   "en": "Settings",
   "t": "設定"
@@ -42,10 +50,6 @@
  "e5f79aa13bd5": {
   "en": "Install app",
   "t": "アプリをインストール"
- },
- "e9b450d14bc2": {
-  "en": "Done",
-  "t": "完了"
  },
  "eb29514de833": {
   "en": "Typeface",

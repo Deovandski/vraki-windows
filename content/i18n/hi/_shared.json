@@ -31,6 +31,14 @@
   "en": "Language",
   "t": "भाषा"
  },
+ "b5608ea73b86": {
+  "en": "Stats for nerds",
+  "t": "तकनीकी आँकड़े"
+ },
+ "bbfa773e5a63": {
+  "en": "Close",
+  "t": "बंद करें"
+ },
  "c7f73bb54d92": {
   "en": "Settings",
   "t": "सेटिंग्स"
@@ -42,10 +50,6 @@
  "e5f79aa13bd5": {
   "en": "Install app",
   "t": "ऐप इंस्टॉल करें"
- },
- "e9b450d14bc2": {
-  "en": "Done",
-  "t": "हो गया"
  },
  "eb29514de833": {
   "en": "Typeface",

@@ -125,15 +125,62 @@ function* segments(document) {
 const textWords = (s) => s.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length;
 const isShared = (el) => !!(el.closest && el.closest(SHARED_SELECTOR));
 
+/** Every page in site/, as a path like "index.html" or "debug/index.html" (home first). */
 function sourcePages() {
-  return fs.readdirSync(SRC).filter((f) => f.endsWith('.html')).sort();
+  return fs.readdirSync(SRC, { recursive: true }).map((f) => f.split(path.sep).join('/'))
+    .filter((f) => f.endsWith('.html')).sort((a, b) => (a === 'index.html' ? -1 : b === 'index.html' ? 1 : a.localeCompare(b)));
+}
+
+/** How many folders down a page is: 0 for index.html, 1 for debug/index.html. */
+const depthOf = (page) => page.split('/').length - 1;
+/** The page's folder: "" for index.html, "debug/" for debug/index.html. */
+const dirOf = (page) => page.slice(0, page.lastIndexOf('/') + 1);
+
+/**
+ * A page's HTML, with its shared blocks filled in. One source: the head script, header, Settings dialog, footer and
+ * shared words live in index.html, marked data-shared="…"; another page writes an empty element with the same
+ * data-shared, and gets index.html's copy here. The copy keeps index.html's exact HTML (so its translations, stored by
+ * hash, match) and is marked data-rebase="../"; applyRebase() moves its relative links to the page's folder after
+ * translating. So a change to the header shows on every page, translated everywhere.
+ */
+let homeDoc = null;
+function loadSource(page) {
+  const html = fs.readFileSync(path.join(SRC, page), 'utf8');
+  if (page === 'index.html' || !html.includes('data-shared')) return html;
+  homeDoc ||= parseHTML(fs.readFileSync(path.join(SRC, 'index.html'), 'utf8')).document;
+  const { document } = parseHTML(html);
+  const up = '../'.repeat(depthOf(page));
+  for (const slot of [...document.querySelectorAll('[data-shared]')]) {
+    const name = slot.getAttribute('data-shared');
+    const from = homeDoc.querySelector(`[data-shared="${name}"]`);
+    if (!from) throw new Error(`${page}: index.html has no data-shared="${name}"`);
+    const copy = from.cloneNode(true);
+    copy.setAttribute('data-rebase', up);
+    slot.replaceWith(copy);
+  }
+  return document.toString();
+}
+
+/** Move the relative links of copied shared blocks (data-rebase="../") to work from the page's folder. */
+function applyRebase(document) {
+  for (const block of document.querySelectorAll('[data-rebase]')) {
+    const up = block.getAttribute('data-rebase');
+    block.removeAttribute('data-rebase');
+    for (const el of [block, ...block.querySelectorAll('[href], [src], [action]')]) {
+      for (const a of ['href', 'src', 'action']) {
+        const v = el.getAttribute(a);
+        if (v == null || /^([a-z][a-z0-9+.-]*:|\/)/i.test(v)) continue;   // URLs and site-absolute paths stay
+        el.setAttribute(a, v.startsWith('#') ? up + v : path.posix.normalize(up + v));
+      }
+    }
+  }
 }
 
 /** hash -> {en, words, pages[], shared} for every segment of every source page. */
 function inventory() {
   const segs = new Map();
   for (const page of sourcePages()) {
-    const { document } = parseHTML(fs.readFileSync(path.join(SRC, page), 'utf8'));
+    const { document } = parseHTML(loadSource(page));
     for (const { el, en } of segments(document)) {
       const h = segHash(en);
       const s = segs.get(h) || { en, words: textWords(en), pages: [], shared: false };
@@ -150,10 +197,16 @@ function inventory() {
 
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-/** A relative link to a file ("media/x.jpg", "vraki-2017.js") needs "../" from /<lang>/; "./", "#x" and URLs don't. */
-function upOne(v) {
-  if (!v || /^([a-z][a-z0-9+.-]*:|\/|#|\.\/?$|\?)/i.test(v)) return v;
-  return '../' + v;
+/**
+ * A relative link, moved from the English page to its copy at /<lang>/<page>. Links to pages ("./", "../", "debug/",
+ * "#try", "../#origin") stay as they are, so they stay inside the language. Links to files ("icon.png", "../site.css")
+ * point back at the one copy of the file, outside the language folder.
+ */
+function rebaseLink(v, page) {
+  if (!v || /^([a-z][a-z0-9+.-]*:|\/|#|\?)/i.test(v)) return v;
+  const bare = v.replace(/[?#].*$/, '');
+  if (bare === '' || bare === '.' || bare.endsWith('/')) return v;           // a page: stay in the language
+  return path.posix.normalize('../'.repeat(depthOf(page) + 1) + dirOf(page) + v);
 }
 
 function languageOptions(langs) {
@@ -187,34 +240,36 @@ function translatePage(src, page, code, meta, store, langs) {
     if (attr) el.setAttribute(attr, t);
     else el.innerHTML = t;
   }
-  // the page lives one folder down: file links get "../"
+  applyRebase(document);
+  // the page lives one folder further down: file links point back at the one copy of each file
   for (const el of document.querySelectorAll('[src], [href], [poster]')) {
-    for (const a of ['src', 'href', 'poster']) if (el.hasAttribute(a)) el.setAttribute(a, upOne(el.getAttribute(a)));
+    for (const a of ['src', 'href', 'poster']) if (el.hasAttribute(a)) el.setAttribute(a, rebaseLink(el.getAttribute(a), page));
   }
-  for (const st of document.querySelectorAll('style')) st.textContent = st.textContent.replace(/url\((["']?)(?!data:|https?:|\/|\.\.\/)/g, 'url($1../');
   const root = document.documentElement;
   root.setAttribute('lang', meta.html_lang || code);
   root.setAttribute('dir', meta.dir || 'ltr');
   root.setAttribute('data-lang', code);
-  root.setAttribute('data-root', '../');
+  root.setAttribute('data-root', '../'.repeat(depthOf(page) + 1));
   const canon = document.querySelector('link[rel="canonical"]');
   if (canon) canon.setAttribute('href', pageUrl(page, code));
   const top = document.querySelector('header');
   if (top && meta.banner) {
-    const en = page === 'index.html' ? '../' : '../' + page;
+    const en = '../'.repeat(depthOf(page) + 1) + dirOf(page);
     top.insertAdjacentHTML('afterend',
       `<div class="i18n-banner" role="note">${meta.banner} <a href="${en}" class="i18n-en" data-lang-switch="en" hreflang="en" lang="en" translate="no">${esc(meta.english || 'English')}</a></div>`);
   }
   return { document, coverage: total ? done / total : 1 };
 }
 
-const pageUrl = (page, code) => `${BASE_URL}/${code && code !== 'en' ? code + '/' : ''}${page === 'index.html' ? '' : page}`;
+const pageUrl = (page, code) => `${BASE_URL}/${code && code !== 'en' ? code + '/' : ''}${page.replace(/(^|\/)index\.html$/, '$1')}`;
+/** A page with <meta name="robots" content="noindex"> (like debug/) gets no hreflang links, and stays out of the AI files. */
+const isNoindex = (document) => /noindex/i.test(document.querySelector('meta[name="robots"]')?.getAttribute('content') || '');
 
 /** Tell search engines and the auto-select script which language versions are ready. */
 function headExtras(document, page, cov, thisCode) {
   const ready = Object.keys(cov).filter((c) => cov[c] >= INDEX_COVERAGE);
   const head = document.querySelector('head');
-  if (ready.length) {
+  if (ready.length && !isNoindex(document)) {
     for (const c of ['en', ...ready]) head.insertAdjacentHTML('beforeend', `<link rel="alternate" hreflang="${c}" href="${pageUrl(page, c)}">`);
     head.insertAdjacentHTML('beforeend', `<link rel="alternate" hreflang="x-default" href="${pageUrl(page)}">`);
   }
@@ -238,7 +293,7 @@ function cmdBuild(args) {
   const lines = [];
   let homeCov = {};
   for (const page of sourcePages()) {
-    const src = fs.readFileSync(path.join(SRC, page), 'utf8');
+    const src = loadSource(page);
     const cov = {}, outs = {};
     for (const { code, meta, store } of langs) {
       const r = translatePage(src, page, code, meta, store, langs);
@@ -246,11 +301,12 @@ function cmdBuild(args) {
     }
     const { document: en } = parseHTML(src);
     prepare(en, langs);
+    applyRebase(en);
     headExtras(en, page, cov);
     fs.writeFileSync(path.join(out, page), en.toString());
     for (const { code } of langs) {
       headExtras(outs[code], page, cov, code);
-      fs.mkdirSync(path.join(out, code), { recursive: true });
+      fs.mkdirSync(path.dirname(path.join(out, code, page)), { recursive: true });
       fs.writeFileSync(path.join(out, code, page), outs[code].toString());
     }
     lines.push(`${page}: ` + langs.map(({ code }) => `${code} ${Math.round(100 * cov[code])}%`).join(' · '));
@@ -287,6 +343,41 @@ function cmdBuild(args) {
 }
 
 // ---------------------------------------------------------------- command line
+
+/**
+ * How much of each language is translated, counted the same way as `status`: words of English segments that have a
+ * translation. Used by tools/stats.mjs for the Stats for nerds page (Deovandski-repo-template's languageStats()).
+ */
+export function languageStats() {
+  const segs = inventory();
+  const pages = sourcePages();
+  const indexable = pages.filter((p) => !isNoindex(parseHTML(loadSource(p)).document));
+  const words = [...segs.values()].reduce((n, s) => n + s.words, 0);
+  const pageWords = new Map();
+  for (const s of segs.values()) for (const p of s.pages) pageWords.set(p, (pageWords.get(p) || 0) + s.words);
+  return {
+    english: { pages: pages.length, pagesIndexable: indexable.length, segments: segs.size, words },
+    indexCoverage: INDEX_COVERAGE,
+    languages: languages().map((code) => {
+      const meta = loadMeta(code);
+      const st = loadStore(code);
+      let doneWords = 0, doneSegs = 0;
+      const pageDone = new Map();
+      for (const [h, s] of segs) {
+        if (!st.has(h)) continue;
+        doneWords += s.words;
+        doneSegs++;
+        for (const p of s.pages) pageDone.set(p, (pageDone.get(p) || 0) + s.words);
+      }
+      const indexed = indexable.filter((p) => (pageDone.get(p) || 0) >= INDEX_COVERAGE * (pageWords.get(p) || 0)).length;
+      return {
+        code, name: meta.name || code, dir: meta.dir || 'ltr',
+        percent: Math.round((1000 * doneWords) / Math.max(1, words)) / 10,
+        words: doneWords, segments: doneSegs, pagesIndexed: indexed,
+      };
+    }),
+  };
+}
 
 function cmdStatus() {
   const segs = inventory();

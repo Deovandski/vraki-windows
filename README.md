@@ -82,7 +82,7 @@ docs/STORE.md            the Store listing, and keeping its identity out of git
 packaging/               store-identity.example.json (the real one is git-ignored)
 site/                    GitHub Pages website (English source), with the JavaScript port of the converter
 content/i18n/            the website's translations, one folder per language (written ahead of time)
-tools/                   tests for the port; i18n.mjs builds the translated site, llms.mjs the files for AI tools
+tools/                   tests; i18n.mjs builds the translated site, llms.mjs the files for AI tools, stats.mjs stats.json
 ```
 
 Docs: [How the conversions work](docs/ALGORITHMS.md) · [Microsoft Store](docs/STORE.md) · [Releasing](docs/RELEASING.md) · [Privacy](PRIVACY.md) · [Security](SECURITY.md)
@@ -93,12 +93,17 @@ The website can be installed as an app (Android, iPhone/iPad, Chrome and Edge on
 
 **Settings › App** has an **Install app** button when the browser can install the site right now. Otherwise it says how: on Android, open the page in Chrome (links opened from WhatsApp, Instagram or Gmail land in a viewer with no install option); on iPhone or iPad, Share › Add to Home Screen. Inside the installed app it says so. This is separate from the 2017 Windows app on the Microsoft Store.
 
+## Stats for nerds
+
+**Settings › DEBUG** opens [`/debug/`](https://deovandski.github.io/vraki-windows/debug/), a black page where a terminal types out what the build and your browser know: the code (commit, pull request, workflow run, tools), the site (pages, files, languages, offline worker), the 2017 Windows app (latest release, Store listing, the Vraki typeface), your browser and device, the network, page timings, and how much of each language is translated. It isn't indexed (`noindex`, and left out of the sitemap and `llms.txt`), and it saves and sends nothing. Build facts come from `stats.json`, written by `tools/stats.mjs` after the build. Same standard as Deovandski-repo-template#19.
+
 ## Reusable components
 
 UI built to be copied into Deovandski's other repos (see "Build reusable components" in CLAUDE.md).
 
 | Component | Files | What it does |
 |---|---|---|
+| Terminal screen | `site/terminal-screen.js`, `site/terminal-screen.css` | An old-school green-on-black terminal that types its lines out fast, one character at a time (click or any key shows it all; reduced motion shows it at once). Always left to right and `translate="no"`. Ported from Deovandski-repo-template's `TerminalScreen.astro` (Deovandski-repo-template#19); used by Stats for nerds. |
 | Install app | `site/install-app.js`, `site/install-app.css` | An "Install app" button that shows only when the browser can install the site, and a hint otherwise (Android, iPhone/iPad, other browsers). Ported from the Deovandski site's `InstallApp.astro` (Deovandski/Deovandski#293). Usage and options are at the top of the script; its words live in `#ui-strings` as `install-app.<key>`. |
 
 ## Files for AI tools and search engines
@@ -114,7 +119,7 @@ The build (`node tools/i18n.mjs build`) also writes plain-text copies of the web
 
 The page's head links the Markdown files with `rel="alternate"`, and the footer links them too. The page decides what goes in: `data-llms-skip` leaves an element out (the interactive converter, the typing box), `data-llms-note` says what was there instead, and `data-llms-code` writes sample output as code. See the top of `tools/llms.mjs`, which is written to be copied into other repos as-is.
 
-**Test it:** `npm ci`, `node tools/i18n.mjs build`, then `node tools/test-llms.mjs` (CI runs the same) and read `_site/index.md`.
+**Test it:** `npm ci`, `npm run build` (the site, then `stats.json`), then `npm test` (CI runs the same) and read `_site/index.md`.
 
 A project site's own `robots.txt` is ignored (crawlers only read the domain root), so the sitemap has to be submitted by hand in [Google Search Console](https://search.google.com/search-console) and [Bing Webmaster Tools](https://www.bing.com/webmasters).
 
